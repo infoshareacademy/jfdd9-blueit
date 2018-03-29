@@ -2,7 +2,7 @@ body {
     box-sizing: border-box;
 }
 .section-hero {
-    background: blue url("../sky.jpeg");
+    background: blue url("../sky.jpeg");                    /* main picture */
     background-size: 100% 600px;
     opacity: 0.6;
     width: 100%x;
@@ -10,13 +10,13 @@ body {
 
 }
 .section-hero div{
-    display: grid;
-    border: 1px white dotted;
+    display: grid;                                          
+    border: 1px white dotted;                                /* temporary grid border for better layout recognition */
 }
 .section-hero .text{
     font-family: cursive sans-serif;
     word-spacing: 5px;
-    font-size: 50px;
+    font-size: 50px;                                           /* the catchphrase */
     text-align: center;
     font-weight: 900;
     color: azure;
@@ -26,7 +26,7 @@ body {
     color: #add8e6;
 }
 .section-hero .description{
-    font-family: cursive sans-serif;
+    font-family: cursive sans-serif;                             /* description */
     font-size: 35px;
     color: azure;
     text-align: center;
