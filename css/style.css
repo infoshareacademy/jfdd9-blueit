@@ -1,3 +1,24 @@
 body {
     box-sizing: border-box;
 }
+
+.form {
+    margin-top: 10px;
+    display: block;
+    border: black solid 1px;
+}
+
+.form-panel-left {
+    float: left;
+    display: block;
+    margin: 0 auto;
+    border: black solid 1px;
+}
+
+.form-panel-right {
+    float: right;
+    display: block;
+    margin: 0 auto;
+    border: black solid 1px;
+}
+
