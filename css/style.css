@@ -1,3 +1,13 @@
 body {
     box-sizing: border-box;
 }
+
+.functionalities {
+    border:1px solid grey;
+    display: flex;
+    justify-content: space-between;
+}
+
+.func-left-column, .func-right-column {
+    border: 1px solid black;
+}
