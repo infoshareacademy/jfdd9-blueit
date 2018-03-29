@@ -1,3 +1,34 @@
 body {
     box-sizing: border-box;
 }
+.section-hero {
+    background: blue url("../sky.jpeg");
+    background-size: 100% 600px;
+    opacity: 0.6;
+    width: 100%x;
+    height: 600px;
+
+}
+.section-hero div{
+    display: grid;
+    border: 1px white dotted;
+}
+.section-hero .text{
+    font-family: cursive sans-serif;
+    word-spacing: 5px;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 900;
+    color: azure;
+    text-transform: capitalize;
+}
+.section-hero .text:hover{
+    color: #add8e6;
+}
+.section-hero .description{
+    font-family: cursive sans-serif;
+    font-size: 35px;
+    color: azure;
+    text-align: center;
+
+}
