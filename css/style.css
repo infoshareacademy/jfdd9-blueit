@@ -7,10 +7,11 @@ body {
 
 h2 {
     text-align: center;
-    padding: 30px 0 0 0;
+    padding: 10px 0 0 0;
 }
 
 .functionalities {
+    margin: 20px;
     background: #fff;
     -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
@@ -31,4 +32,13 @@ h2 {
 
 .fa-car {
     color: #20c820;
+}
+
+.fa-cogs {
+    color: #4a2ed5;
+}
+
+.func-cog {
+    text-align: center;
+    padding: 30px 0 0 0;
 }
