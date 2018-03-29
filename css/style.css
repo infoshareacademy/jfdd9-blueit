@@ -2,12 +2,18 @@ body {
     box-sizing: border-box;
 }
 
-.functionalities {
-    border:1px solid grey;
+h2 {
+    text-align: center;
+}
+
+.columns {
+    border: 1px solid grey;
     display: flex;
     justify-content: space-between;
 }
 
 .func-left-column, .func-right-column {
     border: 1px solid black;
+    padding: 20px;
+    width: 50%;
 }
