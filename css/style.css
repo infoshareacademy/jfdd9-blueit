@@ -1,3 +1,12 @@
 body {
     box-sizing: border-box;
 }
+
+
+
+.team {
+    display: inline-flex;
+    align-items: stretch;
+    border:1px solid black;
+    text-align: center;
+}
