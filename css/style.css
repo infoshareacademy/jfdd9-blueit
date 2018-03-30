@@ -40,11 +40,19 @@ h2 {
 }
 
 .func-column-left {
-    padding: 0 15px 0 0;
+    padding: 0 20px 0 0;
 }
 
 .func-column-right {
-    padding: 0 0 0 15px;
+    padding: 0 0 0 20px;
+}
+
+.func-name {
+    text-align: center;
+}
+
+.func-desc {
+    text-align: justify;
 }
 
 /* FONT AWESOME RULES*/
