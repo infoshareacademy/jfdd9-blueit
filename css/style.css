@@ -18,9 +18,9 @@ h2 {
 .functionalities {
     margin: 20px;
     background: #fff;
-    -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
-    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
 }
 
 .func-columns {
