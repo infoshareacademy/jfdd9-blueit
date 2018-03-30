@@ -13,19 +13,17 @@ h2 {
 .functionalities {
     margin: 20px;
     background: #fff;
-    -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.75);
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.75);
 }
 
 .columns {
-    /*border: 1px solid grey;*/
     display: flex;
     justify-content: space-between;
 }
 
 .func-left-column, .func-right-column {
-    /*border: 1px solid black;*/
     padding: 0 20px 30px 20px;
     width: 50%;
 }
