@@ -3,10 +3,9 @@ body {
 }
 .section-hero {
     background: blue url("../wallpaper2.jpg");                    /* main picture */
-    background-size: 100% 800px;
+    background-size: cover;
     opacity: 0.6;
-    width: 100%x;
-    height: 800px;
+    height: 100vh;
     text-align: right;
 
     }
@@ -17,10 +16,9 @@ body {
     font-size: 50px;                                           /* the catchphrase */
     text-align: right;
     font-weight: 900;
-    width: 600px;
     color: azure;
     text-transform: capitalize;
-    position: relative; top:500px; left: 660px;
+
 
 }
 .section-hero h1:hover{
@@ -30,9 +28,9 @@ body {
     font-family: Verdana sans-serif;                             /* description */
     font-size: 35px;
     color: azure;
-    position: relative; top:500px; left: 300px;
 
-    width: 950px;
+
+
 
     }
 .section-hero img{
