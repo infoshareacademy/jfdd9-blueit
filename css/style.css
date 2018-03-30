@@ -20,7 +20,7 @@ h2 {
 }
 
 .section-hero {
-    background: blue url("../wallpaper2.jpg");                    /* main picture */
+    background: blue url("../wallpaper2.jpg"); /* main picture */
     background-size: 100% 800px;
     opacity: 0.6;
     width: 100%;
@@ -28,48 +28,57 @@ h2 {
     border: 1px white solid;
 }
 
-.section-hero .text{
+.section-hero .text {
     font-family: Verdana sans-serif;
     word-spacing: 5px;
-    font-size: 50px;                                           /* the catchphrase */
+    font-size: 50px; /* the catchphrase */
     text-align: right;
     font-weight: 900;
     width: 600px;
     color: azure;
     text-transform: capitalize;
-    position: relative; top:600px; left: 660px;
+    position: relative;
+    top: 600px;
+    left: 660px;
     text-align: right;
     border: 1px white solid;
 }
-.section-hero .text:hover{
+
+.section-hero .text:hover {
     color: #add8e6;
 }
-.section-hero .description{
-    font-family: Verdana sans-serif;                             /* description */
+
+.section-hero .description {
+    font-family: Verdana sans-serif; /* description */
     font-size: 35px;
     color: azure;
-    position: relative; top:600px; left: 360px;
+    position: relative;
+    top: 600px;
+    left: 360px;
     text-align: right;
     border: 1px white solid;
     width: 900px;
     position: relative;
 }
-.section-hero img{
+
+.section-hero img {
     width: 90px;
-    position: relative; top:490px;
+    position: relative;
+    top: 490px;
     float: left;
     color: black;
     border: 1px white solid;
     float: left;
 }
-.section-hero a{
+
+.section-hero a {
     text-decoration: none;
     color: black;
     border: 1px white solid;
 }
 
 /*FUNCTIONALITIES RULES*/
-.func {
+.func, .form, .about-us {
     margin: 20px;
     background: #fff;
     -webkit-box-shadow: 2px 2px 60px 0 rgba(0, 0, 0, 1);
@@ -89,6 +98,38 @@ h2 {
     box-sizing: border-box;
 }
 
+.func-column-left {
+    padding: 0 20px 0 0;
+}
+
+.func-column-right {
+    padding: 0 0 0 20px;
+}
+
+.func-name {
+    text-align: center;
+}
+
+.func-desc {
+    text-align: justify;
+}
+
+/* FONT AWESOME RULES*/
+.fa-car {
+    color: #20c820;
+}
+
+.fa-cogs {
+    color: rgba(68, 131, 186, 0.1);
+    position: relative;
+    top: 0.6em;
+    font-size: 500px;
+}
+
+.func-cog {
+    text-align: center;
+    height: 0;
+}
 
 .form {
     display: flex;
@@ -118,7 +159,6 @@ h2 {
     bottom: 0;
     right: 0;
     position: absolute;
-    z-index: -1;
 }
 
 .feedback-row-col-25 {
@@ -197,62 +237,6 @@ label {
     width: 92%;
 }
 
-/*-----------------------RWD----------------------------*/
-@media screen and (max-width: 600px) {
-    .form {
-        width: 100%;
-        display: block;
-        clear: both;
-    }
-
-    .form-panel-right, .form-panel-left, input[type=submit] {
-        width: 100%;
-        margin-top: 0;
-    }
-
-    .form-panel-right {
-        margin-top: 6px;
-        padding: 30px;
-    }
-
-    .form h2 {
-        text-align: center;
-    }
-
-
-.func-column-left {
-    padding: 0 20px 0 0;
-}
-
-.func-column-right {
-    padding: 0 0 0 20px;
-}
-
-.func-name {
-    text-align: center;
-}
-
-.func-desc {
-    text-align: justify;
-}
-
-/* FONT AWESOME RULES*/
-.fa-car {
-    color: #20c820;
-}
-
-.fa-cogs {
-    color: rgba(68, 131, 186, 0.1);
-    position: relative;
-    top: 0.6em;
-    font-size: 500px;
-}
-
-.func-cog {
-    text-align: center;
-    height: 0;
-}
-
 .about-us {
     text-align: center;
 }
@@ -279,4 +263,28 @@ label {
 .about-us-social-media {
 
     text-align: center;
+}
+
+/*-----------------------RWD----------------------------*/
+@media screen and (max-width: 600px) {
+    .form {
+        width: 100%;
+        display: block;
+        clear: both;
+    }
+
+    .form-panel-right, .form-panel-left, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .form-panel-right {
+        margin-top: 6px;
+        padding: 30px;
+    }
+
+    .form h2 {
+        text-align: center;
+    }
+
 }
