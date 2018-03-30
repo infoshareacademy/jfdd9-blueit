@@ -3,11 +3,14 @@ body {
     background: #f9f9f9;
     max-width: 1000px;
     margin: 0 auto;
+    font-family: Verdana, sans-serif;
+    font-size: 1.5em;
 }
 
 h2 {
     text-align: center;
     padding: 10px 0;
+    letter-spacing: 0.5em;
 }
 
 .functionalities {
@@ -44,13 +47,11 @@ h2 {
 .fa-cogs {
     color: rgba(11, 86, 255, 0.1);
     position: relative;
-    top: 0.2em;
+    top: 0.6em;
     font-size: 400px;
 }
 
 .func-cog {
     text-align: center;
-    padding: 0;
     height: 0;
-    margin: 0;
 }
