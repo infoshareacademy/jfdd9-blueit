@@ -1,6 +1,8 @@
 body {
+    max-width: 1000px;
     box-sizing: border-box;
     font-family: "DejaVu Sans", sans-serif;
+    margin: 0 auto;
 }
 
 .form {
@@ -9,14 +11,12 @@ body {
     justify-content: space-between;
 }
 
+
+
 .form-panel-left {
     width: 50%;
     padding: 20px;
     /* border: black solid 1px; */
-}
-
-.form-panel-left form {
-    /* float: left; */
 }
 
 .form-panel-right {
@@ -85,6 +85,9 @@ input[type=text], select, textarea {
     margin-left: 5px;
     color: #D1E5FD;
 }
+.feedback-send:hover {
+    color: tomato;
+}
 
 input[type=submit] {
     background-color: #4CAF50;
@@ -109,7 +112,7 @@ label {
     display: inline-block;
     width: 92%;
 }
-
+/*-----------------------RWD----------------------------*/
 @media screen and (max-width: 600px) {
     .form {
         width: 100%;
@@ -126,5 +129,7 @@ label {
         margin-top: 6px;
         padding: 30px;
     }
-
+.form h2 {
+    text-align: center;
+}
 }
