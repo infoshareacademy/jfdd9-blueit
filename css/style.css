@@ -1,12 +1,25 @@
-body {
-    box-sizing: border-box;
+
+.about-us {
+    text-align: center;
+}
+
+.main-about-us {
+    display: inline-flex;
+    justify-content: space-around;
+
+}
+
+.team {
+    margin: 20px;
+    padding: 20px;
+    align-items: stretch;
+    border: 1px solid black;
+    font-size: 26 px;
+
 }
 
 
+.social-media {
 
-.team {
-    display: inline-flex;
-    align-items: stretch;
-    border:1px solid black;
     text-align: center;
 }
