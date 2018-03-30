@@ -22,10 +22,10 @@ h2 {
     background: blue url("../wallpaper2.jpg");                    /* main picture */
     background-size: 100% 800px;
     opacity: 0.6;
-    width: 100%x;
+    width: 100%;
     height: 800px;
     border: 1px white solid;
-    }
+}
 
 .section-hero .text{
     font-family: Verdana sans-serif;
@@ -51,8 +51,8 @@ h2 {
     text-align: right;
     border: 1px white solid;
     width: 900px;
-    position:  relative; bottom right;
-    }
+    position: relative;
+}
 .section-hero img{
     width: 90px;
     position: relative; top:490px;
@@ -119,4 +119,32 @@ h2 {
 .func-cog {
     text-align: center;
     height: 0;
+}
+
+.about-us {
+    text-align: center;
+}
+
+#about-us-header {
+    font-size: 35px;
+
+}
+
+.about-us-main {
+    display: inline-flex;
+    justify-content: space-around;
+
+}
+
+.about-us-team {
+    margin: 20px;
+    padding: 20px;
+    align-items: stretch;
+    font-size: 20px;
+
+}
+
+.about-us-social-media {
+
+    text-align: center;
 }
