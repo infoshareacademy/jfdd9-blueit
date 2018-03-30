@@ -8,7 +8,7 @@ body {
     width: 100%x;
     height: 800px;
     text-align: right;
-    border: 1px white solid;
+
     }
 
 .section-hero .header-text h1{
@@ -21,7 +21,7 @@ body {
     color: azure;
     text-transform: capitalize;
     position: relative; top:500px; left: 660px;
-    border: 1px white solid;
+
 }
 .section-hero h1:hover{
     color: #add8e6;
@@ -31,16 +31,16 @@ body {
     font-size: 35px;
     color: azure;
     position: relative; top:500px; left: 300px;
-    border: 1px white solid;
+
     width: 950px;
 
     }
 .section-hero img{
     width: 90px;
-    position: relative; top:600px;
+    position: relative; top:700px;
     float: left;
     color: black;
-    border: 1px white solid;
+
 }
 .section-hero a{
     text-decoration: none;
