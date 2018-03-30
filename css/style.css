@@ -3,23 +3,27 @@
     text-align: center;
 }
 
-.main-about-us {
+#about-us-header {
+    font-size: 35px;
+
+}
+
+.about-us-main {
     display: inline-flex;
     justify-content: space-around;
 
 }
 
-.team {
+.about-us-team {
     margin: 20px;
     padding: 20px;
     align-items: stretch;
-    border: 1px solid black;
-    font-size: 26 px;
+    font-size: 20px;
 
 }
 
 
-.social-media {
+.about-us-social-media {
 
     text-align: center;
 }
