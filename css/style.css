@@ -18,6 +18,55 @@ h2 {
     text-transform: uppercase;
 }
 
+.section-hero {
+    background: blue url("../wallpaper2.jpg");                    /* main picture */
+    background-size: 100% 800px;
+    opacity: 0.6;
+    width: 100%x;
+    height: 800px;
+    border: 1px white solid;
+    }
+
+.section-hero .text{
+    font-family: Verdana sans-serif;
+    word-spacing: 5px;
+    font-size: 50px;                                           /* the catchphrase */
+    text-align: right;
+    font-weight: 900;
+    width: 600px;
+    color: azure;
+    text-transform: capitalize;
+    position: relative; top:600px; left: 660px;
+    text-align: right;
+    border: 1px white solid;
+}
+.section-hero .text:hover{
+    color: #add8e6;
+}
+.section-hero .description{
+    font-family: Verdana sans-serif;                             /* description */
+    font-size: 35px;
+    color: azure;
+    position: relative; top:600px; left: 360px;
+    text-align: right;
+    border: 1px white solid;
+    width: 900px;
+    position:  relative; bottom right;
+    }
+.section-hero img{
+    width: 90px;
+    position: relative; top:490px;
+    float: left;
+    color: black;
+    border: 1px white solid;
+    float: left;
+}
+.section-hero a{
+    text-decoration: none;
+    color: black;
+    border: 1px white solid;
+}
+
 /*FUNCTIONALITIES RULES*/
 .func {
     margin: 20px;
