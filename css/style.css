@@ -1,3 +1,4 @@
+/*GENERAL RULES*/
 body {
     max-width: 1000px;
     margin: 0 auto;
@@ -14,9 +15,11 @@ h2 {
     padding: 10px 0;
     letter-spacing: 0.5em;
     color: rgba(50, 82, 120, 0.8);
+    text-transform: uppercase;
 }
 
-.functionalities {
+/*FUNCTIONALITIES RULES*/
+.func {
     margin: 20px;
     background: #fff;
     -webkit-box-shadow: 2px 2px 60px 0 rgba(0, 0, 0, 1);
@@ -26,8 +29,6 @@ h2 {
 }
 
 .func-columns {
-    /*display: flex;*/
-    /*justify-content: space-between;*/
     overflow: auto;
     padding: 20px 40px;
 }
@@ -46,12 +47,7 @@ h2 {
     padding: 0 0 0 15px;
 }
 
-/*
-.func-columns:after {
-    clear: both;
-}
-*/
-
+/* FONT AWESOME RULES*/
 .fa-car {
     color: #20c820;
 }
