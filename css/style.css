@@ -1,3 +1,125 @@
+/*GENERAL RULES*/
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: Verdana, sans-serif;
+    font-size: 24px;
+    color: #555;
+    background: -moz-linear-gradient(#58b9ff, #325278);
+    background: -webkit-linear-gradient(#58b9ff, #325278);
+    background: linear-gradient(45deg, #58b9ff, #325278);
+}
+
+h2 {
+    text-align: center;
+    padding: 10px 0;
+    letter-spacing: 0.5em;
+    color: rgba(50, 82, 120, 0.8);
+    text-transform: uppercase;
+}
+
+.section-hero {
+    background: blue url("../wallpaper2.jpg");                    /* main picture */
+    background-size: 100% 800px;
+    opacity: 0.6;
+    width: 100%;
+    height: 800px;
+    border: 1px white solid;
+}
+
+.section-hero .text{
+    font-family: Verdana sans-serif;
+    word-spacing: 5px;
+    font-size: 50px;                                           /* the catchphrase */
+    text-align: right;
+    font-weight: 900;
+    width: 600px;
+    color: azure;
+    text-transform: capitalize;
+    position: relative; top:600px; left: 660px;
+    text-align: right;
+    border: 1px white solid;
+}
+.section-hero .text:hover{
+    color: #add8e6;
+}
+.section-hero .description{
+    font-family: Verdana sans-serif;                             /* description */
+    font-size: 35px;
+    color: azure;
+    position: relative; top:600px; left: 360px;
+    text-align: right;
+    border: 1px white solid;
+    width: 900px;
+    position: relative;
+}
+.section-hero img{
+    width: 90px;
+    position: relative; top:490px;
+    float: left;
+    color: black;
+    border: 1px white solid;
+    float: left;
+}
+.section-hero a{
+    text-decoration: none;
+    color: black;
+    border: 1px white solid;
+}
+
+/*FUNCTIONALITIES RULES*/
+.func {
+    margin: 20px;
+    background: #fff;
+    -webkit-box-shadow: 2px 2px 60px 0 rgba(0, 0, 0, 1);
+    -moz-box-shadow: 2px 2px 60px 0 rgba(0, 0, 0, 1);
+    box-shadow: 2px 2px 60px 0 rgba(0, 0, 0, 1);
+    border-radius: 4px;
+}
+
+.func-columns {
+    overflow: auto;
+    padding: 20px 40px;
+}
+
+.func-column-left, .func-column-right {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.func-column-left {
+    padding: 0 20px 0 0;
+}
+
+.func-column-right {
+    padding: 0 0 0 20px;
+}
+
+.func-name {
+    text-align: center;
+}
+
+.func-desc {
+    text-align: justify;
+}
+
+/* FONT AWESOME RULES*/
+.fa-car {
+    color: #20c820;
+}
+
+.fa-cogs {
+    color: rgba(68, 131, 186, 0.1);
+    position: relative;
+    top: 0.6em;
+    font-size: 500px;
+}
+
+.func-cog {
+    text-align: center;
+    height: 0;
+}
 
 .about-us {
     text-align: center;
