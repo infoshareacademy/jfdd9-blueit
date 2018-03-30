@@ -1,13 +1,10 @@
-body {
-    box-sizing: border-box;
-}
+
 .section-hero {
     background: blue url("../wallpaper2.jpg");                    /* main picture */
     background-size: cover;
     opacity: 0.6;
     height: 100vh;
     text-align: right;
-
     }
 
 .section-hero .header-text h1{
@@ -18,28 +15,25 @@ body {
     font-weight: 900;
     color: azure;
     text-transform: capitalize;
-
-
 }
+
 .section-hero h1:hover{
     color: #add8e6;
+
 }
 .section-hero .header-text h3{
     font-family: Verdana sans-serif;                             /* description */
     font-size: 35px;
     color: azure;
-
-
-
-
     }
+
 .section-hero img{
     width: 90px;
     position: relative; top:700px;
     float: left;
     color: black;
-
 }
+
 .section-hero a{
     text-decoration: none;
     color: black;
