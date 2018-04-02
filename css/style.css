@@ -1,41 +1,53 @@
 
 .section-hero {
-    background: blue url("../wallpaper2.jpg");                    /* main picture */
+    display: flex;
+    align-items: flex-end;
+    background: #7db7e6 url("../wallpaperNEW.jpg");                    /* main picture */
     background-size: cover;
-    opacity: 0.6;
     height: 100vh;
     text-align: right;
-    }
+}
 
-.section-hero .header-text h1{
-    font-family: Verdana sans-serif;
-    word-spacing: 5px;
-    font-size: 50px;                                           /* the catchphrase */
-    text-align: right;
+.section-hero div{
+    width: 100%;
+}
+
+.section-hero .link-to-form{
+    flex-shrink: 5;
+    text-align: center;
+}                                                                   /* link to email form */
+
+.link-to-form a{
+    text-decoration: none;
+    color: #6eff2a;
+    font-family: Verdana Arial sans-serif;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.header-text p.main-header{
+    font-family: Verdana Arial sans-serif;
+    font-size: 55px;
+    flex-grow: 4;
+    word-spacing: 10px;                                                 /* the catchphrase */
     font-weight: 900;
     color: azure;
     text-transform: capitalize;
+    padding: 0;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-.section-hero h1:hover{
+p.main-header:hover{
     color: #add8e6;
-
 }
-.section-hero .header-text h3{
-    font-family: Verdana sans-serif;                             /* description */
+
+.header-text p.decription{
+    font-family: Verdana Arial sans-serif;                               /* description */
+    color: #f0ffff;
     font-size: 35px;
-    color: azure;
-    }
+}
 
 .section-hero img{
-    width: 90px;
-    position: relative; top:700px;
-    float: left;
-    color: black;
-}
-
-.section-hero a{
-    text-decoration: none;
-    color: black;
-    border: 1px white solid;
+    width: 100px;
+    padding: 5px;
 }
