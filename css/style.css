@@ -21,7 +21,7 @@ h2 {
 .section-hero {
     display: flex;
     align-items: flex-end;
-    background: #7db7e6 url("../wallpaperNEW.jpg"); /* main picture */
+    background: #7db7e6 url("../wallpaperNEW.jpg");             /* main picture */
     background-size: cover;
     height: 100vh;
     text-align: right;
@@ -32,37 +32,27 @@ h2 {
     width: 100%;
 }
 
-.section-hero .link-to-form {
-    flex-shrink: 5;
-    text-align: left;
+.section-hero .link-to-form {                                   /* img link to form below */
+    flex-shrink: 10;
+    text-align: center;
     padding: 5px;
-}
-
-/* link to email form */
-.section-hero .link-description {
-    flex-shrink: 7;
-    color: #6eff2a;
-    text-align: right;
-    font-family: Verdana Arial sans-serif;
-    text-transform: capitalize;
-    font-weight: bold;
-    border-right: 2px solid #6eff2a;
-    padding: 5px;
+    border: 3px #49ff23 solid;
+    border-radius: 30px;
 }
 
 .link-to-form a {
     text-decoration: none;
-    color: #6eff2a;
+    color: #49ff23;
     font-family: Verdana Arial sans-serif;
     text-transform: capitalize;
     font-weight: bold;
 }
 
-.header-text p.main-header {
+.header-text p.main-header {                                       /* catchphrase */
     font-family: Verdana Arial sans-serif;
     font-size: 55px;
     flex-grow: 4;
-    word-spacing: 10px; /* the catchphrase */
+    word-spacing: 10px;
     font-weight: 900;
     color: azure;
     text-transform: capitalize;
@@ -75,14 +65,13 @@ p.main-header:hover {
 }
 
 .header-text p.description {
-    font-family: Verdana Arial sans-serif; /* description */
+    font-family: Verdana Arial sans-serif;                         /* description */
     color: #f0ffff;
     font-size: 35px;
 }
 
 .section-hero img {
-    width: 100px;
-    padding: 5px;
+    width: 70px;
 }
 
 /*FUNCTIONALITIES RULES*/
