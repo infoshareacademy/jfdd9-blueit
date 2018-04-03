@@ -15,7 +15,9 @@
 
 .section-hero .link-to-form{
     flex-shrink: 5;
-    text-align: center;
+    text-align: left;
+    padding: 5px;
+
 }                                                                   /* link to email form */
 .section-hero .link-description{
     flex-shrink: 7;
@@ -24,6 +26,8 @@
     font-family: Verdana Arial sans-serif;
     text-transform: capitalize;
     font-weight: bold;
+    border-right: 2px solid #6eff2a;
+    padding: 5px;
 }
 .link-to-form a{
     text-decoration: none;
