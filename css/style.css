@@ -115,7 +115,8 @@ h2 {
 }
 
 /* FONT AWESOME RULES*/
-.fa-car {
+.fa-car, .fa-warehouse, .fa-shopping-cart, .fa-mobile-alt, .fa-child, .fa-paw, .fa-road {
+    font-size: 40px;
     color: #20c820;
 }
 
@@ -129,6 +130,10 @@ h2 {
 .func-cog {
     text-align: center;
     height: 0;
+}
+
+.icon-parking {
+    height: 40px;
 }
 
 .form {
