@@ -1,6 +1,5 @@
 /*GENERAL RULES*/
 body {
-    max-width: 1000px;
     margin: 0 auto;
     font-family: Verdana, sans-serif;
     font-size: 24px;
@@ -86,12 +85,13 @@ p.main-header:hover{
 
 /*FUNCTIONALITIES RULES*/
 .func, .form, .about-us {
-    margin: 20px;
+    margin: 20px auto;
     background: #fff;
     -webkit-box-shadow: 2px 2px 60px 0 rgba(0, 0, 0, 1);
     -moz-box-shadow: 2px 2px 60px 0 rgba(0, 0, 0, 1);
     box-shadow: 2px 2px 60px 0 rgba(0, 0, 0, 1);
     border-radius: 4px;
+    width: 80%;
 }
 
 .func-columns {
