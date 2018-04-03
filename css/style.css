@@ -8,6 +8,7 @@ body {
     background: -moz-linear-gradient(#58b9ff, #325278);
     background: -webkit-linear-gradient(#58b9ff, #325278);
     background: linear-gradient(45deg, #58b9ff, #325278);
+    box-sizing: border-box;
 }
 
 h2 {
@@ -77,7 +78,7 @@ h2 {
 }
 
 /*FUNCTIONALITIES RULES*/
-.func {
+.func, .form, .about-us {
     margin: 20px;
     background: #fff;
     -webkit-box-shadow: 2px 2px 60px 0 rgba(0, 0, 0, 1);
@@ -128,6 +129,113 @@ h2 {
 .func-cog {
     text-align: center;
     height: 0;
+}
+
+.form {
+    display: flex;
+    /* border: black solid 1px; */
+    justify-content: space-between;
+}
+.form h2 {text-align: inherit;text-decoration:  none;text-transform:  none;padding: inherit;letter-spacing:  0;font-size: 25px;}
+
+.form p{
+    font-size:  17px;
+}
+
+.form-panel-left {
+    width: 50%;
+    padding: 20px;
+    /* border: black solid 1px; */
+}
+
+.form-panel-right {
+    position: relative;
+    width: 50%;
+    padding: 20px;
+    /* border-left: black solid 1px; */
+}
+
+.form-panel-right::after {
+    content: "";
+    background: url("../img/lock.png") no-repeat center;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+
+.feedback-row-col-25 {
+    float: left;
+    width: 25%;
+    /* margin-top: 6px; */
+}
+
+.feedback-row-col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.feedback {border-radius: 5px;text-align: center;font-size: 16px;}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.feedback-row {
+    width: 100%;
+}
+
+.feedback-row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.feedback-send {
+    float: right;
+    width: auto;
+    cursor: pointer;
+    background: #fff;
+    font-size: 42px;
+    margin-top: 15px;
+    color: #D1E5FD;
+}
+
+.feedback-send:hover {
+    color: tomato;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: flex;
+    font-size: 18px;
+}
+
+.clear {
+    clear: both;
+}
+
+.feedback-form {
+    display: inline-block;
+    width: 92%;
 }
 
 .about-us {
