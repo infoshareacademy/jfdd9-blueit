@@ -8,11 +8,12 @@ body {
     background: -webkit-linear-gradient(#58b9ff, #325278);
     background: linear-gradient(45deg, #58b9ff, #325278);
     box-sizing: border-box;
+    max-width: 1200px;
 }
 
 h2 {
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0 10px 0;
     letter-spacing: 0.5em;
     color: rgba(50, 82, 120, 0.8);
     text-transform: uppercase;
@@ -21,36 +22,33 @@ h2 {
 .section-hero {
     display: flex;
     align-items: flex-end;
-    background: #7db7e6 url("../wallpaperNEW.jpg"); /* main picture */
+    background: #7db7e6 url("../wallpaperNEW.jpg");                    /* main picture */
     background-size: cover;
     height: 100vh;
     text-align: right;
     padding-right: 5px;
 }
 
-.section-hero div {
+.section-hero div{
     width: 100%;
 }
 
-.section-hero .link-to-form {
+.section-hero .link-to-form{
     flex-shrink: 5;
     text-align: left;
-    padding: 5px;
-}
-
-/* link to email form */
-.section-hero .link-description {
+    padding:  5px;
+}                                                                   /* link to email form */
+.section-hero .link-description{
     flex-shrink: 7;
     color: #6eff2a;
     text-align: right;
     font-family: Verdana Arial sans-serif;
     text-transform: capitalize;
     font-weight: bold;
-    border-right: 2px solid #6eff2a;
+    border-right: 2px solid  #6eff2a;
     padding: 5px;
 }
-
-.link-to-form a {
+.link-to-form a{
     text-decoration: none;
     color: #6eff2a;
     font-family: Verdana Arial sans-serif;
@@ -58,11 +56,11 @@ h2 {
     font-weight: bold;
 }
 
-.header-text p.main-header {
+.header-text p.main-header{
     font-family: Verdana Arial sans-serif;
     font-size: 55px;
     flex-grow: 4;
-    word-spacing: 10px; /* the catchphrase */
+    word-spacing: 10px;                                                 /* the catchphrase */
     font-weight: 900;
     color: azure;
     text-transform: capitalize;
@@ -70,20 +68,21 @@ h2 {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-p.main-header:hover {
+p.main-header:hover{
     color: #add8e6;
 }
 
-.header-text p.description {
-    font-family: Verdana Arial sans-serif; /* description */
+.header-text p.description{
+    font-family: Verdana Arial sans-serif;                               /* description */
     color: #f0ffff;
     font-size: 35px;
 }
 
-.section-hero img {
+.section-hero img{
     width: 100px;
     padding: 5px;
 }
+
 
 /*FUNCTIONALITIES RULES*/
 .func, .form, .about-us {
@@ -125,7 +124,9 @@ p.main-header:hover {
 
 /* FONT AWESOME RULES*/
 .fa-car, .fa-warehouse, .fa-shopping-cart, .fa-mobile-alt, .fa-child, .fa-paw, .fa-road {
-    font-size: 40px;
+    display: block;
+    margin: 10px auto;
+    font-size: 60px;
     color: #20c820;
 }
 
@@ -141,27 +142,15 @@ p.main-header:hover {
     height: 0;
 }
 
-.icon-parking {
-    height: 40px;
-}
-
 .form {
     display: flex;
     /* border: black solid 1px; */
     justify-content: space-between;
 }
+.form h2 {text-align: inherit;text-decoration:  none;text-transform:  none;padding: inherit;letter-spacing:  0;font-size: 25px;}
 
-.form h2 {
-    text-align: inherit;
-    text-decoration: none;
-    text-transform: none;
-    padding: inherit;
-    letter-spacing: 0;
-    font-size: 25px;
-}
-
-.form p {
-    font-size: 17px;
+.form p{
+    font-size:  17px;
 }
 
 .form-panel-left {
@@ -200,11 +189,7 @@ p.main-header:hover {
     margin-top: 6px;
 }
 
-.feedback {
-    border-radius: 5px;
-    text-align: center;
-    font-size: 16px;
-}
+.feedback {border-radius: 5px;text-align: center;font-size: 16px;}
 
 input[type=text], select, textarea {
     width: 100%;
@@ -266,18 +251,17 @@ label {
 
 .about-us {
     text-align: center;
-    margin: 20px auto;
+    margin: 20px;
+    padding: 20px;
     background: #fff;
     -webkit-box-shadow: 2px 2px 60px 0 rgba(0, 0, 0, 1);
     -moz-box-shadow: 2px 2px 60px 0 rgba(0, 0, 0, 1);
     box-shadow: 2px 2px 60px 0 rgba(0, 0, 0, 1);
     border-radius: 4px;
-
 }
 
 #about-us-header {
     font-size: 35px;
-    margin: 0;
 
 }
 
@@ -306,9 +290,30 @@ label {
     color: #20c820;
 }
 
-.about-us-team img {
-    border-radius: 50%;
-    -webkit-box-shadow: 5px 5px 50px 5px black;
-    -moz-box-shadow: 5px 5px 50px 5px black;
-    box-shadow: 5px 5px 50px 5px black);
+/*MOBILE*/
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+        letter-spacing: 0.4em;
+        margin: 0;
+        padding: 30px 0 0 0;
+    }
+
+    .func, .form, .about-us {
+        border-radius: 0;
+        width: 100%;
+    }
+
+    .func-column-left, .func-column-right {
+        width: 100%;
+        padding: 0;
+    }
+
+    .func-cog {
+        display: none;
+    }
 }
