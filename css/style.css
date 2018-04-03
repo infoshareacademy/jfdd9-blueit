@@ -136,6 +136,11 @@ h2 {
     /* border: black solid 1px; */
     justify-content: space-between;
 }
+.form h2 {text-align: inherit;text-decoration:  none;text-transform:  none;padding: inherit;letter-spacing:  0;font-size: 25px;}
+
+.form p{
+    font-size:  17px;
+}
 
 .form-panel-left {
     width: 50%;
@@ -164,7 +169,7 @@ h2 {
 .feedback-row-col-25 {
     float: left;
     width: 25%;
-    margin-top: 6px;
+    /* margin-top: 6px; */
 }
 
 .feedback-row-col-75 {
@@ -173,12 +178,7 @@ h2 {
     margin-top: 6px;
 }
 
-.feedback {
-
-    border-radius: 5px;
-    text-align: center;
-    font-size: 10px;
-}
+.feedback {border-radius: 5px;text-align: center;font-size: 16px;}
 
 input[type=text], select, textarea {
     width: 100%;
@@ -205,7 +205,7 @@ input[type=text], select, textarea {
     cursor: pointer;
     background: #fff;
     font-size: 42px;
-    margin-left: 5px;
+    margin-top: 15px;
     color: #D1E5FD;
 }
 
@@ -225,7 +225,8 @@ input[type=submit] {
 
 label {
     padding: 12px 12px 12px 0;
-    display: inline-block;
+    display: flex;
+    font-size: 18px;
 }
 
 .clear {
