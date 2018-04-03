@@ -20,62 +20,69 @@ h2 {
 }
 
 .section-hero {
-    background: blue url("../wallpaper2.jpg"); /* main picture */
-    background-size: 100% 800px;
-    opacity: 0.6;
-    width: 100%;
-    height: 800px;
-    border: 1px white solid;
+    display: flex;
+    align-items: flex-end;
+    background: #7db7e6 url("../wallpaperNEW.jpg");                    /* main picture */
+    background-size: cover;
+    height: 100vh;
+    text-align: right;
+    padding-right: 5px;
 }
 
-.section-hero .text {
-    font-family: Verdana sans-serif;
-    word-spacing: 5px;
-    font-size: 50px; /* the catchphrase */
+.section-hero div{
+    width: 100%;
+}
+
+.section-hero .link-to-form{
+    flex-shrink: 5;
+    text-align: left;
+    padding:  5px;
+}                                                                   /* link to email form */
+.section-hero .link-description{
+    flex-shrink: 7;
+    color: #6eff2a;
     text-align: right;
+    font-family: Verdana Arial sans-serif;
+    text-transform: capitalize;
+    font-weight: bold;
+    border-right: 2px solid  #6eff2a;
+    padding: 5px;
+}
+.link-to-form a{
+    text-decoration: none;
+    color: #6eff2a;
+    font-family: Verdana Arial sans-serif;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.header-text p.main-header{
+    font-family: Verdana Arial sans-serif;
+    font-size: 55px;
+    flex-grow: 4;
+    word-spacing: 10px;                                                 /* the catchphrase */
     font-weight: 900;
-    width: 600px;
     color: azure;
     text-transform: capitalize;
-    position: relative;
-    top: 600px;
-    left: 660px;
-    text-align: right;
-    border: 1px white solid;
+    padding: 0;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-.section-hero .text:hover {
+p.main-header:hover{
     color: #add8e6;
 }
 
-.section-hero .description {
-    font-family: Verdana sans-serif; /* description */
+.header-text p.description{
+    font-family: Verdana Arial sans-serif;                               /* description */
+    color: #f0ffff;
     font-size: 35px;
-    color: azure;
-    position: relative;
-    top: 600px;
-    left: 360px;
-    text-align: right;
-    border: 1px white solid;
-    width: 900px;
-    position: relative;
 }
 
-.section-hero img {
-    width: 90px;
-    position: relative;
-    top: 490px;
-    float: left;
-    color: black;
-    border: 1px white solid;
-    float: left;
+.section-hero img{
+    width: 100px;
+    padding: 5px;
 }
 
-.section-hero a {
-    text-decoration: none;
-    color: black;
-    border: 1px white solid;
-}
 
 /*FUNCTIONALITIES RULES*/
 .func, .form, .about-us {
@@ -115,7 +122,8 @@ h2 {
 }
 
 /* FONT AWESOME RULES*/
-.fa-car {
+.fa-car, .fa-warehouse, .fa-shopping-cart, .fa-mobile-alt, .fa-child, .fa-paw, .fa-road {
+    font-size: 40px;
     color: #20c820;
 }
 
@@ -129,6 +137,10 @@ h2 {
 .func-cog {
     text-align: center;
     height: 0;
+}
+
+.icon-parking {
+    height: 40px;
 }
 
 .form {
