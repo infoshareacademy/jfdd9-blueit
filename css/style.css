@@ -8,11 +8,12 @@ body {
     background: -webkit-linear-gradient(#58b9ff, #325278);
     background: linear-gradient(45deg, #58b9ff, #325278);
     box-sizing: border-box;
+    max-width: 1200px;
 }
 
 h2 {
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0 10px 0;
     letter-spacing: 0.5em;
     color: rgba(50, 82, 120, 0.8);
     text-transform: uppercase;
@@ -123,7 +124,9 @@ p.main-header:hover{
 
 /* FONT AWESOME RULES*/
 .fa-car, .fa-warehouse, .fa-shopping-cart, .fa-mobile-alt, .fa-child, .fa-paw, .fa-road {
-    font-size: 40px;
+    display: block;
+    margin: 10px auto;
+    font-size: 60px;
     color: #20c820;
 }
 
@@ -137,10 +140,6 @@ p.main-header:hover{
 .func-cog {
     text-align: center;
     height: 0;
-}
-
-.icon-parking {
-    height: 40px;
 }
 
 .form {
@@ -289,4 +288,32 @@ label {
 .about-us-social-media a:hover {
 
     color: #20c820;
+}
+
+/*MOBILE*/
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+        letter-spacing: 0.4em;
+        margin: 0;
+        padding: 30px 0 0 0;
+    }
+
+    .func, .form, .about-us {
+        border-radius: 0;
+        width: 100%;
+    }
+
+    .func-column-left, .func-column-right {
+        width: 100%;
+        padding: 0;
+    }
+
+    .func-cog {
+        display: none;
+    }
 }
