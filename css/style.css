@@ -123,6 +123,13 @@ h2 {
 
 .about-us {
     text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background: #fff;
+    -webkit-box-shadow: 2px 2px 60px 0 rgba(0, 0, 0, 1);
+    -moz-box-shadow: 2px 2px 60px 0 rgba(0, 0, 0, 1);
+    box-shadow: 2px 2px 60px 0 rgba(0, 0, 0, 1);
+    border-radius: 4px;
 }
 
 #about-us-header {
@@ -144,7 +151,13 @@ h2 {
 
 }
 
-.about-us-social-media {
+.about-us-social-media a{
 
     text-align: center;
+    color: rgba(50, 82, 120, 0.8);
+}
+
+.about-us-social-media a:hover{
+
+    color: #20c820;
 }
