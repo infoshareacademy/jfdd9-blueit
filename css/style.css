@@ -1,6 +1,5 @@
 /*GENERAL RULES*/
 body {
-    max-width: 1000px;
     margin: 0 auto;
     font-family: Verdana, sans-serif;
     font-size: 24px;
@@ -86,12 +85,13 @@ p.main-header:hover{
 
 /*FUNCTIONALITIES RULES*/
 .func, .form, .about-us {
-    margin: 20px;
+    margin: 20px auto;
     background: #fff;
     -webkit-box-shadow: 2px 2px 60px 0 rgba(0, 0, 0, 1);
     -moz-box-shadow: 2px 2px 60px 0 rgba(0, 0, 0, 1);
     box-shadow: 2px 2px 60px 0 rgba(0, 0, 0, 1);
     border-radius: 4px;
+    width: 80%;
 }
 
 .func-columns {
@@ -252,6 +252,13 @@ label {
 
 .about-us {
     text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background: #fff;
+    -webkit-box-shadow: 2px 2px 60px 0 rgba(0, 0, 0, 1);
+    -moz-box-shadow: 2px 2px 60px 0 rgba(0, 0, 0, 1);
+    box-shadow: 2px 2px 60px 0 rgba(0, 0, 0, 1);
+    border-radius: 4px;
 }
 
 #about-us-header {
@@ -273,31 +280,13 @@ label {
 
 }
 
-.about-us-social-media {
+.about-us-social-media a {
 
     text-align: center;
+    color: rgba(50, 82, 120, 0.8);
 }
 
-/*-----------------------RWD----------------------------*/
-@media screen and (max-width: 600px) {
-    .form {
-        width: 100%;
-        display: block;
-        clear: both;
-    }
+.about-us-social-media a:hover {
 
-    .form-panel-right, .form-panel-left, input[type=submit] {
-        width: 100%;
-        margin-top: 0;
-    }
-
-    .form-panel-right {
-        margin-top: 6px;
-        padding: 30px;
-    }
-
-    .form h2 {
-        text-align: center;
-    }
-
+    color: #20c820;
 }
