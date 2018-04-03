@@ -6,6 +6,7 @@
     background-size: cover;
     height: 100vh;
     text-align: right;
+    padding-right: 5px;
 }
 
 .section-hero div{
@@ -16,7 +17,14 @@
     flex-shrink: 5;
     text-align: center;
 }                                                                   /* link to email form */
-
+.section-hero .link-description{
+    flex-shrink: 7;
+    color: #6eff2a;
+    text-align: right;
+    font-family: Verdana Arial sans-serif;
+    text-transform: capitalize;
+    font-weight: bold;
+}
 .link-to-form a{
     text-decoration: none;
     color: #6eff2a;
