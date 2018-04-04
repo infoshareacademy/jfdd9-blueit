@@ -36,7 +36,8 @@
 
 .about-us-row {
     opacity: 1;
-    display:flex;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .about-us-member {
@@ -46,8 +47,8 @@
 }
 
 .about-us-pic {
-    margin-bottom:15px;
-    overflow-x: hidden ;
+    margin-bottom: 15px;
+    overflow-x: hidden;
     overflow-y: hidden;
 }
 
@@ -71,16 +72,14 @@
 #about-us .about-us-member .about-us-social a {
     color: #b3b3b3;
     font-size: 20px;
+    text-decoration: none;
 }
 
 #about-us .about-us-member .about-us-social a:hover {
     color: #1dc8cd;
 }
 
-.about-us-row {
-    display:flex;
-    justify-content: space-evenly;
-}
+
 
 
 
