@@ -51,3 +51,12 @@ h3 {
 .container {
     margin: 0 80px;
 }
+
+.divider {
+    display: block;
+    width: 70px;
+    height: 3px;
+    background: #1dc8cd;
+    background: linear-gradient(0deg, #1dc8cd 0%, #55fabe 100%);
+    margin: 20px auto 0 auto;
+}
