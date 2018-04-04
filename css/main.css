@@ -1,0 +1,46 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+    color: #111;
+    margin: 0;
+}
+
+.func {
+    background: #EDF5F5;
+    padding: 40px 0 0 0;
+}
+
+.func > .container {
+    padding: 60px 15px;
+}
+
+.form {
+    padding: 40px 0 0 0;
+}
+
+.form > .container {
+    background: #FFFFFF;
+    padding: 60px 15px;
+}
+
+.about-us {
+    background: #EDF5F5;
+    padding: 40px 0 0 0;
+}
+
+.about-us > .container {
+    padding: 60px 15px;
+}
+
+.container {
+    margin: 0 80px;
+}
