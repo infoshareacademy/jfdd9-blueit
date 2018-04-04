@@ -1,0 +1,40 @@
+.section-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #c4d3e6 url("../wallpaperNEW.jpg");
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.section-headline{
+    border: 1px white solid;
+    font-family: "Open Sans", sans-serif;
+    font-size: 4em;
+}
+
+.section-text{
+    border: 1px white solid;
+    font-family: "Open Sans", sans-serif;
+    font-size: 2em;
+
+}
+
+.section-link {
+    margin-top: 10em;
+    text-decoration: none;
+    border: 1px white solid;
+    border-radius: 20px;
+}
+.link-to-form{
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    color: black;
+    font-size: 2em;
+}
+
+.section-link a:active{
+    background-color: #7db7e6;
+    color: white;
+}
