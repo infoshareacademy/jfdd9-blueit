@@ -4,6 +4,8 @@ html {
 
 body {
     font-family: "Open Sans", sans-serif;
+    margin: 0;
+    color: #666;
 }
 
 h2 {
@@ -14,13 +16,18 @@ h2 {
     margin: 0;
 }
 
+h3 {
+    font-size: 18px;
+    color: #111;
+}
+
 .func {
     background: #EDF5F5;
     padding: 40px 0 0 0;
 }
 
 .func > .container {
-    padding: 60px 15px;
+    padding: 0 15px 40px 15px;
 }
 
 .form {
@@ -37,10 +44,15 @@ h2 {
     padding: 40px 0 0 0;
 }
 
-.about-us > .container {
-    padding: 60px 15px;
-}
-
 .container {
     margin: 0 80px;
+}
+
+.divider {
+    display: block;
+    width: 70px;
+    height: 3px;
+    background: #1dc8cd;
+    background: linear-gradient(0deg, #1dc8cd 0%, #55fabe 100%);
+    margin: 20px auto 0 auto;
 }

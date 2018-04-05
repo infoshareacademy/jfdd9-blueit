@@ -113,7 +113,7 @@ p.main-header:hover {
 }
 
 /* FONT AWESOME RULES*/
-.fa-car, .fa-warehouse, .fa-shopping-cart, .fa-mobile-alt, .fa-child, .fa-paw, .fa-road {
+.fa-car, .fa-warehouse, .fa-hourglass-end, .fa-mobile-alt, .fa-child, .fa-paw, .fa-road {
     font-size: 40px;
     color: #20c820;
 }

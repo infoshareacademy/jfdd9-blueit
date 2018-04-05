@@ -1,0 +1,85 @@
+.about-us {
+    padding: 60px 0;
+    display: block;
+    box-sizing: border-box;
+}
+
+.about-us-section-header {
+    display: block;
+    box-sizing: border-box;
+}
+
+.about-us-section-title {
+    font-size: 32px;
+    color: #111;
+    text-align: center;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+.about-us-section-divider {
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #58b9ff;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.about-us-section-description {
+    text-align: center;
+    padding-bottom: 40px;
+    color: #777;
+    font-style: italic;
+}
+
+.about-us-row {
+    opacity: 1;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about-us-member {
+    text-align: center;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.about-us-pic {
+    margin-bottom: 15px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.about-us-member h4 {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 2px;
+    font-size: 18px;
+}
+
+.about-us-member span {
+    font-style: italic;
+    display: block;
+    font-size: 13px;
+}
+
+#about-us .about-us-member .about-us-social {
+    margin-top: 15px;
+}
+
+#about-us .about-us-member .about-us-social a {
+    color: #b3b3b3;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#about-us .about-us-member .about-us-social a:hover {
+    color: #1dc8cd;
+}
+
+
+
+
+
