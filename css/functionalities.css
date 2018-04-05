@@ -1,0 +1,39 @@
+.container__func {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 930px;
+}
+
+.container__func__box {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    background: #FFFFFF;
+    width: 48%;
+    height: 250px;
+    margin: 40px 0 0 0;
+    padding: 40px;
+    font-size: 15px;
+    line-height: 24px;
+    box-shadow: 0 0 30px rgba(73, 78, 92, 0.15);
+}
+
+.container__func__box__icon {
+    width: 10%;
+    text-align: center;
+}
+
+.container__func__box__desc {
+    width: 80%;
+}
+
+.fa-car, .fa-dollar-sign, .fa-hourglass-end, .fa-mobile-alt, .fa-android, .fa-child, .fa-paw, .fa-location-arrow {
+    color: #46ECC2;
+}
