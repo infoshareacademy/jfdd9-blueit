@@ -1,40 +1,50 @@
-.section-hero {
+.hero-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #c4d3e6 url("../wallpaperNEW.jpg");
+    background: #c4d3e6 url("../wallpaperNEWer.jpg");
     background-size: cover;
     height: 100vh;
-
+    opacity: 0.8;
 }
 
-.section-headline{
-    border: 1px white solid;
+.hero-headline{
     font-family: "Open Sans", sans-serif;
     font-size: 4em;
+    margin-top: 2em;
+    margin-bottom: 0.6em;
 }
 
-.section-text{
-    border: 1px white solid;
+.hero-text{
     font-family: "Open Sans", sans-serif;
-    font-size: 2em;
-
+    font-size: 1.8em;
 }
 
-.section-link {
-    margin-top: 10em;
+.hero-link-contain {
+    margin-top: 4em;
     text-decoration: none;
-    border: 1px white solid;
+    border: 1px black solid;
     border-radius: 20px;
+    padding: 5px;
 }
-.link-to-form{
+
+.hero-link{
     text-decoration: none;
     font-family: "Open Sans", sans-serif;
     color: black;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
-.section-link a:active{
+.hero-link-contain:hover{
+    border: 1px white solid;
+    color: white;
+}
+
+.hero-link-contain:active{
     background-color: #7db7e6;
+    color: white;
+}
+
+.hero-link:active{
     color: white;
 }
