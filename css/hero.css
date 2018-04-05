@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #c4d3e6 url("../wallpaperNEWer.jpg");
+    background: #c4d3e6 url("../img/wallpaperNEWer.jpg");
     background-size: cover;
     height: 100vh;
     opacity: 0.8;

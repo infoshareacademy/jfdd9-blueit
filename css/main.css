@@ -4,7 +4,62 @@ html {
 
 body {
     font-family: "Open Sans", sans-serif;
+    margin: 0;
+    color: #666;
 }
+
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #c4d3e6 url("../img/wallpaperNEWer.jpg");
+    background-size: cover;
+    height: 100vh;
+    opacity: 0.8;
+}
+
+.hero-headline{
+    font-family: "Open Sans", sans-serif;
+    font-size: 4em;
+    margin-top: 2em;
+    margin-bottom: 0.6em;
+}
+
+.hero-text{
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.8em;
+}
+
+.hero-link-contain {
+    margin-top: 4em;
+    text-decoration: none;
+    border: 1px black solid;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.hero-link{
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    color: black;
+    font-size: 1.5em;
+}
+
+.hero-link-contain:hover{
+    border: 1px white solid;
+    color: white;
+}
+
+.hero-link-contain:active{
+    background-color: #7db7e6;
+    color: white;
+}
+
+.hero-link:active{
+    color: white;
+}
+
 
 h2 {
     font-size: 32px;
@@ -14,13 +69,18 @@ h2 {
     margin: 0;
 }
 
+h3 {
+    font-size: 18px;
+    color: #111;
+}
+
 .func {
     background: #EDF5F5;
     padding: 40px 0 0 0;
 }
 
 .func > .container {
-    padding: 60px 15px;
+    padding: 0 15px 40px 15px;
 }
 
 .form {
@@ -37,10 +97,15 @@ h2 {
     padding: 40px 0 0 0;
 }
 
-.about-us > .container {
-    padding: 60px 15px;
-}
-
 .container {
     margin: 0 80px;
+}
+
+.divider {
+    display: block;
+    width: 70px;
+    height: 3px;
+    background: #1dc8cd;
+    background: linear-gradient(0deg, #1dc8cd 0%, #55fabe 100%);
+    margin: 20px auto 0 auto;
 }
