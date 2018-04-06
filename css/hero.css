@@ -1,48 +1,67 @@
 .menu-bar{
-    height: 5em;
-    width: 100%;
-    background-color: rgba(21, 65, 45, 0.7);
-    position: fixed;
-    display:flex;
-    flex-direction: row;
-    color: white;
-    font-family: "Open Sans", sans-serif;
+      display:flex;
+      height: 5em;
+      width: 100%;
+      background-color: rgba(21, 65, 45, 0.7);
+      position: fixed;
+      flex-direction: row;
+      color: white;
+      font-family: "Open Sans", sans-serif;
 }
 
-.nav-logo,
-.nav-nav {
-    width: 40%;
-
-    align-self: center;
-    margin: 0 auto;
+  .menu-logo-text,
+  .menu-nav {
+      display: flex;
+      width: 45%;
+      align-self: center;
+      margin: 0 auto;
 }
 
-.nav-logo{
+  .menu-logo-img{
+    justify-content: center;
+      width: 5%;
+      height: auto;
+ }
 
-    font-weight: 900;
-    justify-content: flex-start;
+  .menu-logo-img img{
+      width: 70%;
+      height: auto;
+      float: right;
+      padding-right: 5px;
+ }
 
-}
+  .menu-logo-text{
+      font-weight: 900;
+      justify-content: flex-start;
+      font-size: 2em;
+      font-style: italic;
+  }
 
-.nav-links{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    align-content: center;
-    list-style-type: none;
+  .menu-nav-links{
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      list-style-type: none;
+  }
 
+  .menu-nav-links a{
+      text-decoration: none;
+      color:white;
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.5em;
+      border: 1px white solid;
+      border-radius: 20px;
+      padding: 5px;
+      margin-left: 2em;
+  }
 
-}
+  .menu-nav-links a:hover{
+      background-color: #344834;
+  }
 
-.nav-links a{
-    text-decoration: none;
-    color:white;
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.5em;
-    border: 1px white solid;
-    border-radius: 20px;
-    padding: 5px;
-}
+  .menu-nav-links a:active{
+      background-color: #080d08;
+  }
 
 .hero-section {
     display: flex;
@@ -51,7 +70,6 @@
     background: #c4d3e6 url("../img/tesla.jpeg");
     background-size: cover;
     height: 100vh;
-
 }
 
 .hero-headline{
@@ -59,7 +77,6 @@
     font-size: 4em;
     margin-top: 1.7em;
     margin-bottom: 0.3em;
-
 }
 
 .hero-text{
@@ -79,20 +96,20 @@
 .hero-link{
     text-decoration: none;
     font-family: "Open Sans", sans-serif;
-    color: #ffffff;
+    color: #fff;
     font-size: 1.5em;
 }
 
 .hero-link-contain:hover{
-    color: #ffffff;
+    color: #fff;
     background-color: rgba(29, 136, 70, 0.7);
 }
 
 .hero-link-contain:active{
     background-color: #15412d;
-    color: #ffffff;
+    color: #fff;
 }
 
 .hero-link:active{
-    color: #ffffff;
+    color: #fff;
 }

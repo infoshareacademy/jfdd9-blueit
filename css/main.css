@@ -30,6 +30,7 @@ body {
 .hero-text{
     font-family: "Open Sans", sans-serif;
     font-size: 1.8em;
+    opacity: 1;
 }
 
 .hero-link-contain {
