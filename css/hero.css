@@ -1,29 +1,46 @@
+.menu-bar{
+    display: inline-block;
+    height: 5em;
+    width: 100%;
+    background-color: #69eea5;
+        position: fixed;
+    opacity: 0.8;
+    align-items: center;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    list-style-type: none;
+}
 .hero-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #c4d3e6 url("../img/wallpaperNEWer.jpg");
+    background: #c4d3e6 url("../img/tesla.jpeg");
     background-size: cover;
     height: 100vh;
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 .hero-headline{
     font-family: "Open Sans", sans-serif;
     font-size: 4em;
     margin-top: 2em;
-    margin-bottom: 0.6em;
+    margin-bottom: 0.3em;
+    opacity: 1;
 }
 
 .hero-text{
     font-family: "Open Sans", sans-serif;
     font-size: 1.8em;
+    opacity: 1;
 }
 
 .hero-link-contain {
     margin-top: 4em;
     text-decoration: none;
-    border: 1px black solid;
+    border: 2px #ffffff solid;
     border-radius: 20px;
     padding: 5px;
 }
@@ -31,20 +48,21 @@
 .hero-link{
     text-decoration: none;
     font-family: "Open Sans", sans-serif;
-    color: black;
+    color: #ffffff;
     font-size: 1.5em;
 }
 
 .hero-link-contain:hover{
-    border: 1px white solid;
-    color: white;
+    border: 2px #000000 solid;
+    color: #ffffff;
+    background-color: #000000;
 }
 
 .hero-link-contain:active{
     background-color: #7db7e6;
-    color: white;
+    color: #ffffff;
 }
 
 .hero-link:active{
-    color: white;
+    color: #ffffff;
 }
