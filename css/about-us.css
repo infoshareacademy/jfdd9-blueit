@@ -10,21 +10,10 @@
 }
 
 .about-us-section-title {
-    font-size: 32px;
-    color: #111;
     text-align: center;
     font-weight: 400;
     margin: 0 0 20px 0;
     padding: 0;
-}
-
-.about-us-section-divider {
-    display: block;
-    width: 60px;
-    height: 3px;
-    background: #58b9ff;
-    margin: 0 auto;
-    margin-bottom: 20px;
 }
 
 .about-us-section-description {
@@ -79,6 +68,9 @@
     color: #1dc8cd;
 }
 
+.about-us-section-header p {
+    margin-top: 20px;
+}
 
 
 
