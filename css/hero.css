@@ -1,18 +1,49 @@
 .menu-bar{
-    display: inline-block;
     height: 5em;
     width: 100%;
-    background-color: #69eea5;
-        position: fixed;
-    opacity: 0.8;
-    align-items: center;
+    background-color: rgba(21, 65, 45, 0.7);
+    position: fixed;
+    display:flex;
+    flex-direction: row;
+    color: white;
+    font-family: "Open Sans", sans-serif;
 }
+
+.nav-logo,
+.nav-nav {
+    width: 40%;
+
+    align-self: center;
+    margin: 0 auto;
+}
+
+.nav-logo{
+
+    font-weight: 900;
+    justify-content: flex-start;
+
+}
+
 .nav-links{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-direction: row;
+    align-content: center;
     list-style-type: none;
+
+
 }
+
+.nav-links a{
+    text-decoration: none;
+    color:white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5em;
+    border: 1px white solid;
+    border-radius: 20px;
+    padding: 5px;
+}
+
 .hero-section {
     display: flex;
     flex-direction: column;
@@ -20,15 +51,15 @@
     background: #c4d3e6 url("../img/tesla.jpeg");
     background-size: cover;
     height: 100vh;
-    opacity: 0.7;
+
 }
 
 .hero-headline{
     font-family: "Open Sans", sans-serif;
     font-size: 4em;
-    margin-top: 2em;
+    margin-top: 1.7em;
     margin-bottom: 0.3em;
-    opacity: 1;
+
 }
 
 .hero-text{
@@ -38,7 +69,7 @@
 }
 
 .hero-link-contain {
-    margin-top: 4em;
+    margin-top: 7em;
     text-decoration: none;
     border: 2px #ffffff solid;
     border-radius: 20px;
@@ -53,13 +84,12 @@
 }
 
 .hero-link-contain:hover{
-    border: 2px #000000 solid;
     color: #ffffff;
-    background-color: #000000;
+    background-color: rgba(29, 136, 70, 0.7);
 }
 
 .hero-link-contain:active{
-    background-color: #7db7e6;
+    background-color: #15412d;
     color: #ffffff;
 }
 
