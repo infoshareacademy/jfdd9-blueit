@@ -1,6 +1,6 @@
 .menu-bar{
       display:flex;
-      height: 6rem;
+      height: 5rem;
       width: 100%;
       background-color: rgba(21, 65, 45, 0.7);
       position: fixed;
@@ -46,18 +46,20 @@
       text-decoration: none;
       color:white;
       font-family: "Open Sans", sans-serif;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       border: 1px #fff inset;
       border-radius: 20px;
       padding: 5px;
   }
 
   .menu-nav-links a:hover{
-      background-color: #344834;
+      background-color: #fff;
+      color: #0f2a1c;
   }
 
   .menu-nav-links a:active{
-      background-color: #080d08;
+      background-color: #0f2a1c;
+      color: #fff;
   }
 
 .hero-section {
@@ -96,14 +98,18 @@
     color: #fff;
     font-size: 1.5rem;
 }
-.hero-link:active{
-    color: black;
+.hero-link:hover{
+    color: #0f2a1c;
 }
-
-.hero-link-contain:hover{
+.hero-link:active{
     background-color: #0f2a1c;
+    color: #fff;
+}
+.hero-link-contain:hover{
+    background-color: #fff;
+
 }
 
 .hero-link-contain:active {
-    background-color: #fff;
+    background-color: #0f2a1c;
 }
