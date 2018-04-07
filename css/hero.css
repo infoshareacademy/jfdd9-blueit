@@ -1,6 +1,6 @@
 .menu-bar{
       display:flex;
-      height: 5em;
+      height: 6rem;
       width: 100%;
       background-color: rgba(21, 65, 45, 0.7);
       position: fixed;
@@ -17,13 +17,13 @@
 }
 
   .menu-logo-img{
-    justify-content: center;
+      align-self: center;
       width: 5%;
       height: auto;
  }
 
   .menu-logo-img img{
-      width: 65%;
+      width: 4rem;
       height: auto;
       float: right;
  }
@@ -31,7 +31,7 @@
   .menu-logo-text{
       font-weight: 900;
       justify-content: flex-start;
-      font-size: 2em;
+      font-size: 2rem;
       font-style: italic;
   }
 
@@ -46,8 +46,8 @@
       text-decoration: none;
       color:white;
       font-family: "Open Sans", sans-serif;
-      font-size: 1.5em;
-      border: 1px white solid;
+      font-size: 1.5rem;
+      border: 1px #fff inset;
       border-radius: 20px;
       padding: 5px;
   }
@@ -71,21 +71,21 @@
 
 .hero-headline{
     font-family: "Open Sans", sans-serif;
-    font-size: 4em;
-    margin-top: 1.7em;
-    margin-bottom: 0.3em;
+    font-size: 4rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
 }
 
 .hero-text{
     font-family: "Open Sans", sans-serif;
-    font-size: 1.8em;
+    font-size: 1.8rem;
     opacity: 1;
 }
 
 .hero-link-contain {
-    margin-top: 8em;
+    margin-top: 8rem;
     text-decoration: none;
-    border: 2px #ffffff solid;
+    border: 2px #fff double;
     border-radius: 20px;
     padding: 5px;
 }
@@ -94,19 +94,16 @@
     text-decoration: none;
     font-family: "Open Sans", sans-serif;
     color: #fff;
-    font-size: 1.5em;
+    font-size: 1.5rem;
+}
+.hero-link:active{
+    color: black;
 }
 
 .hero-link-contain:hover{
-    color: #fff;
-    background-color: rgba(21, 65, 45, 0.7);
-}
-
-.hero-link-contain:active{
     background-color: #0f2a1c;
-    color: #fff;
 }
 
-.hero-link:active{
-    color: #fff;
+.hero-link-contain:active {
+    background-color: #fff;
 }
