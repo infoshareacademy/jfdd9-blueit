@@ -11,7 +11,6 @@
 
   .menu-logo-text,
   .menu-nav {
-      display: flex;
       width: 45%;
       align-self: center;
       margin: 0 auto;
@@ -24,10 +23,9 @@
  }
 
   .menu-logo-img img{
-      width: 70%;
+      width: 65%;
       height: auto;
       float: right;
-      padding-right: 5px;
  }
 
   .menu-logo-text{
@@ -38,10 +36,10 @@
   }
 
   .menu-nav-links{
+      list-style-type: none;
       display: flex;
       flex-direction: row;
-      align-content: center;
-      list-style-type: none;
+      justify-content: space-evenly;
   }
 
   .menu-nav-links a{
@@ -52,7 +50,6 @@
       border: 1px white solid;
       border-radius: 20px;
       padding: 5px;
-      margin-left: 2em;
   }
 
   .menu-nav-links a:hover{
@@ -86,7 +83,7 @@
 }
 
 .hero-link-contain {
-    margin-top: 7em;
+    margin-top: 8em;
     text-decoration: none;
     border: 2px #ffffff solid;
     border-radius: 20px;
@@ -102,11 +99,11 @@
 
 .hero-link-contain:hover{
     color: #fff;
-    background-color: rgba(29, 136, 70, 0.7);
+    background-color: rgba(21, 65, 45, 0.7);
 }
 
 .hero-link-contain:active{
-    background-color: #15412d;
+    background-color: #0f2a1c;
     color: #fff;
 }
 
