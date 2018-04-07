@@ -2,7 +2,8 @@
       display:flex;
       height: 5rem;
       width: 100%;
-      background-color: rgba(21, 65, 45, 0.7);
+      background-color: #0f2a1c;
+      opacity: 0.7;
       position: fixed;
       flex-direction: row;
       color: white;
@@ -20,7 +21,7 @@
       align-self: center;
       width: 5%;
       height: auto;
- }
+  }
 
   .menu-logo-img img{
       width: 4rem;
@@ -49,7 +50,7 @@
       font-size: 1.4rem;
       border: 1px #fff inset;
       border-radius: 20px;
-      padding: 5px;
+      padding: 3px 10px;
   }
 
   .menu-nav-links a:hover{
@@ -58,7 +59,7 @@
   }
 
   .menu-nav-links a:active{
-      background-color: #0f2a1c;
+      background-color: #000;
       color: #fff;
   }
 
@@ -98,18 +99,92 @@
     color: #fff;
     font-size: 1.5rem;
 }
+
 .hero-link:hover{
     color: #0f2a1c;
 }
+
 .hero-link:active{
     background-color: #0f2a1c;
     color: #fff;
 }
+
 .hero-link-contain:hover{
     background-color: #fff;
-
 }
 
 .hero-link-contain:active {
     background-color: #0f2a1c;
 }
+
+
+
+
+/* testing vertical menu bar */
+
+
+.ver-menu-bar{
+    display:flex;
+    height: 100vh;
+    width: 20%;
+    background-color: #0f2a1c;
+    opacity: 0.7;
+    position: fixed;
+    flex-direction: column;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+}
+
+.ver-menu-logo-text,
+.ver-menu-nav {
+    height: 45%;
+    align-self: flex-start;
+    margin: 0 auto;
+}
+
+.ver-menu-logo-img{
+    align-self: flex-start;
+    height: 5%;
+    width: auto;
+}
+
+.ver-menu-logo-img img{
+    width: 4rem;
+    height: auto;
+    float: right;
+}
+
+.ver-menu-logo-text{
+    font-weight: 900;
+    justify-content: flex-start;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.ver-menu-nav-links{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.ver-menu-nav-links a{
+    text-decoration: none;
+    color:white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.4rem;
+    border: 1px #fff inset;
+    border-radius: 20px;
+    padding: 3px 10px;
+}
+
+.ver-menu-nav-links a:hover{
+    background-color: #fff;
+    color: #0f2a1c;
+}
+
+.ver-menu-nav-links a:active{
+    background-color: #000;
+    color: #fff;
+}
+
