@@ -9,7 +9,9 @@
       color: white;
       font-family: "Open Sans", sans-serif;
 }
-
+.menu-bar:hover{
+    opacity: 0.9;
+}
   .menu-logo-text,
   .menu-nav {
       width: 45%;
@@ -67,8 +69,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #c4d3e6 url("../img/tesla.jpeg");
-    background-size: cover;
+    background: #c4d3e6 url("../img/tesla.jpeg") no-repeat;
+    background-size: 100%;
     height: 100vh;
 }
 
@@ -116,75 +118,3 @@
 .hero-link-contain:active {
     background-color: #0f2a1c;
 }
-
-
-
-
-/* testing vertical menu bar */
-
-
-.ver-menu-bar{
-    display:flex;
-    height: 100vh;
-    width: 20%;
-    background-color: #0f2a1c;
-    opacity: 0.7;
-    position: fixed;
-    flex-direction: column;
-    color: white;
-    font-family: "Open Sans", sans-serif;
-}
-
-.ver-menu-logo-text,
-.ver-menu-nav {
-    height: 45%;
-    align-self: flex-start;
-    margin: 0 auto;
-}
-
-.ver-menu-logo-img{
-    align-self: flex-start;
-    height: 5%;
-    width: auto;
-}
-
-.ver-menu-logo-img img{
-    width: 4rem;
-    height: auto;
-    float: right;
-}
-
-.ver-menu-logo-text{
-    font-weight: 900;
-    justify-content: flex-start;
-    font-size: 2rem;
-    font-style: italic;
-}
-
-.ver-menu-nav-links{
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.ver-menu-nav-links a{
-    text-decoration: none;
-    color:white;
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.4rem;
-    border: 1px #fff inset;
-    border-radius: 20px;
-    padding: 3px 10px;
-}
-
-.ver-menu-nav-links a:hover{
-    background-color: #fff;
-    color: #0f2a1c;
-}
-
-.ver-menu-nav-links a:active{
-    background-color: #000;
-    color: #fff;
-}
-
