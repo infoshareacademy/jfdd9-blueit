@@ -1,29 +1,94 @@
+.menu-bar{
+      display:flex;
+      height: 5rem;
+      width: 100%;
+      background-color: #0f2a1c;
+      opacity: 0.7;
+      position: fixed;
+      flex-direction: row;
+      color: white;
+      font-family: "Open Sans", sans-serif;
+}
+
+  .menu-logo-text,
+  .menu-nav {
+      width: 45%;
+      align-self: center;
+      margin: 0 auto;
+}
+
+  .menu-logo-img{
+      align-self: center;
+      width: 5%;
+      height: auto;
+  }
+
+  .menu-logo-img img{
+      width: 4rem;
+      height: auto;
+      float: right;
+ }
+
+  .menu-logo-text{
+      font-weight: 900;
+      justify-content: flex-start;
+      font-size: 2rem;
+      font-style: italic;
+  }
+
+  .menu-nav-links{
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+  }
+
+  .menu-nav-links a{
+      text-decoration: none;
+      color:white;
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.4rem;
+      border: 1px #fff inset;
+      border-radius: 20px;
+      padding: 3px 10px;
+  }
+
+  .menu-nav-links a:hover{
+      background-color: #fff;
+      color: #0f2a1c;
+  }
+
+  .menu-nav-links a:active{
+      background-color: #000;
+      color: #fff;
+  }
+
 .hero-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #c4d3e6 url("../img/wallpaperNEWer.jpg");
+    background: #c4d3e6 url("../img/tesla.jpeg");
     background-size: cover;
     height: 100vh;
-    opacity: 0.8;
 }
 
 .hero-headline{
     font-family: "Open Sans", sans-serif;
-    font-size: 4em;
-    margin-top: 2em;
-    margin-bottom: 0.6em;
+    font-size: 4rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
 }
 
 .hero-text{
     font-family: "Open Sans", sans-serif;
-    font-size: 1.8em;
+    font-size: 1.8rem;
+    opacity: 1;
 }
 
 .hero-link-contain {
-    margin-top: 4em;
+    margin-top: 8rem;
     text-decoration: none;
-    border: 1px black solid;
+    border: 2px #fff double;
     border-radius: 20px;
     padding: 5px;
 }
@@ -31,20 +96,95 @@
 .hero-link{
     text-decoration: none;
     font-family: "Open Sans", sans-serif;
-    color: black;
-    font-size: 1.5em;
+    color: #fff;
+    font-size: 1.5rem;
 }
 
-.hero-link-contain:hover{
-    border: 1px white solid;
-    color: white;
-}
-
-.hero-link-contain:active{
-    background-color: #7db7e6;
-    color: white;
+.hero-link:hover{
+    color: #0f2a1c;
 }
 
 .hero-link:active{
-    color: white;
+    background-color: #0f2a1c;
+    color: #fff;
 }
+
+.hero-link-contain:hover{
+    background-color: #fff;
+}
+
+.hero-link-contain:active {
+    background-color: #0f2a1c;
+}
+
+
+
+
+/* testing vertical menu bar */
+
+
+.ver-menu-bar{
+    display:flex;
+    height: 100vh;
+    width: 20%;
+    background-color: #0f2a1c;
+    opacity: 0.7;
+    position: fixed;
+    flex-direction: column;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+}
+
+.ver-menu-logo-text,
+.ver-menu-nav {
+    height: 45%;
+    align-self: flex-start;
+    margin: 0 auto;
+}
+
+.ver-menu-logo-img{
+    align-self: flex-start;
+    height: 5%;
+    width: auto;
+}
+
+.ver-menu-logo-img img{
+    width: 4rem;
+    height: auto;
+    float: right;
+}
+
+.ver-menu-logo-text{
+    font-weight: 900;
+    justify-content: flex-start;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.ver-menu-nav-links{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.ver-menu-nav-links a{
+    text-decoration: none;
+    color:white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.4rem;
+    border: 1px #fff inset;
+    border-radius: 20px;
+    padding: 3px 10px;
+}
+
+.ver-menu-nav-links a:hover{
+    background-color: #fff;
+    color: #0f2a1c;
+}
+
+.ver-menu-nav-links a:active{
+    background-color: #000;
+    color: #fff;
+}
+
