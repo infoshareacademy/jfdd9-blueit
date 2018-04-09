@@ -1,16 +1,20 @@
 .menu-bar{
-      display:flex;
-      height: 5rem;
-      width: 100%;
-      background-color: #0f2a1c;
-      opacity: 0.7;
-      position: fixed;
-      flex-direction: row;
-      color: white;
-      font-family: "Open Sans", sans-serif;
+    display:flex;
+    height: 5rem;
+    width: 100%;
+    background-color: #0f2a1c;
+    opacity: 0.7;
+    position: fixed;
+    flex-direction: row;
+    color: white;
+    font-family: "Open Sans", sans-serif;
 }
 .menu-bar:hover{
     opacity: 0.9;
+}
+
+.menu-btn{
+    display: none;
 }
 
 .horizontal-menu-btn{
@@ -18,57 +22,57 @@
 }
 
 .menu-logo-text,
-  .menu-nav {
-      width: 45%;
-      align-self: center;
-      margin: 0 auto;
+.menu-nav {
+    width: 45%;
+    align-self: center;
+    margin: 0 auto;
 }
 
-  .menu-logo-img{
-      align-self: center;
-      width: 5%;
-      height: auto;
-  }
+.menu-logo-img{
+    align-self: center;
+    width: 5%;
+    height: auto;
+}
 
-  .menu-logo-img img{
-      width: 4rem;
-      height: auto;
-      float: right;
- }
+.menu-logo-img img{
+    width: 4rem;
+    height: auto;
+    float: right;
+}
 
-  .menu-logo-text{
-      font-weight: 900;
-      justify-content: flex-start;
-      font-size: 2rem;
-      font-style: italic;
-  }
+.menu-logo-text{
+    font-weight: 900;
+    justify-content: flex-start;
+    font-size: 2rem;
+    font-style: italic;
+}
 
-  .menu-nav-links{
-      list-style-type: none;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-  }
+.menu-nav-links{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 
-  .menu-nav-links a{
-      text-decoration: none;
-      color:white;
-      font-family: "Open Sans", sans-serif;
-      font-size: 1.4rem;
-      border: 1px #fff inset;
-      border-radius: 20px;
-      padding: 3px 10px;
-  }
+.menu-nav-links a{
+    text-decoration: none;
+    color:white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.4rem;
+    border: 1px #fff inset;
+    border-radius: 20px;
+    padding: 3px 10px;
+}
 
-  .menu-nav-links a:hover{
-      background-color: #fff;
-      color: #0f2a1c;
-  }
+.menu-nav-links a:hover{
+    background-color: #fff;
+    color: #0f2a1c;
+}
 
-  .menu-nav-links a:active{
-      background-color: #000;
-      color: #fff;
-  }
+.menu-nav-links a:active{
+    background-color: #000;
+    color: #fff;
+}
 
 .hero-section {
     display: flex;
@@ -129,7 +133,7 @@
 /* ============= iPad screen   ======================= */
 
 @media (min-width: 769px) and (max-width: 1440px) {
-    
+
     .menu-logo-img{
         display: none;
     }
@@ -162,7 +166,25 @@
         width: 20%
     }
     .menu-nav{
-        width: 70%;
+        width: 40%;
+    }
+    .menu-nav-links{
+        display: none
+    }
+    .menu-btn{
+        display: block;
+        color:white;
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.4rem;
+        font-weight: 700;
+        border: 2px #fff inset;
+        border-radius: 20px;
+        padding: 3px 10px;
+        text-align: center;
+    }
+    .menu-btn:hover{
+        background-color: #fff;
+        color: #0f2a1c;
     }
     .hero-section {
         background-size: 100% 100%;
