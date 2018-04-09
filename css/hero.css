@@ -150,8 +150,15 @@
         background-size: 100% 100%;
     }
 }
+/* ===================   769px to 841px ==================*/
 
-
+@media (min-width: 769px) and (max-width: 841px) {
+    .hero-headline{
+        font-size: 2em;
+        font-weight: 700;
+        margin-top: 5em;
+    }
+}
 /*=================== iPhone screen ======================= */
 
 @media (max-width: 768px){
@@ -159,18 +166,23 @@
     .menu-logo-text{
         display: none;
     }
+
     .hero-text{
         display: none;
     }
+
     .menu-logo-img{
         width: 20%
     }
+
     .menu-nav{
         width: 40%;
     }
+
     .menu-nav-links{
         display: none
     }
+
     .menu-btn{
         display: block;
         color:white;
@@ -181,33 +193,53 @@
         border-radius: 20px;
         padding: 3px 10px;
         text-align: center;
+        position: relative;
     }
+
     .menu-btn:hover{
         background-color: #fff;
         color: #0f2a1c;
     }
+
+    .menu-nav:hover .menu-nav-links{
+        display: block;
+        position: absolute;
+    }
+
+    .menu-nav-links a {
+        text-decoration: none;
+        background-color: #0e3208;
+    }
+
     .hero-section {
         background-size: 100% 100%;
     }
+
     .hero-headline{
-        font-size: 1.5em;
+        font-size: 1.8em;
         font-weight: 700;
+        margin-top: 4em;
+        text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
     }
+
     .hero-link-contain{
         border: 3px #fff double;
         border-radius: 50px;
         padding: 9px;
         background-color: rgb(14, 50, 8);
     }
+
     .hero-link{
         color: #fff;
         font-weight: 700;
         text-decoration: none;
     }
+
     .hero-link-contain:hover{
         background-color: #010201;
         text-decoration: none;
     }
+
     .hero-link:hover{
         color: #fff;
     }
