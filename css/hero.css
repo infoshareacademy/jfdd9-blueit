@@ -12,7 +12,12 @@
 .menu-bar:hover{
     opacity: 0.9;
 }
-  .menu-logo-text,
+
+.horizontal-menu-btn{
+    display: none;
+}
+
+.menu-logo-text,
   .menu-nav {
       width: 45%;
       align-self: center;
@@ -70,8 +75,7 @@
     flex-direction: column;
     align-items: center;
     background: #c4d3e6 url("../img/tesla.jpeg") no-repeat;
-    background-size: 100%;
-    height: 100vh;
+    background-size: 100% auto;
 }
 
 .hero-headline{
@@ -89,7 +93,6 @@
 
 .hero-link-contain {
     margin-top: 8rem;
-    text-decoration: none;
     border: 2px #fff double;
     border-radius: 20px;
     padding: 5px;
@@ -104,17 +107,86 @@
 
 .hero-link:hover{
     color: #0f2a1c;
+    text-decoration: none;
 }
 
 .hero-link:active{
     background-color: #0f2a1c;
     color: #fff;
+    text-decoration: none;
 }
 
 .hero-link-contain:hover{
     background-color: #fff;
+    text-decoration: none;
 }
 
 .hero-link-contain:active {
     background-color: #0f2a1c;
+}
+
+
+/* ============= iPad screen   ======================= */
+
+@media (min-width: 769px) and (max-width: 1440px) {
+    
+    .menu-logo-img{
+        display: none;
+    }
+    .hero-text{
+        display: none;
+    }
+    .menu-logo-text{
+        width: 30%;
+    }
+    .menu-nav{
+        width: 70%;
+    }
+    .hero-section {
+        background-size: 100% 100%;
+    }
+}
+
+
+/*=================== iPhone screen ======================= */
+
+@media (max-width: 768px){
+
+    .menu-logo-text{
+        display: none;
+    }
+    .hero-text{
+        display: none;
+    }
+    .menu-logo-img{
+        width: 20%
+    }
+    .menu-nav{
+        width: 70%;
+    }
+    .hero-section {
+        background-size: 100% 100%;
+    }
+    .hero-headline{
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+    .hero-link-contain{
+        border: 3px #fff double;
+        border-radius: 50px;
+        padding: 9px;
+        background-color: rgb(14, 50, 8);
+    }
+    .hero-link{
+        color: #fff;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    .hero-link-contain:hover{
+        background-color: #010201;
+        text-decoration: none;
+    }
+    .hero-link:hover{
+        color: #fff;
+    }
 }

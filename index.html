@@ -6,6 +6,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="css/main.css" type="text/css" rel="stylesheet">
     <link href="css/hero.css" type="text/css" rel="stylesheet">
     <link href="css/functionalities.css" type="text/css" rel="stylesheet">
@@ -28,6 +30,7 @@
                         <span>BlueSky Cars</span>
                 </div>
                 <div class="menu-nav">
+                    <span class="horizontal-menu-btn">Menu</span>
                     <nav>
                         <ul class="menu-nav-links">
                             <li><a href="#form" >Get inside</a></li>
@@ -134,58 +137,30 @@
 </section>
 
 <section id="form" class="form">
-    <div class="container">
-        <div class="form-panel panel-left">
-        <h2>Interested ? Give us a feedback !</h2>
-        <form class="feedback-form" action="https://formspree.io/blueit.isa@gmail.com"
-              method="POST">
 
-                <div class="feedback-row">
-                    <div class="feedback-row-col-25">
-                        <label for="fname">First name</label>
-                    </div>
-                    <div class="feedback-row-col-75">
-                        <input id="fname" class="feedback" type="text" name="fname"
-                               placeholder="Enter Your name ...">
-                    </div>
-                </div>
-                <div class="feedback-row">
-                    <div class="feedback-row-col-25">
-                        <label for="lname">Last name</label>
-                    </div>
-                    <div class="feedback-row-col-75">
-                        <input id="lname" class="feedback" type="text" name="lname"
-                               placeholder="Enter Your last name ...">
-                    </div>
-                </div>
-                <div class="feedback-row">
-                    <div class="feedback-row-col-25">
-                        <label for="email">Email</label>
-                    </div>
-                    <div class="feedback-row-col-75">
-                        <input id="email" class="feedback" type="text" name="email"
-                               placeholder="Enter Your email address ...">
-                    </div>
-                </div>
-                <div class="clear"></div>
-                <button class="feedback-send" type="submit">
-                    <i class="far fa-envelope"></i>
-                </button>
+
+    <div class="container">
+        <h2>Sign Up</h2>
+        <span class="divider"></span>
+        <form action="https://formspree.io/blueit.isa@gmail.com" method="POST">
+
+
+
+            <input type="text" id="name" name="user_name" aria-label="name" placeholder="Enter Your name ...">
+
+
+            <input type="text" id="last-name" name="user_name" aria-label="last_name"
+                   placeholder="Enter Your last name ...">
+
+
+            <input type="email" id="mail" name="user_email" aria-label="email"
+                   placeholder="Eneter Your Email address ...">
+
+            <button class="form-send" type="submit">Sign Up</button>
+            <p>Your e-mail address will not be shared to third-party organisations.</p>
         </form>
     </div>
 
-    <div class="form-panel panel-right">
-        <h2>We care about Your privacy ! </h2>
-        <p>Your e-mail address will not be shared to third-party organisations.<br><br>Actually, we don't give a
-            damn
-            about
-            your privacy. Your email address will be sent to everyone including porn sites, your local church
-            and to
-            your
-            Momma !</p>
-        <p>We also know what You did last summer ! You're his father, you sick f*** !</p>
-        <p>And You masturbate more than anyone on the planet. </p>
-    </div>
     <div class="clear"></div>
 </section>
 
@@ -196,14 +171,15 @@
 <section id="about-us" class="about-us">
     <div class="container">
         <div class="about-us-section-header">
-            <h3 class="about-us-section-title">Our Team</h3>
-            <span class="about-us-section-divider"></span>
+            <h2 class="about-us-section-title">Our Team</h2>
+            <span class="divider"></span>
             <p class="about-us-section-description">Taking care of our customers, our communities and our
                 environment.</p>
         </div>
 
-        <div class="about-us-row">
-            <div class="about-us-col">
+        <div class="row">
+
+            <div class="col-md-3">
                 <div class="about-us-member">
                     <div class="about-us-pic">
                         <img src="img/robert.jpg" alt="Robert Nowakowski" width="210px" height="210px">
@@ -222,9 +198,10 @@
                         </a>
                     </div>
                 </div>
+
             </div>
 
-            <div class="about-us-col">
+            <div class="col-md-3">
                 <div class="about-us-member">
                     <div class="about-us-pic">
                         <img src="img/lukasz.jpeg" alt="Lukasz Koziara" width="210px" height="210px">
@@ -243,9 +220,10 @@
                         </a>
                     </div>
                 </div>
+
             </div>
 
-            <div class="about-us-col">
+            <div class="col-md-3">
                 <div class="about-us-member">
                     <div class="about-us-pic">
                         <img src="img/maciej.jpg" alt="Maciej Blandzi" width="210px" height="210px">
@@ -264,9 +242,10 @@
                         </a>
                     </div>
                 </div>
+
             </div>
 
-            <div class="about-us-col">
+            <div class="col-md-3">
                 <div class="about-us-member">
                     <div class="about-us-pic">
                         <img src="img/agata.jpg" alt="Agata Piernikowska" width="210px" height="210px">
@@ -285,10 +264,11 @@
                         </a>
                     </div>
                 </div>
+
             </div>
+
         </div>
     </div>
-
 </section>
 
 </body>
