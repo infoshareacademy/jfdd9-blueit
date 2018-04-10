@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    max-width: 930px;
+    /*max-width: 930px;*/
 }
 
 .container__func__box {
@@ -50,9 +50,14 @@
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 767px) {
     .container__func__box {
         padding: 20px;
         width: 100%;
+    }
+
+    .func > .container{
+        padding-left: 0;
+        padding-right: 0;
     }
 }
