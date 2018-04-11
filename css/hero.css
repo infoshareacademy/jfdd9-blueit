@@ -8,6 +8,7 @@
     flex-direction: row;
     color: white;
     font-family: "Open Sans", sans-serif;
+    z-index: 100;
 }
 .menu-bar:hover{
     opacity: 0.9;
@@ -79,7 +80,9 @@
     flex-direction: column;
     align-items: center;
     background: #c4d3e6 url("../img/tesla.jpeg") no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
 }
 
 .hero-headline{
