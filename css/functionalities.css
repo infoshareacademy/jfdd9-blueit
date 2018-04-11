@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    max-width: 930px;
+    /*max-width: 930px;*/
 }
 
 .container__func__box {
@@ -36,4 +36,28 @@
 
 .fa-car, .fa-dollar-sign, .fa-hourglass-end, .fa-mobile-alt, .fa-android, .fa-child, .fa-paw, .fa-location-arrow {
     color: #46ECC2;
+}
+
+@media screen and (max-width: 992px) {
+    .container__func {
+        display: block;
+    }
+
+    .container__func__box {
+        margin: 40px auto 0 auto;
+        width: 90%;
+        max-width: 930px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container__func__box {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .func > .container{
+        padding-left: 0;
+        padding-right: 0;
+    }
 }

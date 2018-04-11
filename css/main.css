@@ -76,11 +76,11 @@ h3 {
 
 .func {
     background: #EDF5F5;
-    padding: 40px 0 0 0;
+    padding: 60px 0 0 0;
 }
 
 .func > .container {
-    padding: 0 15px 40px 15px;
+    padding: 0 15px 60px 15px;
 }
 
 .form {
@@ -89,7 +89,7 @@ h3 {
 
 .form > .container {
     background: #FFFFFF;
-    padding: 60px 15px;
+    padding: 60px 15px 50px;
 }
 
 .about-us {

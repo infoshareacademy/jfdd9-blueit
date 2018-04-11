@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-.about-us-section-header {
-    display: block;
-    box-sizing: border-box;
-}
 
 .about-us-section-title {
     text-align: center;
@@ -18,27 +14,21 @@
 
 .about-us-section-description {
     text-align: center;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     color: #777;
     font-style: italic;
-}
-
-.about-us-row {
-    opacity: 1;
-    display: flex;
-    justify-content: space-evenly;
 }
 
 .about-us-member {
     text-align: center;
     margin-bottom: 20px;
     box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .about-us-pic {
     margin-bottom: 15px;
-    overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 .about-us-member h4 {
@@ -46,7 +36,7 @@
     font-weight: 700;
     margin-bottom: 2px;
     font-size: 18px;
-}
+    }
 
 .about-us-member span {
     font-style: italic;
@@ -60,7 +50,7 @@
 
 #about-us .about-us-member .about-us-social a {
     color: #b3b3b3;
-    font-size: 20px;
+    font-size: 23px;
     text-decoration: none;
 }
 
@@ -72,6 +62,10 @@
     margin-top: 20px;
 }
 
-
-
-
+@media (min-width: 996px) {
+    #about-us .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
