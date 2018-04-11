@@ -62,7 +62,7 @@
     margin-top: 20px;
 }
 
-@media (min-width: 996px) {
+@media (min-width: 1050px) {
     #about-us .row {
         display: flex;
         flex-direction: row;
