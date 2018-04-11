@@ -1,29 +1,103 @@
+.menu-bar{
+    display:flex;
+    height: 5rem;
+    width: 100%;
+    background-color: #0f2a1c;
+    opacity: 0.7;
+    position: fixed;
+    flex-direction: row;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+}
+.menu-bar:hover{
+    opacity: 0.9;
+}
+
+.menu-btn{
+    display: none;
+}
+
+.horizontal-menu-btn{
+    display: none;
+}
+
+.menu-logo-text,
+.menu-nav {
+    width: 45%;
+    align-self: center;
+    margin: 0 auto;
+}
+
+.menu-logo-img{
+    align-self: center;
+    width: 5%;
+    height: auto;
+}
+
+.menu-logo-img img{
+    width: 4rem;
+    height: auto;
+    float: right;
+}
+
+.menu-logo-text{
+    font-weight: 900;
+    justify-content: flex-start;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.menu-nav-links{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.menu-nav-links a{
+    text-decoration: none;
+    color:white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.4rem;
+    border: 1px #fff inset;
+    border-radius: 20px;
+    padding: 3px 10px;
+}
+
+.menu-nav-links a:hover{
+    background-color: #fff;
+    color: #0f2a1c;
+}
+
+.menu-nav-links a:active{
+    background-color: #000;
+    color: #fff;
+}
+
 .hero-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #c4d3e6 url("../img/wallpaperNEWer.jpg");
-    background-size: cover;
-    height: 100vh;
-    opacity: 0.8;
+    background: #c4d3e6 url("../img/tesla.jpeg") no-repeat;
+    background-size: 100% auto;
 }
 
 .hero-headline{
     font-family: "Open Sans", sans-serif;
-    font-size: 4em;
-    margin-top: 2em;
-    margin-bottom: 0.6em;
+    font-size: 4rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
 }
 
 .hero-text{
     font-family: "Open Sans", sans-serif;
-    font-size: 1.8em;
+    font-size: 1.8rem;
+    opacity: 1;
 }
 
 .hero-link-contain {
-    margin-top: 4em;
-    text-decoration: none;
-    border: 1px black solid;
+    margin-top: 8rem;
+    border: 2px #fff double;
     border-radius: 20px;
     padding: 5px;
 }
@@ -31,20 +105,142 @@
 .hero-link{
     text-decoration: none;
     font-family: "Open Sans", sans-serif;
-    color: black;
-    font-size: 1.5em;
+    color: #fff;
+    font-size: 1.5rem;
 }
 
-.hero-link-contain:hover{
-    border: 1px white solid;
-    color: white;
-}
-
-.hero-link-contain:active{
-    background-color: #7db7e6;
-    color: white;
+.hero-link:hover{
+    color: #0f2a1c;
+    text-decoration: none;
 }
 
 .hero-link:active{
-    color: white;
+    background-color: #0f2a1c;
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero-link-contain:hover{
+    background-color: #fff;
+    text-decoration: none;
+}
+
+.hero-link-contain:active {
+    background-color: #0f2a1c;
+}
+
+
+/* ============= iPad screen   ======================= */
+
+@media (min-width: 769px) and (max-width: 1440px) {
+
+    .menu-logo-img{
+        display: none;
+    }
+    .hero-text{
+        display: none;
+    }
+    .menu-logo-text{
+        width: 30%;
+    }
+    .menu-nav{
+        width: 70%;
+    }
+    .hero-section {
+        background-size: 100% 100%;
+    }
+}
+/* ===================   769px to 841px ==================*/
+
+@media (min-width: 769px) and (max-width: 841px) {
+    .hero-headline{
+        font-size: 2em;
+        font-weight: 700;
+        margin-top: 5em;
+    }
+}
+/*=================== iPhone screen ======================= */
+
+@media (max-width: 768px){
+
+    .menu-logo-text{
+        display: none;
+    }
+
+    .hero-text{
+        display: none;
+    }
+
+    .menu-logo-img{
+        width: 20%
+    }
+
+    .menu-nav{
+        width: 40%;
+    }
+
+    .menu-nav-links{
+        display: none
+    }
+
+    .menu-btn{
+        display: block;
+        color:white;
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.4rem;
+        font-weight: 700;
+        border: 2px #fff inset;
+        border-radius: 20px;
+        padding: 3px 10px;
+        text-align: center;
+        position: relative;
+    }
+
+    .menu-btn:hover{
+        background-color: #fff;
+        color: #0f2a1c;
+    }
+
+    .menu-nav:hover .menu-nav-links{
+        display: block;
+        position: absolute;
+    }
+
+    .menu-nav-links a {
+        text-decoration: none;
+        background-color: #0e3208;
+    }
+
+    .hero-section {
+        background-size: 100% 100%;
+    }
+
+    .hero-headline{
+        font-size: 1.8em;
+        font-weight: 700;
+        margin-top: 4em;
+        text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    }
+
+    .hero-link-contain{
+        border: 3px #fff double;
+        border-radius: 50px;
+        padding: 9px;
+        background-color: rgb(14, 50, 8);
+    }
+
+    .hero-link{
+        color: #fff;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    .hero-link-contain:hover{
+        background-color: #010201;
+        text-decoration: none;
+    }
+
+    .hero-link:hover{
+        color: #fff;
+    }
 }

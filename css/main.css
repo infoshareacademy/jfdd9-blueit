@@ -8,27 +8,28 @@ body {
     color: #666;
 }
 
-
 .hero-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #c4d3e6 url("../img/wallpaperNEWer.jpg");
+    background: #c4d3e6 url("../img/tesla.jpeg");
     background-size: cover;
     height: 100vh;
     opacity: 0.8;
 }
 
-.hero-headline{
+.hero-headline {
     font-family: "Open Sans", sans-serif;
     font-size: 4em;
     margin-top: 2em;
     margin-bottom: 0.6em;
+    opacity: 1;
 }
 
-.hero-text{
+.hero-text {
     font-family: "Open Sans", sans-serif;
     font-size: 1.8em;
+    opacity: 1;
 }
 
 .hero-link-contain {
@@ -39,27 +40,26 @@ body {
     padding: 5px;
 }
 
-.hero-link{
+.hero-link {
     text-decoration: none;
     font-family: "Open Sans", sans-serif;
     color: black;
     font-size: 1.5em;
 }
 
-.hero-link-contain:hover{
+.hero-link-contain:hover {
     border: 1px white solid;
     color: white;
 }
 
-.hero-link-contain:active{
+.hero-link-contain:active {
     background-color: #7db7e6;
     color: white;
 }
 
-.hero-link:active{
+.hero-link:active {
     color: white;
 }
-
 
 h2 {
     font-size: 32px;
@@ -76,29 +76,25 @@ h3 {
 
 .func {
     background: #EDF5F5;
-    padding: 40px 0 0 0;
+    padding: 60px 0 0 0;
 }
 
 .func > .container {
-    padding: 0 15px 40px 15px;
+    padding: 0 15px 60px 15px;
 }
 
 .form {
-    padding: 40px 0 0 0;
+    /* padding: 40px 0 0 0; */
 }
 
 .form > .container {
     background: #FFFFFF;
-    padding: 60px 15px;
+    padding: 60px 15px 50px;
 }
 
 .about-us {
     background: #EDF5F5;
     padding: 40px 0 0 0;
-}
-
-.container {
-    margin: 0 80px;
 }
 
 .divider {

@@ -1,14 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
+    // Selecting all func boxes
     var funcBox = document.querySelectorAll('.func-box');
-    // var screenPosition = funcBox1.getBoundingClientRect();
 
+    // Event listener on scroll
     document.addEventListener("scroll", function () {
+
+        // For each element (func box) add or remove classes
         funcBox.forEach(function (element) {
-            /*console.log('\nwindow.innerHeight: ', window.innerHeight);
-            console.log('Top: ', element.getBoundingClientRect().top);
-            console.log('Bottom: ', element.getBoundingClientRect().bottom);
-            console.log('Height: ', element.getBoundingClientRect().height);*/
-            if (element.getBoundingClientRect().top < window.innerHeight - (element.getBoundingClientRect().height / 2)) {
+            var elementRect = element.getBoundingClientRect();
+
+            // Element.getBoundingClientRect() method returns position of the element relative to the viewport
+            // window.innerHeight calculates Height (in pixels) of the browser window viewport
+            if (elementRect.top < window.innerHeight - (elementRect.height / 3)) {
                 element.classList.add('func-show-box');
             }
             else {

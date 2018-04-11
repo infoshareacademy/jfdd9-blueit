@@ -16,22 +16,44 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js"
             integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
             crossorigin="anonymous"></script>
-    <title>Document</title>
+    <link rel="shortcut icon" type="image/png" href="./favicon.png"/>
+    <title>BlueSky Cars - 3city</title>
 </head>
 <body>
 
-<section id="hero-section" class="hero-section">
-    <div class="hero-headline">Take a Deep Breath. Finally.</div>
-    <div class="hero-text">Over 50 comfortable electric vehicles.</div>
-    <div class="hero-text">Dozens of convenient pick-up &amp drop-off locations.</div>
-    <div class="hero-link-contain">
-        <a href="#form" class="hero-link">
-            <!--   <img src="iconcar.png">  -->
-            <span>Start the ride</span>
-        </a>
-    </div>
-</section>
-
+<header>
+    <section id="hero-section" class="hero-section">
+        <div class="menu-bar">
+            <div class="menu-logo-img">
+                <img src="img/carwhite.png" alt="blue sky cars logo">
+            </div>
+            <div class="menu-logo-text">
+                <span>BlueSky Cars</span>
+            </div>
+            <div class="menu-nav">
+                <span class="menu-btn">Menu</span>
+                <div class="dropdown">
+                    <nav>
+                        <ul class="menu-nav-links">
+                            <li><a href="#form">Get inside</a></li>
+                            <li><a href="#func">Features</a></li>
+                            <li><a href="#about-us">Meet Us</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="hero-headline">Take a Deep Breath. Finally.</div>
+        <div class="hero-text">Over 50 comfortable electric vehicles.</div>
+        <div class="hero-text">Dozens of convenient pick-up &amp drop-off locations.</div>
+        <div class="hero-link-contain">
+            <a href="#form" class="hero-link">
+                <span>Start the ride !</span>
+            </a>
+        </div>
+    </section>
+</header>
 <section id="func" class="func">
     <h2>Features</h2>
     <span class="divider"></span>
@@ -118,59 +140,31 @@
 </section>
 
 <section id="form" class="form">
+
+
     <div class="container">
-        <div class="form-panel panel-left">
-            <h2>Interested ? Give us a feedback !</h2>
-            <form class="feedback-form" action="https://formspree.io/blueit.isa@gmail.com"
-                  method="POST">
+        <h2>Sign Up</h2>
+        <h3>We will inform You about start date of BlueSky Cars project.</h3>
+        <span class="divider"></span>
+        <form action="https://formspree.io/blueit.isa@gmail.com" method="POST">
 
-                <div class="feedback-row">
-                    <div class="feedback-row-col-25">
-                        <label for="fname">First name</label>
-                    </div>
-                    <div class="feedback-row-col-75">
-                        <input id="fname" class="feedback" type="text" name="fname"
-                               placeholder="Enter Your name ...">
-                    </div>
-                </div>
-                <div class="feedback-row">
-                    <div class="feedback-row-col-25">
-                        <label for="lname">Last name</label>
-                    </div>
-                    <div class="feedback-row-col-75">
-                        <input id="lname" class="feedback" type="text" name="lname"
-                               placeholder="Enter Your last name ...">
-                    </div>
-                </div>
-                <div class="feedback-row">
-                    <div class="feedback-row-col-25">
-                        <label for="email">Email</label>
-                    </div>
-                    <div class="feedback-row-col-75">
-                        <input id="email" class="feedback" type="text" name="email"
-                               placeholder="Enter Your email address ...">
-                    </div>
-                </div>
-                <div class="clear"></div>
-                <button class="feedback-send" type="submit">
-                    <i class="far fa-envelope"></i>
-                </button>
-            </form>
-        </div>
 
-        <div class="form-panel panel-right">
-            <h2>We care about Your privacy ! </h2>
-            <p>Your e-mail address will not be shared to third-party organisations.<br><br>Actually, we don't give a
-                damn
-                about
-                your privacy. Your email address will be sent to everyone including porn sites, your local church
-                and to
-                your
-                Momma !</p>
-            <p>We also know what You did last summer ! You're his father, you sick f*** !</p>
-            <p>And You masturbate more than anyone on the planet. </p>
-        </div>
-        <div class="clear"></div>
+            <input type="text" id="name" name="user_name" aria-label="name" placeholder="Enter your name ..." required>
+
+
+            <input type="text" id="last-name" name="user_name" aria-label="last_name"
+                   placeholder="Enter your last name ..." required>
+
+
+            <input type="email" id="mail" name="user_email" aria-label="email"
+                   placeholder="Enter your email address ..." required>
+
+            <button class="form-send" type="submit" aria-label="sing-up-button">Sign Up</button>
+            <small>*Your e-mail address will not be shared to third-party organisations.</small>
+        </form>
+    </div>
+
+    <div class="clear"></div>
 </section>
 
 
@@ -187,96 +181,81 @@
         </div>
 
         <div class="row">
-
-            <div class="col-md-3">
-                <div class="about-us-member">
-                    <div class="about-us-pic">
-                        <img src="img/robert.jpg" alt="Robert Nowakowski" width="210px" height="210px">
-                    </div>
-                    <h4>Robert Nowakowski</h4>
-                    <span>Junior Front-end Developer</span>
-                    <div class="about-us-social">
-                        <a href="https://pl-pl.facebook.com/Smerfy-274878629193710/" target="_blank">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="https://github.com/rob-now" target="_blank">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="mailto:rnowakowski.prv@gmail.com">
-                            <i class="fas fa-at"></i>
-                        </a>
-                    </div>
+            <div class="about-us-member">
+                <div class="about-us-pic">
+                    <img src="img/robert.jpg" alt="Robert Nowakowski" width="210px" height="210px">
+                </div>
+                <h4>Robert Nowakowski</h4>
+                <span>Junior Front-end Developer</span>
+                <div class="about-us-social">
+                    <a href="https://github.com/rob-now" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/robert-nowakowski/">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:rnowakowski.prv@gmail.com">
+                        <i class="fas fa-at"></i>
+                    </a>
                 </div>
 
             </div>
 
-            <div class="col-md-3">
-                <div class="about-us-member">
-                    <div class="about-us-pic">
-                        <img src="img/lukasz.jpeg" alt="Lukasz Koziara" width="210px" height="210px">
-                    </div>
-                    <h4>Lukasz Koziara</h4>
-                    <span>Junior Front-end Developer</span>
-                    <div class="about-us-social">
-                        <a href="https://pl-pl.facebook.com/bajka.krecik" target="_blank">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="https://github.com/lkoziara" target="_blank">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="mailto:lkoziara@gmail.com">
-                            <i class="fas fa-at"></i>
-                        </a>
-                    </div>
+            <div class="about-us-member">
+                <div class="about-us-pic">
+                    <img src="img/lukasz.jpeg" alt="Lukasz Koziara" width="210px" height="210px">
                 </div>
-
+                <h4>Lukasz Koziara</h4>
+                <span>Junior Front-end Developer</span>
+                <div class="about-us-social">
+                    <a href="https://github.com/lkoziara" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/robert-nowakowski/">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:lkoziara@gmail.com">
+                        <i class="fas fa-at"></i>
+                    </a>
+                </div>
             </div>
 
-            <div class="col-md-3">
-                <div class="about-us-member">
-                    <div class="about-us-pic">
-                        <img src="img/maciej.jpg" alt="Maciej Blandzi" width="210px" height="210px">
-                    </div>
-                    <h4>Maciej Blandzi</h4>
-                    <span>Junior Front-end Developer</span>
-                    <div class="about-us-social">
-                        <a href="https://www.facebook.com/TheSimpsons/" target="_blank">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="https://github.com/maciabe" target="_blank">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="mailto:mblandzi@gmail.com">
-                            <i class="fas fa-at"></i>
-                        </a>
-                    </div>
+            <div class="about-us-member">
+                <div class="about-us-pic">
+                    <img src="img/maciej.jpg" alt="Maciej Blandzi" width="210px" height="210px">
                 </div>
-
+                <h4>Maciej Blandzi</h4>
+                <span>Junior Front-end Developer</span>
+                <div class="about-us-social">
+                    <a href="https://github.com/maciabe" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/robert-nowakowski/">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:mblandzi@gmail.com">
+                        <i class="fas fa-at"></i>
+                    </a>
+                </div>
             </div>
 
-            <div class="col-md-3">
-                <div class="about-us-member">
-                    <div class="about-us-pic">
-                        <img src="img/agata.jpg" alt="Agata Piernikowska" width="210px" height="210px">
-                    </div>
-                    <h4>Agata Piernikowska</h4>
-                    <span>Junior Front-end Developer</span>
-                    <div class="about-us-social">
-                        <a href="https://www.facebook.com/Pszcz%C3%B3%C5%82ka-Maja-259872857385437/" target="_blank">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="https://github.com/agatapier" target="_blank">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="mailto:agata.piernikowska@yahoo.com">
-                            <i class="fas fa-at"></i>
-                        </a>
-                    </div>
+            <div class="about-us-member">
+                <div class="about-us-pic">
+                    <img src="img/agata.jpg" alt="Agata Piernikowska" width="210px" height="210px">
                 </div>
-
+                <h4>Agata Piernikowska</h4>
+                <span>Junior Front-end Developer</span>
+                <div class="about-us-social">
+                    <a href="https://github.com/agatapiernikowska" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:agata.piernikowska@yahoo.com">
+                        <i class="fas fa-at"></i>
+                    </a>
+                </div>
             </div>
-
         </div>
+
     </div>
 </section>
 
