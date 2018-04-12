@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -22,34 +21,37 @@
 <body>
 
 
-
-<!--https://getbootstrap.com/docs/3.3/css/#grid-->
-
-
-
 <header>
     <section id="hero-section" class="hero-section">
-        <nav class="navbar navbar-inverse navbar-fixed-top ">
-        <nav class="navbar navbar-inverse navbar-fixed-top my-navbar dark-background">
-            <div class="container-fluid nav-div"><div>
-                    <a class="navbar-brand hero-navbar" href="#">
-                        <img alt="Brand" src="./img/carwhite.png">
-                    </a>
-                    <span>BlueSky Cars</span>
+
+
+
+
+        <nav class="navbar navbar-inverse navbar-fixed-top hero-navbar">
+            <div class="container-fluid nav-div">
+
+                <button type="button" class="navbar-toggle collapsed hero-navbar__toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                    <span class="glyphicon glyphicon-menu-hamburger"></span>
+                </button>
+                    <a class="navbar-brand">
+                        <span class="hero-brand">BlueSky Cars</span></a>
+
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right hero-navbar-list navbar-menu">
                     <li><a href="#form">Sign Up!</a></li>
                     <li><a href="#func">Features</a></li>
                     <li><a href="#about-us">About Us</a></li>
                 </ul>
             </div>
         </nav>
-        <div class="container hero-section-div">
-        <div class="hero-headline">
-            <img src="./img/hero-wallpaper.jpg" class="img-responsive block-center">
 
-            Take a Deep Breath. Finally.</div>
+
+
+
+        <div class="container hero-section-div">
+            <img src="./img/hero-wallpaper.jpg" class="img-responsive hero-background">
+            <div class="hero-headline">Take a Deep Breath. Finally.</div>
         <!--<div class="hero-text">Over 50 comfortable electric vehicles.</div>-->
         <!--<div class="hero-text">Dozens of convenient pick-up &amp drop-off locations.</div>-->
         <!--<div class="hero-link-contain">-->
@@ -268,6 +270,7 @@
 
     </div>
 </section>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
