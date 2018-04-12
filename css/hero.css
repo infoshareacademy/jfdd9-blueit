@@ -1,5 +1,4 @@
 
-
 .hero-section-div {
     width: 100%;
     padding: 0;
@@ -10,24 +9,35 @@
 
 .hero-navbar{
     background-color: rgba(11, 18, 89, 0.8);
+}
 
-}
-.hero-brand{
-    font-style: italic;
-    font-size: 1.3em;
-}
 .hero-navbar:hover{
     background-color: rgba(11,17,57,0.91);
+    /*height: 12%;*/
+}
+
+.hero-navbar-menu{
+    padding-right: 5%;
    }
 
-.navbar-menu{
-    padding-right: 5%;
+.hero-navbar-menu a {
     font-family: "Helvetica", sans-serif;
-    font-size: 1.3em;
+    font-size: 1.6em;
+    color: #fff;
 }
-.hero-navbar-img{
-    height: 80%;
-    padding: 0;
+
+.hero-navbar-logo img{
+    height: 2.2em;
+    float: left;
+    margin-left: 1em;
+    margin-top: -10px;
+}
+.hero-navbar-logo-text{
+    font-style: italic;
+    font-size: 1.8em;
+    color: #fff;
+    font-weight: 600;
+    margin-left: 0.3em;
 }
 
 .hero-background {
@@ -39,45 +49,41 @@
 .hero-headline {
     position: absolute;
     top: 10%;
-    left: 10%;
+    left: 20%;
     font-family: "Helvetica", sans-serif;
     font-size: 4rem;
-    margin-top: 5rem;
     color: #FFF;
 }
 
-/*.hero-link-contain {*/
-    /*margin-top: 8rem;*/
-    /*border: 2px #fff double;*/
-    /*border-radius: 20px;*/
-    /*padding: 5px;*/
-/*}*/
+@media screen and (min-width: 768px) and (max-width: 1330px) {
+    .hero-headline {
+        font-size: 2.8em;
+        position: absolute;
+        top: 15%;
+        left: 25%;
 
-/*.hero-link{*/
-    /*text-decoration: none;*/
-    /*font-family: "Open Sans", sans-serif;*/
-    /*color: #fff;*/
-    /*font-size: 1.5rem;*/
-    /*position: absolute;*/
-/*}*/
+    }
+}
+@media screen and (max-width: 767px) {
+    .hero-headline {
+        font-size: 2rem;
+        position: absolute;
+        top: 85%;
+        left: 18%;
+    }
 
-/*.hero-link:hover{*/
-    /*color: #0f2a1c;*/
-    /*text-decoration: none;*/
-/*}*/
+    .hero-navbar-logo-text {
+        font-size: 1.3em;
+        margin-left: 1em;
+    }
 
-/*.hero-link:active{*/
-    /*background-color: #0f2a1c;*/
-    /*color: #fff;*/
-    /*text-decoration: none;*/
-/*}*/
+    .hero-navbar-logo img {
+        margin-left: 0.4em;
+    }
+}
+@media screen and (max-width: 566px) {
+    .hero-headline{
+        display: none;
+    }
 
-/*.hero-link-contain:hover{*/
-    /*background-color: #fff;*/
-    /*text-decoration: none;*/
-/*}*/
-
-/*.hero-link-contain:active {*/
-    /*background-color: #0f2a1c;*/
-/*}*/
-
+}
