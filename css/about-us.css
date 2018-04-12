@@ -58,6 +58,10 @@
     color: #1dc8cd;
 }
 
+.about-us-pic img:hover {
+    box-shadow: 0 0 5px #777;
+}
+
 .about-us-section-header p {
     margin-top: 20px;
 }
