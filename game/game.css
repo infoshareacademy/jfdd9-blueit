@@ -19,16 +19,20 @@
 
 }
 
-.car{
+.car {
     background-image: url("img/player.png");
     width: 99px;
     height: 192px;
 }
 
 .enemy_1 {
-    
+    width: 100px;
+    height: 100px;
+    background: black;
 }
 
 .enemy_2 {
-
+    width: 100px;
+    height: 100px;
+    background: white;
 }

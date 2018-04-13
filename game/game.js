@@ -45,6 +45,7 @@ var game = (function () {
 
     function dropEnemy() {
         var enemy = document.createElement('div');
+        // Adding random class enemy_1 or enemy_2
         enemy.classList.add('enemy_' + Math.floor(Math.random() * (2 - 1 + 1)) + 1);
 
     }
