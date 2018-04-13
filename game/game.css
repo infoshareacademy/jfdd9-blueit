@@ -38,12 +38,16 @@ body{
 }
 
 .enemy_2 {
+    position: absolute;
+    top: 0;
     width: 100px;
     height: 100px;
-    background: white;
+    background: #58b9ff;
 }
 
 .enemy_3 {
+    position: absolute;
+    top: 0;
     width: 100px;
     height: 100px;
     background: brown;

@@ -48,6 +48,11 @@ var game = (function () {
         // Adding random class enemy_1 or enemy_2
         enemy.classList.add('enemy_' + (Math.floor(Math.random() * (3 - 1 + 1)) + 1));
         getRoad().appendChild(enemy);
+
+        setInterval(function () {
+            enemy.style.left = getRoad().offsetLeft + getRoad().clientWidth/4 + 'px';
+        }, 16);
+
     }
 
     dropEnemy();
