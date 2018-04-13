@@ -6,6 +6,7 @@ var game = (function () {
     function moveRight() {
         direction = 1;
     }
+
     function moveLeft() {
         direction = -1;
     }
@@ -13,7 +14,7 @@ var game = (function () {
     function enableControls() {
         document.addEventListener('keydown', function (event) {
             console.log(event.code);
-            switch(event.code) {
+            switch (event.code) {
                 case 'ArrowRight':
                     moveRight();
                     break;
@@ -23,10 +24,12 @@ var game = (function () {
             }
         })
     }
+
     function getCar() {
         return document.querySelector('.car')
     }
-    function start () {
+
+    function start() {
         enableControls()
 
         setInterval(function () {
@@ -34,6 +37,19 @@ var game = (function () {
             getCar().style.marginLeft = (marginLeft + direction) + 'px'
         }, 16)
     }
+
+
+    function getRoad() {
+        return document.querySelector('.road');
+    }
+
+    function dropEnemy() {
+        var enemy = document.createElement('div');
+        enemy.classList.add('enemy_' + Math.floor(Math.random() * (2 - 1 + 1)) + 1);
+
+    }
+
+
     return {
         start: start
     }
