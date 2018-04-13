@@ -30,9 +30,14 @@ var game = (function () {
         enableControls()
 
         setInterval(function () {
-            var marginLeft = parseInt(getCar().style.marginLeft || 0);
+            var marginLeft = Math.max(
+                Math.min(
+                parseInt(getCar().style.marginLeft || 0),
+                501
+            ),0);
             getCar().style.marginLeft = (marginLeft + direction) + 'px'
-        }, 16)
+        }, 16);
+
     }
     return {
         start: start
