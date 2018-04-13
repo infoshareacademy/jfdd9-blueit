@@ -11,6 +11,7 @@
 }
 
 .road {
+    margin: 0 auto;
     width: 600px;
     height: 900px;
     background-image: url("img/road.jpg");
@@ -19,7 +20,7 @@
 }
 
 .car{
-    width: 100px;
-    height: 100px;
-    background: black;
+    background-image: url("img/player.png");
+    width: 99px;
+    height: 192px;
 }
