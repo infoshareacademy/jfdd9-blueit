@@ -112,7 +112,7 @@ body {
 
 form {
     max-width: 300px;
-    margin: 20px auto;
+    margin: 30px auto 0 auto;
     padding: 10px 20px;
     border-radius: 8px;
 }
@@ -165,6 +165,10 @@ select {
     -webkit-transition: background-color 500ms linear;
     -ms-transition: background-color 500ms linear;
     transition: background-color 500ms linear;
+}
+
+.form h3 {
+    text-align: center;
 }
 
 @media screen and (min-width: 480px) {
