@@ -51,7 +51,12 @@ var game = (function () {
         getRoad().appendChild(enemy);
         //Checking enemy position in respect to changes in window width
         setInterval(function () {
+            //Positioning enemy on the road
             enemy.style.left = getRoad().offsetLeft + getRoad().clientWidth / 4 + 'px';
+            //Moving enemy from top to bottom
+            var marginTop = parseInt(enemy.style.marginTop || 0);
+            var enemySpeed = 2;
+            enemy.style.marginTop = (marginTop + enemySpeed) + 'px';
         }, 16);
     }
 
