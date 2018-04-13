@@ -167,6 +167,10 @@ select {
     transition: background-color 500ms linear;
 }
 
+.form h3 {
+    text-align: center;
+}
+
 @media screen and (min-width: 480px) {
 
     form {
