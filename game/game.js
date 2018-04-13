@@ -47,12 +47,12 @@ var game = (function () {
         var enemy = document.createElement('div');
         // Adding random class enemy_1 or enemy_2
         enemy.classList.add('enemy_' + (Math.floor(Math.random() * (3 - 1 + 1)) + 1));
+        //Adding enemy to DOM
         getRoad().appendChild(enemy);
-
+        //Checking enemy position in respect to changes in window width
         setInterval(function () {
-            enemy.style.left = getRoad().offsetLeft + getRoad().clientWidth/4 + 'px';
+            enemy.style.left = getRoad().offsetLeft + getRoad().clientWidth / 4 + 'px';
         }, 16);
-
     }
 
     dropEnemy();
