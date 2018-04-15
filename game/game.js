@@ -44,49 +44,49 @@ var game = (function () {
     }
 
     function getTrack() {
+        // Getting each track position
         var track1 = getRoad().offsetLeft + 'px';
         var track2 = getRoad().offsetLeft + getRoad().clientWidth / 4 + 'px';
         var track3 = getRoad().offsetLeft + getRoad().clientWidth / 2 + 'px';
         var track4 = getRoad().offsetLeft + (getRoad().clientWidth - getRoad().clientWidth / 4) + 'px';
+        // Track array to draw from
         var trackArray = [track1, track2, track3, track4];
+        // Returning random track from trackArray
         return trackArray[Math.floor(Math.random() * (trackArray.length))];
     }
 
-    function dropEnemy() {
+    function enemyOrBattery() {
+        // Enemy and battery elements declaration
         var enemy = document.createElement('div');
-        // Adding random class enemy_1 or enemy_2
+        var battery = document.createElement('div');
+        // Adding enemy and battery classes
         enemy.classList.add('enemy_' + (Math.floor(Math.random() * (3 - 1 + 1)) + 1));
-        //Adding enemy to DOM (road div)
-        getRoad().appendChild(enemy);
-        //Positioning enemy on the road
-        //Checking enemy position in respect to changes in window width (don't work now as 'enemy.style.left = getTrack();' was moved out of interval)
-        enemy.style.left = getTrack();
+        battery.classList.add('battery');
+        // Generating random number from 1 to 10
+        var randomNumber = Math.floor(Math.random() * 10 + 1);
+        // Returning element depending on the randomNumber
+        return randomNumber < 10 ? enemy : battery;
+    }
+
+    function dropEnemyOrBattery(item) {
+        // Add item to DOM
+        getRoad().appendChild(item);
+        // Positioning item on the road
+        // todo: updating item position when window width changes
+        item.style.left = getTrack();
+        // Moving item from top to bottom
         setInterval(function () {
-            //Moving enemy from top to bottom
-            var marginTop = parseInt(enemy.style.marginTop || 0);
+            var marginTop = parseInt(item.style.marginTop || 0);
             var enemySpeed = 2;
-            enemy.style.marginTop = (marginTop + enemySpeed) + 'px';
+            var batterySpeed = 4;
+            // Assigning speed depending on item type
+            item.classList.contains('battery')
+                ? item.style.marginTop = (marginTop + batterySpeed) + 'px'
+                : item.style.marginTop = (marginTop + enemySpeed) + 'px';
         }, 16);
     }
 
-    function dropBattery () {
-        var battery = document.createElement('div');
-        //Adding class 'battery'
-        battery.classList.add('battery');
-        //Adding battery to DOM (road div)
-        getRoad().appendChild(battery);
-        //Positioning battery on the road
-        battery.style.left = getTrack();
-        setInterval(function () {
-            var marginTop = parseInt(battery.style.marginTop || 0);
-            var batterySpeed = 2;
-            battery.style.marginTop = (marginTop + batterySpeed) + 'px';
-        }, 32);
-    }
-
-    dropEnemy();
-
-    dropBattery();
+    dropEnemyOrBattery(enemyOrBattery());
 
     return {
         start: start
