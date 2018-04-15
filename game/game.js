@@ -60,7 +60,7 @@ var game = (function () {
         var enemy = document.createElement('div');
         var battery = document.createElement('div');
         // Adding enemy and battery classes
-        enemy.classList.add('enemy_' + (Math.floor(Math.random() * (3 - 1 + 1)) + 1));
+        enemy.classList.add('enemy_' + (Math.floor(Math.random() * 3 + 1)));
         battery.classList.add('battery');
         // Generating random number from 1 to 10
         var randomNumber = Math.floor(Math.random() * 10 + 1);

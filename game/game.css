@@ -52,7 +52,7 @@ body {
     height: 350px;
     background: url('img/car3.png') no-repeat;
 }
-
+/*todo: dodać więcej różnorodnych wrogów*/
 /*todo: kolor baterii na zielony (ECO)*/
 .battery {
     position: absolute;
