@@ -74,6 +74,9 @@ var game = (function () {
         // Positioning item on the road
         // todo: updating item position when window width changes
         // todo: pojawia się boczny scroll kiedy element dojedzie do samego dołu ekranu
+        // todo: wykrywanie kolizji z 'car' dla enemy i battery
+        // todo: wrzucanie wrogów i baterii w zadanym odstępie czasu
+        // todo: usuwanie wrogów i baterii z dołu ekranu
         // Variable for adding left offset to item for positioning it in the center of the track
         var itemLeftOffset = ((getRoad().clientWidth / 4) - item.clientWidth) / 2;
         item.style.left = getTrack() + itemLeftOffset + 'px';
