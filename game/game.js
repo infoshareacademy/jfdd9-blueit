@@ -76,7 +76,6 @@ var game = (function () {
         // todo: pojawia się boczny scroll kiedy element dojedzie do samego dołu ekranu
         // todo: wykrywanie kolizji z 'car' dla enemy i battery
         // todo: wrzucanie wrogów i baterii w zadanym odstępie czasu
-        // todo: usuwanie wrogów i baterii z dołu ekranu
         // Variable for adding left offset to item for positioning it in the center of the track
         var itemLeftOffset = ((getRoad().clientWidth / 4) - item.clientWidth) / 2;
         item.style.left = getTrack() + itemLeftOffset + 'px';
@@ -89,6 +88,10 @@ var game = (function () {
             item.classList.contains('battery')
                 ? item.style.marginTop = (marginTop + batterySpeed) + 'px'
                 : item.style.marginTop = (marginTop + enemySpeed) + 'px';
+            // Removing item from document
+            if (parseInt(item.style.marginTop) > getRoad().clientHeight + item.clientHeight) {
+                item.remove();
+            }
         }, 16);
     }
 
