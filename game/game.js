@@ -52,16 +52,15 @@ var game = (function () {
         return trackArray[Math.floor(Math.random() * (trackArray.length))];
     }
 
-
     function dropEnemy() {
         var enemy = document.createElement('div');
         // Adding random class enemy_1 or enemy_2
         enemy.classList.add('enemy_' + (Math.floor(Math.random() * (3 - 1 + 1)) + 1));
-        //Adding enemy to DOM
+        //Adding enemy to DOM (road div)
         getRoad().appendChild(enemy);
         //Positioning enemy on the road
+        //Checking enemy position in respect to changes in window width (don't work now as 'enemy.style.left = getTrack();' was moved out of interval)
         enemy.style.left = getTrack();
-        //Checking enemy position in respect to changes in window width
         setInterval(function () {
             //Moving enemy from top to bottom
             var marginTop = parseInt(enemy.style.marginTop || 0);
@@ -70,8 +69,24 @@ var game = (function () {
         }, 16);
     }
 
+    function dropBattery () {
+        var battery = document.createElement('div');
+        //Adding class 'battery'
+        battery.classList.add('battery');
+        //Adding battery to DOM (road div)
+        getRoad().appendChild(battery);
+        //Positioning battery on the road
+        battery.style.left = getTrack();
+        setInterval(function () {
+            var marginTop = parseInt(battery.style.marginTop || 0);
+            var batterySpeed = 2;
+            battery.style.marginTop = (marginTop + batterySpeed) + 'px';
+        }, 32);
+    }
+
     dropEnemy();
 
+    dropBattery();
 
     return {
         start: start

@@ -52,3 +52,11 @@ body {
     height: 100px;
     background: brown;
 }
+
+.battery {
+    position: absolute;
+    top: -150px;
+    width: 100px;
+    height: 100px;
+    background: green;
+}
