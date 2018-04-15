@@ -31,32 +31,34 @@ body {
 
 .enemy_1 {
     position: absolute;
-    top: -150px;
-    width: 100px;
-    height: 100px;
-    background: black;
+    top: -192px;
+    width: 99px;
+    height: 192px;
+    background: url('img/car1.png') no-repeat;
 }
 
 .enemy_2 {
     position: absolute;
-    top: -150px;
-    width: 100px;
-    height: 100px;
-    background: #58b9ff;
+    top: -192px;
+    width: 90px;
+    height: 192px;
+    background: url('img/car2.png') no-repeat;
 }
 
 .enemy_3 {
     position: absolute;
-    top: -150px;
-    width: 100px;
-    height: 100px;
-    background: brown;
+    top: -350px;
+    width: 101px;
+    height: 350px;
+    background: url('img/car3.png') no-repeat;
 }
 
+/*todo: kolor baterii na zielony (ECO)*/
 .battery {
     position: absolute;
-    top: -150px;
-    width: 100px;
-    height: 100px;
-    background: green;
+    top: -50px;
+    width: 50px;
+    height: 50px;
+    background: url('img/car-battery.png');
+    background-size: cover;
 }
