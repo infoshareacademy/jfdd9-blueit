@@ -43,16 +43,26 @@ var game = (function () {
         return document.querySelector('.road');
     }
 
+    function getTrack() {
+        var track1 = getRoad().offsetLeft + 'px';
+        var track2 = getRoad().offsetLeft + getRoad().clientWidth / 4 + 'px';
+        var track3 = getRoad().offsetLeft + getRoad().clientWidth / 2 + 'px';
+        var track4 = getRoad().offsetLeft + (getRoad().clientWidth - getRoad().clientWidth / 4) + 'px';
+        var trackArray = [track1, track2, track3, track4];
+        return trackArray[Math.floor(Math.random() * (trackArray.length))];
+    }
+
+
     function dropEnemy() {
         var enemy = document.createElement('div');
         // Adding random class enemy_1 or enemy_2
         enemy.classList.add('enemy_' + (Math.floor(Math.random() * (3 - 1 + 1)) + 1));
         //Adding enemy to DOM
         getRoad().appendChild(enemy);
+        //Positioning enemy on the road
+        enemy.style.left = getTrack();
         //Checking enemy position in respect to changes in window width
         setInterval(function () {
-            //Positioning enemy on the road
-            enemy.style.left = getRoad().offsetLeft + getRoad().clientWidth / 4 + 'px';
             //Moving enemy from top to bottom
             var marginTop = parseInt(enemy.style.marginTop || 0);
             var enemySpeed = 2;

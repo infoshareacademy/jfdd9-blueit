@@ -39,7 +39,7 @@ body {
 
 .enemy_2 {
     position: absolute;
-    top: 0;
+    top: -150px;
     width: 100px;
     height: 100px;
     background: #58b9ff;
@@ -47,7 +47,7 @@ body {
 
 .enemy_3 {
     position: absolute;
-    top: 0;
+    top: -150px;
     width: 100px;
     height: 100px;
     background: brown;
