@@ -45,10 +45,10 @@ var game = (function () {
 
     function getTrack() {
         // Getting each track position
-        var track1 = getRoad().offsetLeft + 'px';
-        var track2 = getRoad().offsetLeft + getRoad().clientWidth / 4 + 'px';
-        var track3 = getRoad().offsetLeft + getRoad().clientWidth / 2 + 'px';
-        var track4 = getRoad().offsetLeft + (getRoad().clientWidth - getRoad().clientWidth / 4) + 'px';
+        var track1 = getRoad().offsetLeft;
+        var track2 = getRoad().offsetLeft + getRoad().clientWidth / 4;
+        var track3 = getRoad().offsetLeft + getRoad().clientWidth / 2;
+        var track4 = getRoad().offsetLeft + (getRoad().clientWidth - getRoad().clientWidth / 4);
         // Track array to draw from
         var trackArray = [track1, track2, track3, track4];
         // Returning random track from trackArray
@@ -74,8 +74,9 @@ var game = (function () {
         // Positioning item on the road
         // todo: updating item position when window width changes
         // todo: pojawia się boczny scroll kiedy element dojedzie do samego dołu ekranu
-        // todo: wyśrodkować itemy względem toru jazdy
-        item.style.left = getTrack();
+        // Variable for adding left offset to item for positioning it in the center of the track
+        var itemLeftOffset = ((getRoad().clientWidth / 4) - item.clientWidth) / 2;
+        item.style.left = getTrack() + itemLeftOffset + 'px';
         // Moving item from top to bottom
         setInterval(function () {
             var marginTop = parseInt(item.style.marginTop || 0);

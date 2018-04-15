@@ -1,5 +1,5 @@
 body {
-    margin: 0px;
+    margin: 0;
 }
 
 .container {
@@ -14,6 +14,7 @@ body {
     background-image: url("img/grass.jpg");
 }
 
+/*todo: grafika drogi ma niepotrzebny margines z prawej strony (pobocze) przez co elementy niedokładnie się środkują*/
 .road {
     margin: 0 auto;
     width: 600px;
@@ -52,6 +53,7 @@ body {
     height: 350px;
     background: url('img/car3.png') no-repeat;
 }
+
 /*todo: dodać więcej różnorodnych wrogów*/
 /*todo: kolor baterii na zielony (ECO)*/
 .battery {
