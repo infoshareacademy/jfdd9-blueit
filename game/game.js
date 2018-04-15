@@ -73,11 +73,13 @@ var game = (function () {
         getRoad().appendChild(item);
         // Positioning item on the road
         // todo: updating item position when window width changes
+        // todo: pojawia się boczny scroll kiedy element dojedzie do samego dołu ekranu
+        // todo: wyśrodkować itemy względem toru jazdy
         item.style.left = getTrack();
         // Moving item from top to bottom
         setInterval(function () {
             var marginTop = parseInt(item.style.marginTop || 0);
-            var enemySpeed = 2;
+            var enemySpeed = 3;
             var batterySpeed = 4;
             // Assigning speed depending on item type
             item.classList.contains('battery')
