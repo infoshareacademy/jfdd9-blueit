@@ -6,7 +6,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    max-width: 930px;
 }
 
 .container__func__box {
@@ -35,7 +34,22 @@
 }
 
 .fa-car, .fa-dollar-sign, .fa-hourglass-end, .fa-mobile-alt, .fa-android, .fa-child, .fa-paw, .fa-location-arrow {
-    color: #46ECC2;
+    color: rgba(11, 18, 89, 0.8);
+}
+
+/*Func boxes animation on scroll*/
+.func-hide-box {
+    opacity: 0;
+    position: relative;
+    top: 50px;
+    transition: all .5s;
+}
+
+.func-show-box {
+    opacity: 1;
+    position: relative;
+    top: 0;
+    transition: all .5s;
 }
 
 @media screen and (max-width: 992px) {
@@ -50,9 +64,14 @@
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 767px) {
     .container__func__box {
         padding: 20px;
         width: 100%;
+    }
+
+    .func > .container {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
