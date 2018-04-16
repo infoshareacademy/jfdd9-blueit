@@ -1,10 +1,11 @@
 body {
     margin: 0;
+    overflow: hidden;
 }
 
 .container {
     width: 100%;
-    margin: 0 auto
+    margin: 0 auto;
 }
 
 .grass {
@@ -21,7 +22,6 @@ body {
     height: 100vh;
     background-image: url("img/road.jpg");
     background-repeat: repeat-y;
-
 }
 
 .car {
