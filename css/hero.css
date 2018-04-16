@@ -12,8 +12,48 @@
 }
 
 .hero-navbar:hover{
-    background-color: rgba(11,17,57,0.91);
+    background-color: rgba(11, 17, 57, 0.91);
     /*height: 12%;*/
+}
+.modal-title, .modal-body{
+    font-family: "Helvetica", sans-serif;
+    font-size: 1.7em;
+    color: #fff;
+    text-align: center;
+    line-height:2em;
+}
+.modal-title2{
+    font-family: "Helvetica", sans-serif;
+    font-size: 1.4em;
+    color: #fff;
+    text-align: center;
+    line-height:2em;
+}
+.modal-body{
+    font-size: 1.2em;
+}
+.modal-content{
+    background-color: rgb(11, 17, 57);
+}
+.modal-logo{
+    float: left;
+}
+.hero-start-button{
+    border: 1px red double;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #0b1139;
+    font-family: "Helvetica", sans-serif;
+    font-size: 1.3em;
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.hero-start-button:hover{
+    background-color: #0b1139;
+    color: #fff;
+    border: 1px white double;
 }
 
 .hero-navbar-menu{
