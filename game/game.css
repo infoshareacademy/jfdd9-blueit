@@ -6,19 +6,23 @@
 .grass {
     display: flex;
     width: 100%;
-    height: 900px;
+    height: 949px;
     background-image: url("img/grass.jpg");
 }
 
-.road {
+
+#road {
     display: flex;
     margin: 0 auto;
     width: 600px;
-    height: 900px;
+    height: 949px;
     background-image: url("img/road.jpg");
     background-repeat: repeat-y;
 
 }
+
+
+
 
 .car{
     background-image: url("img/player.png");
