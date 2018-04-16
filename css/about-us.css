@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 .about-us-section-title {
     text-align: center;
     font-weight: 400;
@@ -36,7 +35,7 @@
     font-weight: 700;
     margin-bottom: 2px;
     font-size: 18px;
-    }
+}
 
 .about-us-member span {
     font-style: italic;
@@ -57,7 +56,6 @@
 #about-us .about-us-member .about-us-social a:hover {
     color: rgba(11, 18, 89, 0.8);
 }
-
 
 .about-us-section-header p {
     margin-top: 20px;
