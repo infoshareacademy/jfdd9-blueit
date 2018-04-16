@@ -60,7 +60,7 @@ var game = (function () {
         var enemy = document.createElement('div');
         var battery = document.createElement('div');
         // Adding enemy and battery classes
-        enemy.classList.add('enemy_' + (Math.floor(Math.random() * 3 + 1)));
+        enemy.classList.add('enemy_' + (Math.floor(Math.random() * 8 + 1)));
         battery.classList.add('battery');
         // Generating random number from 1 to 10
         var randomNumber = Math.floor(Math.random() * 10 + 1);
@@ -78,7 +78,7 @@ var game = (function () {
         setInterval(function () {
             var marginTop = parseInt(item.style.marginTop || 0);
             var enemySpeed = 3;
-            var batterySpeed = 4;
+            var batterySpeed = 3;
             // Assigning random track to variable
             var track = getTrack(index);
             // Item offset amount from left
