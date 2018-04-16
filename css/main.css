@@ -51,7 +51,7 @@ h3 {
     display: block;
     width: 70px;
     height: 3px;
-    background: #1dc8cd;
-    background: linear-gradient(0deg, #1dc8cd 0%, #55fabe 100%);
+    background: rgba(11, 18, 89, 0.8);
+    background: linear-gradient(0deg, rgba(11, 18, 89, 0.8) 0%, skyblue 100%);
     margin: 20px auto 0 auto;
 }
