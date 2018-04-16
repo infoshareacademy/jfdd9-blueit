@@ -23,7 +23,11 @@ var game = (function () {
                     break;
             }
         })
+        document.addEventListener("keyup", function (event){
+            direction = 0;
+        })
     }
+
 
     var y = 0;
     requestAnimationFrame(move);
