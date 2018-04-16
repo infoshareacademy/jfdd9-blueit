@@ -17,10 +17,22 @@
 }
 
 .hero-start-button{
-    width: 100px;
+    width: 130px;
     height:40px;
-    background-color: white;
-    color: rgb(11, 17, 57);
+    border: 1px red double;
+    background-color: #fff;
+    color: #0b1139;
+    font-family: "Helvetica", sans-serif;
+    font-size: 1.3em;
+    font-weight: 900;
+    position: absolute;
+    top: 17%;
+    left: 67%;
+}
+.hero-start-button:hover{
+    background-color: #0b1139;
+    color: #fff;
+    border: 1px white double;
 }
 
 .hero-navbar-menu{

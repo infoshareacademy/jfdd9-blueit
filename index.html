@@ -34,27 +34,57 @@
 
             <div class="collapse navbar-collapse" id="navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right hero-navbar-list hero-navbar-menu">
-                    <li class="active"><a href="#form">Sign Up!</a></li>
-                    <li class="active"><a href="#func">Features</a></li>
-                    <li class="active"><a href="#about-us">Our Team</a></li>
+                    <li ><a href="#form">Sign Up!</a></li>
+                    <li ><a href="#func">Features</a></li>
+                    <li ><a href="#about-us">Our Team</a></li>
                 </ul>
             </div>
         </nav>
         <div class="container hero-section-div">
             <img src="./img/hero-wallpaper.jpg" class="img-responsive hero-background">
-            <!--start button-->
-            <a href="#form" ><button type="button" class="hero-start-button">Find out how</button></a>
+            <div>
+                <!--start button-->
+                <a href="#form" >
+                    <button type="button" class="hero-start-button">Find out how</button>
+                </a>
+            </div>
 
             <div class="hero-headline">Take a Deep Breath. Finally.</div>
-
-
-
-
-
         </div>
+
     </section>
 </header>
+
 <section id="func" class="func">
+
+    <!--============================================================================-->
+    <!--modal before game-->
+    <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#siemaModal">
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Siema
+    </button>
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="form-modal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Thank you !!</h4>
+                </div>
+                <div class="modal-body">
+                    <p class="input-group-addon" id="basic-addon2">Thank you for joining the green revolution</p>
+                    <p>Now youll have a chance to test your driving skills</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Another time</button>
+                    <button type="button" class="btn btn-primary">Test yourself</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+    <!--===============================================================================   -->
+
     <h2>Features</h2>
     <span class="divider"></span>
     <div class="container">
@@ -159,10 +189,13 @@
             <input type="email" id="mail" name="user_email" aria-label="email"
                    placeholder="Enter your email address ..." required>
 
-            <button class="form-send" type="submit" aria-label="sing-up-button">Sign Up</button>
+            <button class="form-send" type="submit" aria-label="sing-up-button" data-target="#form-modal">Sign Up</button>
             <small>*Your e-mail address will not be shared to third-party organisations.</small>
         </form>
     </div>
+
+
+
 
     <div class="clear"></div>
 </section>
@@ -260,5 +293,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="script/functionalities.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </body>
 </html>
