@@ -94,8 +94,6 @@ body {
     background: url('img/car8.png') no-repeat;
 }
 
-/*todo: dodać więcej różnorodnych wrogów*/
-/*todo: kolor baterii na zielony (ECO)*/
 .battery {
     position: absolute;
     top: -70px;
