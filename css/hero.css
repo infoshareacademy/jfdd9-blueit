@@ -15,11 +15,21 @@
     background-color: rgba(11, 17, 57, 0.91);
     /*height: 12%;*/
 }
+.modal-title, .modal-body{
+    font-family: "Helvetica", sans-serif;
+    font-size: 1.5em;
+    color: #fff;
+    text-align: center;
+}
+
+.modal-content{
+    background-color: rgb(11, 17, 57);
+}
 
 .hero-start-button{
     width: 130px;
     height:40px;
-    border: 1px red double;
+    border: 1px orange double;
     background-color: #fff;
     color: #0b1139;
     font-family: "Helvetica", sans-serif;
