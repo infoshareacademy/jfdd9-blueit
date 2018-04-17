@@ -17,7 +17,7 @@ var game = (function () {
     }
 
     function moveDown() {
-        directionY = -4;
+        directionY = -8;
     }
 
     function enableControls() {
