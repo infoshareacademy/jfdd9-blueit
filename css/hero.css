@@ -39,17 +39,16 @@
     float: left;
 }
 .hero-start-button{
-    width: 130px;
-    height:40px;
-    border: 1px orange double;
+    border: 1px red double;
+    border-radius: 50%;
     background-color: #fff;
     color: #0b1139;
     font-family: "Helvetica", sans-serif;
     font-size: 1.3em;
     font-weight: 900;
     position: absolute;
-    top: 17%;
-    left: 67%;
+    top: 50%;
+    left: 50%;
 }
 .hero-start-button:hover{
     background-color: #0b1139;
