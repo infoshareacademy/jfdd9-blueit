@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    zoom: 75%;
+    /*zoom: 75%;*/
     overflow: hidden;
 }
 
@@ -12,7 +12,7 @@ body {
 .grass {
     display: flex;
     width: 100%;
-    height: 131vh;
+    height: 100vh;
     background-image: url("img/grass.jpg");
 }
 
@@ -21,7 +21,7 @@ body {
     display: flex;
     margin: 0 auto;
     width: 600px;
-    height: 131vh;
+    height: 100vh;
     background-image: url("img/road.jpg");
     background-repeat: repeat-y;
 }
@@ -107,3 +107,8 @@ body {
     background: url('img/battery.png');
     background-size: cover;
 }
+
+/*
+@viewport {
+    height: 100vh;
+}*/
