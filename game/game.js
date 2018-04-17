@@ -1,39 +1,90 @@
 var game = (function () {
 
 
-    var direction = 0;
+    var directionX = 0;
+    var directionY = 0;
 
     function moveRight() {
-        direction = 1;
+        directionX = 6;
     }
+
     function moveLeft() {
-        direction = -1;
+        directionX = -6;
+    }
+
+    function moveUp() {
+        directionY = 4;
+    }
+
+    function moveDown() {
+        directionY = -4;
     }
 
     function enableControls() {
         document.addEventListener('keydown', function (event) {
             console.log(event.code);
-            switch(event.code) {
+            switch (event.code) {
                 case 'ArrowRight':
                     moveRight();
                     break;
                 case 'ArrowLeft':
                     moveLeft();
                     break;
+                case 'ArrowUp':
+                    moveUp();
+                    break;
+                case "ArrowDown":
+                    moveDown();
+                    break;
             }
         })
+        document.addEventListener("keyup", function (event) {
+            console.log(event)
+             directionX = 0;
+            // directionY = 0;
+        })
     }
+
+
+    var y = 0;
+    requestAnimationFrame(move);
+    function getRoad() {
+        return document.querySelector('.road')
+    }
+
+    function move() {
+        y += 8;
+        getRoad().style.backgroundPosition = '0 ' + y + 'px';
+        requestAnimationFrame(move);
+
+    }
+
     function getCar() {
         return document.querySelector('.car')
     }
-    function start () {
+
+    function start() {
         enableControls()
 
         setInterval(function () {
-            var marginLeft = parseInt(getCar().style.marginLeft || 0);
-            getCar().style.marginLeft = (marginLeft + direction) + 'px'
-        }, 16)
+            var marginLeft = Math.max(
+                Math.min(
+                    parseInt(getCar().style.marginLeft || 0),
+                    495
+                ), 0);
+            getCar().style.marginLeft = (marginLeft + directionX) + 'px'
+
+            var marginBottom = Math.max(
+                Math.min(
+                    parseInt(getCar().style.marginBottom || 0),
+                    900
+                ), 0);
+            getCar().style.marginBottom = (marginBottom + directionY) + 'px'
+        }, 30);
+
+
     }
+
     return {
         start: start
     }
