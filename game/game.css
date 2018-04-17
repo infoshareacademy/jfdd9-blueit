@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    zoom: 75%;
     overflow: hidden;
 }
 
@@ -11,15 +12,16 @@ body {
 .grass {
     display: flex;
     width: 100%;
-    height: 100vh;
+    height: 131vh;
     background-image: url("img/grass.jpg");
 }
 
 /*todo: grafika drogi ma niepotrzebny margines z prawej strony (pobocze) przez co elementy niedokładnie się środkują*/
 .road {
+    display: flex;
     margin: 0 auto;
     width: 600px;
-    height: 100vh;
+    height: 131vh;
     background-image: url("img/road.jpg");
     background-repeat: repeat-y;
 }
@@ -28,6 +30,9 @@ body {
     background-image: url("img/player.png");
     width: 99px;
     height: 192px;
+    bottom: 1px;
+    align-self: flex-end;
+    z-index: 1;
 }
 
 .enemy_1 {

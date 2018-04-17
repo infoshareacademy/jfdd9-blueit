@@ -9,12 +9,15 @@
 
 .hero-navbar{
     background-color: rgba(11, 18, 89, 0.8);
+    border: none;
 }
+
 
 .hero-navbar:hover{
     background-color: rgba(11,17,57,0.91);
+    }
     /*height: 12%;*/
-}
+
 
 .hero-navbar-menu{
     padding-right: 5%;
@@ -86,4 +89,8 @@
         display: none;
     }
 
+}
+
+.hero-section {
+    overflow: hidden;
 }
