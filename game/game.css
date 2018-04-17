@@ -32,7 +32,7 @@ body {
     height: 192px;
     bottom: 1px;
     align-self: flex-end;
-    z-index: 1;
+    z-index: 3;
 }
 
 .enemy_1 {
@@ -41,6 +41,7 @@ body {
     width: 99px;
     height: 192px;
     background: url('img/car1.png') no-repeat;
+    z-index: 2;
 }
 
 .enemy_2 {
@@ -49,6 +50,7 @@ body {
     width: 90px;
     height: 192px;
     background: url('img/car2.png') no-repeat;
+    z-index: 2;
 }
 
 .enemy_3 {
@@ -57,6 +59,7 @@ body {
     width: 101px;
     height: 350px;
     background: url('img/car3.png') no-repeat;
+    z-index: 2;
 }
 
 .enemy_4 {
@@ -65,6 +68,7 @@ body {
     width: 108px;
     height: 189px;
     background: url('img/car4.png') no-repeat;
+    z-index: 2;
 }
 
 .enemy_5 {
@@ -73,6 +77,7 @@ body {
     width: 102px;
     height: 192px;
     background: url('img/car5.png') no-repeat;
+    z-index: 2;
 }
 
 .enemy_6 {
@@ -81,6 +86,7 @@ body {
     width: 102px;
     height: 186px;
     background: url('img/car6.png') no-repeat;
+    z-index: 2;
 }
 
 .enemy_7 {
@@ -89,6 +95,7 @@ body {
     width: 102px;
     height: 186px;
     background: url('img/car7.png') no-repeat;
+    z-index: 2;
 }
 
 .enemy_8 {
@@ -97,6 +104,7 @@ body {
     width: 96px;
     height: 180px;
     background: url('img/car8.png') no-repeat;
+    z-index: 2;
 }
 
 .battery {
@@ -106,9 +114,5 @@ body {
     height: 70px;
     background: url('img/battery.png');
     background-size: cover;
+    z-index: 1;
 }
-
-/*
-@viewport {
-    height: 100vh;
-}*/
