@@ -47,11 +47,13 @@ var game = (function () {
 
     var y = 0;
     requestAnimationFrame(move);
-    var road = document.getElementById('road');
+    function getRoad() {
+        return document.querySelector('.road')
+    }
 
     function move() {
         y += 8;
-        road.style.backgroundPosition = '0 ' + y + 'px';
+        getRoad().style.backgroundPosition = '0 ' + y + 'px';
         requestAnimationFrame(move);
 
     }
