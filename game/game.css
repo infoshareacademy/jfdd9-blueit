@@ -1,34 +1,32 @@
 body {
-    zoom: 75%
-
+    margin: 0;
+    /*zoom: 75%;*/
+    overflow: hidden;
 }
+
 .container {
     width: 100%;
-    margin: 0 auto
+    margin: 0 auto;
 }
 
 .grass {
     display: flex;
     width: 100%;
-    height: 131vh;
+    height: 100vh;
     background-image: url("img/grass.jpg");
 }
 
-
+/*todo: grafika drogi ma niepotrzebny margines z prawej strony (pobocze) przez co elementy niedokładnie się środkują*/
 .road {
     display: flex;
     margin: 0 auto;
     width: 600px;
-    height: 131vh;
+    height: 100vh;
     background-image: url("img/road.jpg");
     background-repeat: repeat-y;
-
 }
 
-
-
-
-.car{
+.car {
     background-image: url("img/player.png");
     width: 99px;
     height: 192px;
@@ -36,3 +34,81 @@ body {
     align-self: flex-end;
     z-index: 1;
 }
+
+.enemy_1 {
+    position: absolute;
+    top: -192px;
+    width: 99px;
+    height: 192px;
+    background: url('img/car1.png') no-repeat;
+}
+
+.enemy_2 {
+    position: absolute;
+    top: -192px;
+    width: 90px;
+    height: 192px;
+    background: url('img/car2.png') no-repeat;
+}
+
+.enemy_3 {
+    position: absolute;
+    top: -350px;
+    width: 101px;
+    height: 350px;
+    background: url('img/car3.png') no-repeat;
+}
+
+.enemy_4 {
+    position: absolute;
+    top: -189px;
+    width: 108px;
+    height: 189px;
+    background: url('img/car4.png') no-repeat;
+}
+
+.enemy_5 {
+    position: absolute;
+    top: -192px;
+    width: 102px;
+    height: 192px;
+    background: url('img/car5.png') no-repeat;
+}
+
+.enemy_6 {
+    position: absolute;
+    top: -186px;
+    width: 102px;
+    height: 186px;
+    background: url('img/car6.png') no-repeat;
+}
+
+.enemy_7 {
+    position: absolute;
+    top: -186px;
+    width: 102px;
+    height: 186px;
+    background: url('img/car7.png') no-repeat;
+}
+
+.enemy_8 {
+    position: absolute;
+    top: -180px;
+    width: 96px;
+    height: 180px;
+    background: url('img/car8.png') no-repeat;
+}
+
+.battery {
+    position: absolute;
+    top: -70px;
+    width: 70px;
+    height: 70px;
+    background: url('img/battery.png');
+    background-size: cover;
+}
+
+/*
+@viewport {
+    height: 100vh;
+}*/
