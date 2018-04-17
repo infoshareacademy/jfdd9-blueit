@@ -17,15 +17,27 @@
 }
 .modal-title, .modal-body{
     font-family: "Helvetica", sans-serif;
-    font-size: 1.5em;
+    font-size: 1.7em;
     color: #fff;
     text-align: center;
+    line-height:2em;
 }
-
+.modal-title2{
+    font-family: "Helvetica", sans-serif;
+    font-size: 1.4em;
+    color: #fff;
+    text-align: center;
+    line-height:2em;
+}
+.modal-body{
+    font-size: 1.2em;
+}
 .modal-content{
     background-color: rgb(11, 17, 57);
 }
-
+.modal-logo{
+    float: left;
+}
 .hero-start-button{
     width: 130px;
     height:40px;
