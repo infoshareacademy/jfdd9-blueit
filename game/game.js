@@ -37,9 +37,9 @@ var game = (function () {
                     moveDown();
                     break;
             }
-        })
+        });
         document.addEventListener("keyup", function (event) {
-            console.log(event)
+            console.log(event);
             directionX = 0;
             // directionY = 0;
         })
@@ -65,7 +65,7 @@ var game = (function () {
     }
 
     function start() {
-        enableControls()
+        enableControls();
 
         setInterval(function () {
             var marginLeft = Math.max(
@@ -73,7 +73,7 @@ var game = (function () {
                     parseInt(getCar().style.marginLeft || 0),
                     495
                 ), 0);
-            getCar().style.marginLeft = (marginLeft + directionX) + 'px'
+            getCar().style.marginLeft = (marginLeft + directionX) + 'px';
 
             var marginBottom = Math.max(
                 Math.min(
@@ -98,7 +98,7 @@ var game = (function () {
         return trackArray[index];
     }
 
-    function enemyOrBattery() {
+    function getEnemyOrBattery() {
         // Enemy and battery elements declaration
         var enemy = document.createElement('div');
         var battery = document.createElement('div');
@@ -143,10 +143,10 @@ var game = (function () {
     }
 
     // Dropping first item
-    dropEnemyOrBattery(enemyOrBattery());
+    dropEnemyOrBattery(getEnemyOrBattery());
     // Dropping next items in time intervals
     setInterval(function () {
-        dropEnemyOrBattery(enemyOrBattery());
+        dropEnemyOrBattery(getEnemyOrBattery());
     }, 1000);
 
     return {
