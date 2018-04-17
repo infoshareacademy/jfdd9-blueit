@@ -40,7 +40,7 @@ var game = (function () {
         })
         document.addEventListener("keyup", function (event) {
             console.log(event)
-             directionX = 0;
+            directionX = 0;
             // directionY = 0;
         })
     }
@@ -48,6 +48,7 @@ var game = (function () {
 
     var y = 0;
     requestAnimationFrame(move);
+
     function getRoad() {
         return document.querySelector('.road')
     }
@@ -117,9 +118,9 @@ var game = (function () {
         // todo: wykrywanie kolizji z 'car' dla enemy i battery
 
         // Moving item from top to bottom
-        setInterval(function () {
+        var idSetInterval = setInterval(function () {
             var marginTop = parseInt(item.style.marginTop || 0);
-            var enemySpeed = 3;
+            var enemySpeed = 13;
             var batterySpeed = 3;
             // Assigning random track to variable
             var track = getTrack(index);
@@ -136,6 +137,7 @@ var game = (function () {
             // Removing item from document
             if (parseInt(item.style.marginTop) > getRoad().clientHeight + item.clientHeight) {
                 item.remove();
+                clearInterval(idSetInterval);
             }
         }, 16);
     }
@@ -145,7 +147,7 @@ var game = (function () {
     // Dropping next items in time intervals
     setInterval(function () {
         dropEnemyOrBattery(enemyOrBattery());
-    }, 3000);
+    }, 1000);
 
     return {
         start: start
