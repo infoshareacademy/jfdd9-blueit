@@ -1,14 +1,23 @@
 var game = (function () {
 
 
-    var direction = 0;
+    var directionX = 0;
+    var directionY = 0;
 
     function moveRight() {
-        direction = 3;
+        directionX = 6;
     }
 
     function moveLeft() {
-        direction = -3;
+        directionX = -6;
+    }
+
+    function moveUp() {
+        directionY = 4;
+    }
+
+    function moveDown() {
+        directionY = -4;
     }
 
     function enableControls() {
@@ -21,10 +30,17 @@ var game = (function () {
                 case 'ArrowLeft':
                     moveLeft();
                     break;
+                case 'ArrowUp':
+                    moveUp();
+                    break;
+                case "ArrowDown":
+                    moveDown();
+                    break;
             }
         })
-        document.addEventListener("keyup", function (event){
-            direction = 0;
+        document.addEventListener("keyup", function (event) {
+            directionX = 0;
+            directionY = 0;
         })
     }
 
@@ -34,7 +50,7 @@ var game = (function () {
     var road = document.getElementById('road');
 
     function move() {
-        y += 3;
+        y += 8;
         road.style.backgroundPosition = '0 ' + y + 'px';
         requestAnimationFrame(move);
 
@@ -51,10 +67,18 @@ var game = (function () {
             var marginLeft = Math.max(
                 Math.min(
                     parseInt(getCar().style.marginLeft || 0),
-                    501
+                    495
                 ), 0);
-            getCar().style.marginLeft = (marginLeft + direction) + 'px'
+            getCar().style.marginLeft = (marginLeft + directionX) + 'px'
+
+            var marginBottom = Math.max(
+                Math.min(
+                    parseInt(getCar().style.marginBottom || 0),
+                    900
+                ), 0);
+            getCar().style.marginBottom = (marginBottom + directionY) + 'px'
         }, 16);
+
 
     }
 
