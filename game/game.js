@@ -39,8 +39,9 @@ var game = (function () {
             }
         })
         document.addEventListener("keyup", function (event) {
-            directionX = 0;
-            directionY = 0;
+            console.log(event)
+             directionX = 0;
+            // directionY = 0;
         })
     }
 
@@ -79,7 +80,7 @@ var game = (function () {
                     900
                 ), 0);
             getCar().style.marginBottom = (marginBottom + directionY) + 'px'
-        }, 16);
+        }, 30);
 
 
     }
