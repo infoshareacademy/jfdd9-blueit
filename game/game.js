@@ -69,6 +69,7 @@ var game = (function () {
         z += 10;
         getRoad().style.backgroundPosition = '0 ' + y + 'px';
         getGrass().style.backgroundPosition = '0 ' + z + 'px';
+
         requestAnimationFrame(move);
 
     }
@@ -79,7 +80,7 @@ var game = (function () {
 
     function start() {
         enableControls();
-
+        startTimer();
         setInterval(function () {
             var marginLeft = Math.max(
                 Math.min(
@@ -98,6 +99,56 @@ var game = (function () {
 
 
     }
+    var score = 0;
+    var timer = 0;
+    var timerIntervalId;
+
+    function getLastScreen () {
+        return document.querySelector('.last-screen');
+    }
+
+    function getScore() {
+        return document.querySelector('.score');
+    }
+
+    function getTimer() {
+        return document.querySelector('.timer');
+    }
+
+    function startTimer() {
+        timerIntervalId = setInterval(function () {
+            timer += 1;
+        }, 1000);
+    }
+
+
+
+
+    // console.log(getLastScreen());
+   /*
+    var scoreContainer = document.getElementById('score');
+    var score = 0;
+    var batteries = getFromRoad(road, 'b');
+    var resetButtonNode = document.getElementById('reset-button');
+    resetButtonNode.addEventListener('click', start);
+
+
+
+
+    function showScore(score) {
+        scoreContainer.innerText = score + ' points';
+    }
+
+    function update() {
+        if (najazd auta na baterie) {
+            score += 1;
+        }
+
+        function reset() {
+            time = 0;
+            score = 0;
+            showScore();
+        }*/
 
     function getTrack(index) {
         // Getting each track position
@@ -126,7 +177,25 @@ var game = (function () {
         var randomNumber = Math.floor(Math.random() * 10 + 1);
 
         // Returning element depending on the randomNumber
-        return randomNumber < 10 ? enemy : battery;
+        return randomNumber < 5 ? enemy : battery;
+    }
+
+    var intervals = [];
+
+    function removeInterval(id) {
+        intervals = intervals.filter(function (interval) {
+            return interval.id !== id
+        })
+    }
+
+    function clearAllIntervals() {
+
+        intervals.forEach(function (interval) {
+            clearInterval(interval.id);
+            if (interval.element) {
+                interval.element.remove();
+            }
+        })
     }
 
     function dropEnemyOrBattery(item) {
@@ -136,7 +205,7 @@ var game = (function () {
         // todo: wykrywanie kolizji z 'car' dla enemy i battery
 
         // Moving item from top to bottom
-        var idSetInterval = setInterval(function () {
+        var intervalId = setInterval(function () {
             var marginTop = parseInt(item.style.marginTop || 0);
             var enemySpeed = 8;
             var batterySpeed = 10;
@@ -176,45 +245,51 @@ var game = (function () {
                 itemRectY < playerCarRectY + playerCarRectHeight &&
                 itemRectHeight + itemRectY > playerCarRectY) {
                 if (item.classList.contains('battery')) {
-                    console.log('Congratulations! You have picked up the battery - 1 point.');
-                    clearInterval(idSetInterval);
+                    clearInterval(intervalId);
                     item.remove();
+                    score += 1;
+                    console.log('Congratulations! You have picked up the battery - 1 point.', score);
+                    getScore().innerText = score;
+                    getScore().style.color = 'white';
+                    getTimer().innerText = timer;
+                    getTimer().style.color = 'white';
+
                 } else {
                     console.log('You wrecked the car! Game over!');
-                    clearInterval(idSetInterval);
+                    getLastScreen().classList.add('last-screen-show');
+                    clearInterval(intervalId);
+                    clearInterval(timerIntervalId);
+                    clearAllIntervals();
                 }
             }
 
             // Removing item from document if it reaches bottom of the screen and clearing interval
             if (parseInt(item.style.marginTop) > getRoad().clientHeight + item.clientHeight) {
                 item.remove();
-                clearInterval(idSetInterval);
+                clearInterval(intervalId);
+                removeInterval(intervalId);
             }
         }, 16);
+
+        intervals.push({ id: intervalId, element: item })
     }
 
-    function timer() {
+    /*function timer() {
         // todo: timer function
-    }
+    }*/
 
     // Dropping first item
-    dropEnemyOrBattery(getEnemyOrBattery());
     // Dropping more items when timer reaches a point in time
     // Min interval - 400 (when enemies don't touch each other)
-    if (timer() > 5000) {
-        // Dropping next items in time intervals
-        setInterval(function () {
-            dropEnemyOrBattery(getEnemyOrBattery());
-        }, 750);
-    } else if (timer() > 10000) {
-        setInterval(function () {
-            dropEnemyOrBattery(getEnemyOrBattery());
-        }, 400);
-    } else {
-        setInterval(function () {
-            dropEnemyOrBattery(getEnemyOrBattery());
-        }, 1000);
-    }
+
+    var gameIntervalId = setInterval(function () {
+
+
+        dropEnemyOrBattery(getEnemyOrBattery());
+    }, 1000);
+
+    intervals.push({ id: gameIntervalId })
+
 
 
     return {
