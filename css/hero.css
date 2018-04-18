@@ -1,10 +1,26 @@
 
-.hero-section-div {
+.hero-section-wall {
     width: 100%;
     padding: 0;
     color: #fff;
     font-weight: 100;
     position: relative;
+}
+.glyphicon-menu-hamburger {
+    font-size: 1em;
+    color: #0b1139;
+}
+.nav-link{
+    color: #fff;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+.nav-link-hidden{
+    visibility: hidden;
+}
+.navbar-toggle{
+    background-color: white;
 }
 
 .hero-navbar{
@@ -13,14 +29,8 @@
 
 .hero-navbar:hover{
     background-color: rgba(11, 17, 57, 0.91);
-    /*height: 12%;*/
 }
-.hero-navbar-list{
-    color: yellow;
-}
-.aa{
-    color:yellow;
-}
+
 .modal-title, .modal-body{
     font-family: "Helvetica", sans-serif;
     font-size: 1.7em;
@@ -28,6 +38,7 @@
     text-align: center;
     line-height:2em;
 }
+
 .modal-title2{
     font-family: "Helvetica", sans-serif;
     font-size: 1.4em;
@@ -38,17 +49,11 @@
 .modal-body{
     font-size: 1.2em;
 }
-.modal-dialog{
-    border: 4 px y ellow solid;
-}
 .modal{
-    border: 3 px r ed solid;
     background-color: rgba(11, 18, 89, 0.3);
 }
 .modal-content{
     background-color: rgb(11, 17, 57);
-
-    border: 4 px g reen solid;
 }
 .modal-logo{
     float: left;
@@ -58,26 +63,24 @@
     text-transform: capitalize;
 }
 .hero-start-button{
-    border: 4px white outset;
     width: fit-content;
-    padding: 6px;
+    padding: 12px 40px;
+    letter-spacing: 0.2em;
     background-color: #fff;
+    border: 1px red solid;
     color: #0b1139;
-    font-family: "Helvetica", sans-serif;
     text-transform: uppercase;
     font-size:1.2em;
-    font-weight: 900;
+    font-weight: 700;
+    transition: color 0.1s;
     position: absolute;
-    top: 10%;
-    left: 0;
-    /*transition: background-color 30ms ease-out 0.3s;*/
-    text-shadow: 1px 1px 1px black;
+    bottom: 60%;
+    left: 35%;
 }
 .hero-start-button:hover{
     background-color: #0b1139;
     color: #fff;
-    border: 4px white outset;
-
+    border: 1px #fff solid;
 }
 
 .hero-navbar-menu{
@@ -89,12 +92,9 @@
     font-size: 1.6em;
     color: #fff;
 }
-.navbar-link a:hover{
-    font-size: larger;
-}
 
 .hero-navbar-logo img{
-    height: 2.2em;
+    height: 2.1em;
     float: left;
     margin-left: 1em;
     margin-top: -10px;
@@ -110,7 +110,6 @@
 .hero-background {
     width: 100%;
     height: auto;
-    display: block;
 }
 
 .hero-headline {
@@ -133,24 +132,21 @@
 }
 @media screen and (max-width: 767px) {
     .hero-headline {
-        font-size: 2rem;
-        position: absolute;
-        top: 85%;
-        left: 18%;
-    }
-
-    .hero-navbar-logo-text {
-        font-size: 1.3em;
-        margin-left: 1em;
+        display: none;
     }
 
     .hero-navbar-logo img {
         margin-left: 0.4em;
     }
-}
-@media screen and (max-width: 566px) {
-    .hero-headline{
-        display: none;
+
+    .hero-navbar-menu  li{
+        width: 100%;
+        float: none;
+        text-align: center;
     }
 
+    .hero-start-button {
+        left:20%;
+        bottom: 5%;
+    }
 }

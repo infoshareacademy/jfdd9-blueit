@@ -1,7 +1,5 @@
 .welcome-screen {
     background: url("road.jpg");
-    opacity: 0.6;
-    animation: moment-off 0s linear 0.3s;
     animation-fill-mode: forwards;
     text-align: center;
     color: #ffffff;
@@ -16,19 +14,4 @@
 h1 {
     text-shadow: 0 1.5px 0 rgba(0, 0, 0, 0.3);
 }
-.welcome-button:active{
-  display: none;
-}
 
-
-
-@keyframes moment-on {
-    from {opacity: 1;}
-    10% {opacity: 0.1;}
-    to {opacity: 0;}
-}
-
-@keyframes moment-off {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
