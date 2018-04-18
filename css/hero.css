@@ -60,7 +60,7 @@
 .hero-start-button{
     border: 4px white outset;
     width: fit-content;
-    height: 15%%;
+    padding: 6px;
     background-color: #fff;
     color: #0b1139;
     font-family: "Helvetica", sans-serif;
@@ -68,10 +68,9 @@
     font-size:1.2em;
     font-weight: 900;
     position: absolute;
-    top: 70%;
+    top: 75%;
     left: 5%;
-    padding: 6px;
-    transition: ;
+    /*transition: background-color 30ms ease-out 0.3s;*/
     text-shadow: 1px 1px 3px black;
 }
 .hero-start-button:hover{
@@ -102,7 +101,7 @@
 }
 .hero-navbar-logo-text{
     font-style: italic;
-    font-size: 1.8em;
+    font-size: 1.4em;
     color: #fff;
     font-weight: 600;
     margin-left: 0.3em;
