@@ -109,6 +109,8 @@ var game = (function () {
     var timer = 0;
     var scoreIntervalId;
     var timerIntervalId;
+    var pointsForBattery = 5;
+    var pointsPerSecond = 2;
 
     function getLastScreen() {
         return document.querySelector('.last-screen');
@@ -129,8 +131,8 @@ var game = (function () {
 
     function updateScoreByTime() {
         scoreIntervalId = setInterval(function () {
-            updateScore(0.1);
-        }, 50);
+            updateScore(pointsPerSecond);
+        }, 1000);
     }
 
     var timerNode = document.querySelectorAll('.timer');
@@ -267,7 +269,7 @@ var game = (function () {
                 if (item.classList.contains('battery')) {
                     clearInterval(itemIntervalId);
                     item.remove();
-                    updateScore(5);
+                    updateScore(pointsForBattery);
 
                 } else {
                     getLastScreen().classList.add('last-screen-show');
