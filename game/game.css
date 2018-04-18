@@ -116,3 +116,28 @@ body {
     background-size: cover;
     z-index: 1;
 }
+
+.last-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70vw;
+    height: 70vh;
+    display: none;
+    justify-content: center;
+    background: url("img/koniec.jpg");
+    background-size: cover;
+    z-index: 4;
+}
+
+.last-screen-show {
+    display: block;
+}
+
+.reset-button {
+    padding: 20px 70px;
+    margin: 10px;
+    background-color: #20c820;
+    font-size: 30px;
+    text-transform: uppercase;
+}
