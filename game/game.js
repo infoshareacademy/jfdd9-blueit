@@ -69,19 +69,22 @@ var game = (function () {
         z += 10;
         getRoad().style.backgroundPosition = '0 ' + y + 'px';
         getGrass().style.backgroundPosition = '0 ' + z + 'px';
-
+        if (gameOver === true){
+            return;
+        }
         requestAnimationFrame(move);
-
     }
 
     function getCar() {
         return document.querySelector('.car')
     }
 
+    var carInterval;
+
     function start() {
         enableControls();
         startTimer();
-        setInterval(function () {
+        carInterval = setInterval(function () {
             var marginLeft = Math.max(
                 Math.min(
                     parseInt(getCar().style.marginLeft || 0),
@@ -181,6 +184,7 @@ var game = (function () {
     }
 
     var intervals = [];
+    var gameOver = false;
 
     function removeInterval(id) {
         intervals = intervals.filter(function (interval) {
@@ -248,18 +252,22 @@ var game = (function () {
                     clearInterval(intervalId);
                     item.remove();
                     score += 1;
-                    console.log('Congratulations! You have picked up the battery - 1 point.', score);
+                    // console.log('Congratulations! You have picked up the battery - 1 point.', score);
                     getScore().innerText = score;
                     getScore().style.color = 'white';
                     getTimer().innerText = timer;
                     getTimer().style.color = 'white';
 
                 } else {
-                    console.log('You wrecked the car! Game over!');
+                    // console.log('You wrecked the car! Game over!');
                     getLastScreen().classList.add('last-screen-show');
                     clearInterval(intervalId);
                     clearInterval(timerIntervalId);
+                    clearInterval(carInterval);
                     clearAllIntervals();
+                    gameOver = true;
+                    getCar().remove();
+                    clearInterval(carInterval);
                 }
             }
 
