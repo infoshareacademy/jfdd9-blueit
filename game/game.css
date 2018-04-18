@@ -121,15 +121,24 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 70vw;
+    width: 100vw;
     height: 70vh;
     display: none;
     justify-content: center;
-    background: url("img/koniec.jpg");
+    background-color: black;
     background-size: cover;
     z-index: 4;
 }
 
+.last-screen-text {
+    color:white;
+    font-size: 10rem;
+    letter-spacing: 0.6rem;
+    text-align: center;
+    font-family: Arial, Verdana, sans-serif;
+    font-style: italic;
+    text-shadow: 0.5rem 0.5rem 0.5rem #20c820;
+}
 .last-screen-show {
     display: block;
 }
