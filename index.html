@@ -41,12 +41,9 @@
         </nav>
         <div class="container hero-section-div">
             <img src="./img/hero-wallpaper.jpg" class="img-responsive hero-background">
-            <div>
-                <!--start button-->
-                <a href="#form" >
+                <a href="#form">
                     <button type="button" class="btn btn-outline-light hero-start-button">Click and be amazed</button>
                 </a>
-            </div>
             <div class="hero-headline">Take a Deep Breath. Finally.</div>
         </div>
     </section>
@@ -136,29 +133,28 @@
     </div>
 </section>
 
-<section id="form" class="form">
-    <div class="container">
-        <h2>Sign Up</h2>
-        <h3>We will inform You about start date of BlueSky Cars project.</h3>
-        <span class="divider"></span>
-        <form action="https://formspree.io/blueit.isa@gmail.com" method="POST">
+<div class="container">
+    <h2>Sign Up</h2>
+    <h3>We will inform You about start date of BlueSky Cars project.</h3>
+    <span class="divider"></span>
+    <form action="https://formspree.io/blueit.isa@gmail.com" method="POST">
 
 
-            <input type="text" id="name" name="user_name" aria-label="name" placeholder="Enter your name ..." required>
+        <input type="text" id="name" name="user_name" aria-label="name" placeholder="Enter your name ..." required>
 
 
-            <input type="text" id="last-name" name="user_name" aria-label="last_name"
-                   placeholder="Enter your last name ..." required>
+        <input type="text" id="last-name" name="user_name" aria-label="last_name"
+               placeholder="Enter your last name ..." required>
 
 
-            <input type="email" id="mail" name="user_email" aria-label="email"
-                   placeholder="Enter your email address ..." required>
+        <input type="email" id="mail" name="user_email" aria-label="email"
+               placeholder="Enter your email address ..." required>
 
-            <button class="form-send" type="submit" aria-label="sing-up-button" data-target="#form-modal">Sign Up</button>
-            <small>*Your e-mail address will not be shared to third-party organisations.</small>
-        </form>
-
-    </div>
+        <input type="hidden" name="_next" value="http://localhost:63342/jfdd9-blueit/gamestart.html?_ijt=8s498p192qpt80tu1ccgu0aduq"/>
+        <button class="form-send" type="submit" aria-label="sing-up-button">Sign Up</button>
+        <small>*Your e-mail address will not be shared to third-party organisations.</small>
+    </form>
+</div>
   <!--============================================================================-->
   <!--modal before game-->
 
@@ -176,7 +172,7 @@
                         <p class="modal-title2">You've just joined our Blue Sky revolution &nbsp<i class="far fa-smile"></i></p>
                     </div>
                     <div class="modal-body">
-                        <p>You've been rewarded with an Ultimate Driving Challenge</p>
+                        <p>You've been awarded an Ultimate Driving Challenge</p>
                     </div>
                     <div class="modal-footer">
                         <a href="gamestart.html"><button type="submit" class="btn btn-primary">TEST YOUR DRIVING SKILLS</button></a>
@@ -190,6 +186,7 @@
 
 
 <!--===========================================================================-->
+
 
     <div class="clear"></div>
 </section>

@@ -68,10 +68,10 @@
     font-size:1.2em;
     font-weight: 900;
     position: absolute;
-    top: 75%;
-    left: 5%;
+    top: 10%;
+    left: 0;
     /*transition: background-color 30ms ease-out 0.3s;*/
-    text-shadow: 1px 1px 3px black;
+    text-shadow: 1px 1px 1px black;
 }
 .hero-start-button:hover{
     background-color: #0b1139;
@@ -101,7 +101,7 @@
 }
 .hero-navbar-logo-text{
     font-style: italic;
-    font-size: 1.4em;
+    font-size: 1.2em;
     color: #fff;
     font-weight: 600;
     margin-left: 0.3em;
