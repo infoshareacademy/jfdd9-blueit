@@ -4,6 +4,11 @@ var game = (function () {
     var directionX = 0;
     var directionY = 0;
 
+    function brake() {
+        directionX = 0;
+        directionY = 0;
+    }
+
     function moveRight() {
         directionX = 6;
     }
@@ -17,7 +22,7 @@ var game = (function () {
     }
 
     function moveDown() {
-        directionY = -4;
+        directionY = -8;
     }
 
     function enableControls() {
@@ -36,26 +41,34 @@ var game = (function () {
                 case "ArrowDown":
                     moveDown();
                     break;
+                case "Space":
+                    brake()
+                    break;
             }
         });
         document.addEventListener("keyup", function (event) {
-            // console.log(event);
-            directionX = 0;
+            // console.log(event)
+            // directionX = 0;
             // directionY = 0;
         })
     }
 
 
-    var y = 0;
     requestAnimationFrame(move);
-
+    var y = 0;
+    var z = 0;
     function getRoad() {
         return document.querySelector('.road')
     }
+    function getGrass() {
+        return document.querySelector('.grass')
+    }
 
     function move() {
-        y += 8;
+        y += 20;
+        z += 10;
         getRoad().style.backgroundPosition = '0 ' + y + 'px';
+        getGrass().style.backgroundPosition = '0 ' + z + 'px';
         requestAnimationFrame(move);
 
     }
@@ -113,12 +126,14 @@ var game = (function () {
         var randomNumber = Math.floor(Math.random() * 10 + 1);
 
         // Returning element depending on the randomNumber
-        return randomNumber < 5 ? enemy : battery;
+        return randomNumber < 10 ? enemy : battery;
     }
 
     function dropEnemyOrBattery(item) {
         // Assigning random number from 0 to 4 to variable
         var index = Math.floor(Math.random() * 4);
+
+        // todo: wykrywanie kolizji z 'car' dla enemy i battery
 
         // Moving item from top to bottom
         var idSetInterval = setInterval(function () {
