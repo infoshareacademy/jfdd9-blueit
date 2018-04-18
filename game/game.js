@@ -178,12 +178,29 @@ var game = (function () {
         }, 16);
     }
 
+    function timer() {
+        // todo: timer function
+    }
+
     // Dropping first item
     dropEnemyOrBattery(getEnemyOrBattery());
-    // Dropping next items in time intervals
-    setInterval(function () {
-        dropEnemyOrBattery(getEnemyOrBattery());
-    }, 1000);
+    // Dropping more items when timer reaches a point in time
+    // Min interval - 400 (when enemies don't touch each other)
+    if (timer() > 5000) {
+        // Dropping next items in time intervals
+        setInterval(function () {
+            dropEnemyOrBattery(getEnemyOrBattery());
+        }, 750);
+    } else if (timer() > 10000) {
+        setInterval(function () {
+            dropEnemyOrBattery(getEnemyOrBattery());
+        }, 400);
+    } else {
+        setInterval(function () {
+            dropEnemyOrBattery(getEnemyOrBattery());
+        }, 1000);
+    }
+
 
     return {
         start: start
