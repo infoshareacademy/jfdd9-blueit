@@ -249,9 +249,9 @@ var game = (function () {
                     item.remove();
                     score += 1;
                     console.log('Congratulations! You have picked up the battery - 1 point.', score);
-                    getScore().innerText = score;
+                    getScore().innerText = ' Points: ' + score;
                     getScore().style.color = 'white';
-                    getTimer().innerText = timer;
+                    getTimer().innerText = 'Time: ' + timer + ' sec';
                     getTimer().style.color = 'white';
 
                 } else {
