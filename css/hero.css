@@ -1,246 +1,96 @@
-.menu-bar{
-    display:flex;
-    height: 5rem;
+
+.hero-section-div {
     width: 100%;
-    background-color: #0f2a1c;
-    opacity: 0.7;
-    position: fixed;
-    flex-direction: row;
-    color: white;
-    font-family: "Open Sans", sans-serif;
-}
-.menu-bar:hover{
-    opacity: 0.9;
-}
-
-.menu-btn{
-    display: none;
-}
-
-.horizontal-menu-btn{
-    display: none;
-}
-
-.menu-logo-text,
-.menu-nav {
-    width: 45%;
-    align-self: center;
-    margin: 0 auto;
-}
-
-.menu-logo-img{
-    align-self: center;
-    width: 5%;
-    height: auto;
-}
-
-.menu-logo-img img{
-    width: 4rem;
-    height: auto;
-    float: right;
-}
-
-.menu-logo-text{
-    font-weight: 900;
-    justify-content: flex-start;
-    font-size: 2rem;
-    font-style: italic;
-}
-
-.menu-nav-links{
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.menu-nav-links a{
-    text-decoration: none;
-    color:white;
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.4rem;
-    border: 1px #fff inset;
-    border-radius: 20px;
-    padding: 3px 10px;
-}
-
-.menu-nav-links a:hover{
-    background-color: #fff;
-    color: #0f2a1c;
-}
-
-.menu-nav-links a:active{
-    background-color: #000;
+    padding: 0;
     color: #fff;
+    font-weight: 100;
+    position: relative;
+}
+
+.hero-navbar{
+    background-color: rgba(11, 18, 89, 0.8);
+    border: none;
+}
+
+
+.hero-navbar:hover{
+    background-color: rgba(11,17,57,0.91);
+    }
+    /*height: 12%;*/
+
+
+.hero-navbar-menu{
+    padding-right: 5%;
+   }
+
+.hero-navbar-menu a {
+    font-family: "Helvetica", sans-serif;
+    font-size: 1.6em;
+    color: #fff;
+}
+
+.hero-navbar-logo img{
+    height: 2.2em;
+    float: left;
+    margin-left: 1em;
+    margin-top: -10px;
+}
+.hero-navbar-logo-text{
+    font-style: italic;
+    font-size: 1.8em;
+    color: #fff;
+    font-weight: 600;
+    margin-left: 0.3em;
+}
+
+.hero-background {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-headline {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    font-family: "Helvetica", sans-serif;
+    font-size: 4rem;
+    color: #FFF;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1330px) {
+    .hero-headline {
+        font-size: 2.8em;
+        position: absolute;
+        top: 15%;
+        left: 25%;
+
+    }
+}
+@media screen and (max-width: 767px) {
+    .hero-headline {
+        font-size: 2rem;
+        position: absolute;
+        top: 85%;
+        left: 18%;
+    }
+
+    .hero-navbar-logo-text {
+        font-size: 1.3em;
+        margin-left: 1em;
+    }
+
+    .hero-navbar-logo img {
+        margin-left: 0.4em;
+    }
+}
+@media screen and (max-width: 566px) {
+    .hero-headline{
+        display: none;
+    }
+
 }
 
 .hero-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #c4d3e6 url("../img/tesla.jpeg") no-repeat;
-    background-size: 100% auto;
-}
-
-.hero-headline{
-    font-family: "Open Sans", sans-serif;
-    font-size: 4rem;
-    margin-top: 5rem;
-    margin-bottom: 2rem;
-}
-
-.hero-text{
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.8rem;
-    opacity: 1;
-}
-
-.hero-link-contain {
-    margin-top: 8rem;
-    border: 2px #fff double;
-    border-radius: 20px;
-    padding: 5px;
-}
-
-.hero-link{
-    text-decoration: none;
-    font-family: "Open Sans", sans-serif;
-    color: #fff;
-    font-size: 1.5rem;
-}
-
-.hero-link:hover{
-    color: #0f2a1c;
-    text-decoration: none;
-}
-
-.hero-link:active{
-    background-color: #0f2a1c;
-    color: #fff;
-    text-decoration: none;
-}
-
-.hero-link-contain:hover{
-    background-color: #fff;
-    text-decoration: none;
-}
-
-.hero-link-contain:active {
-    background-color: #0f2a1c;
-}
-
-
-/* ============= iPad screen   ======================= */
-
-@media (min-width: 769px) and (max-width: 1440px) {
-
-    .menu-logo-img{
-        display: none;
-    }
-    .hero-text{
-        display: none;
-    }
-    .menu-logo-text{
-        width: 30%;
-    }
-    .menu-nav{
-        width: 70%;
-    }
-    .hero-section {
-        background-size: 100% 100%;
-    }
-}
-/* ===================   769px to 841px ==================*/
-
-@media (min-width: 769px) and (max-width: 841px) {
-    .hero-headline{
-        font-size: 2em;
-        font-weight: 700;
-        margin-top: 5em;
-    }
-}
-/*=================== iPhone screen ======================= */
-
-@media (max-width: 768px){
-
-    .menu-logo-text{
-        display: none;
-    }
-
-    .hero-text{
-        display: none;
-    }
-
-    .menu-logo-img{
-        width: 20%
-    }
-
-    .menu-nav{
-        width: 40%;
-    }
-
-    .menu-nav-links{
-        display: none
-    }
-
-    .menu-btn{
-        display: block;
-        color:white;
-        font-family: "Open Sans", sans-serif;
-        font-size: 1.4rem;
-        font-weight: 700;
-        border: 2px #fff inset;
-        border-radius: 20px;
-        padding: 3px 10px;
-        text-align: center;
-        position: relative;
-    }
-
-    .menu-btn:hover{
-        background-color: #fff;
-        color: #0f2a1c;
-    }
-
-    .menu-nav:hover .menu-nav-links{
-        display: block;
-        position: absolute;
-    }
-
-    .menu-nav-links a {
-        text-decoration: none;
-        background-color: #0e3208;
-    }
-
-    .hero-section {
-        background-size: 100% 100%;
-    }
-
-    .hero-headline{
-        font-size: 1.8em;
-        font-weight: 700;
-        margin-top: 4em;
-        text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-    }
-
-    .hero-link-contain{
-        border: 3px #fff double;
-        border-radius: 50px;
-        padding: 9px;
-        background-color: rgb(14, 50, 8);
-    }
-
-    .hero-link{
-        color: #fff;
-        font-weight: 700;
-        text-decoration: none;
-    }
-
-    .hero-link-contain:hover{
-        background-color: #010201;
-        text-decoration: none;
-    }
-
-    .hero-link:hover{
-        color: #fff;
-    }
+    overflow: hidden;
 }

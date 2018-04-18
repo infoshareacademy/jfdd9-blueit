@@ -55,17 +55,19 @@
 }
 
 #about-us .about-us-member .about-us-social a:hover {
-    color: #1dc8cd;
+    color: rgba(11, 18, 89, 0.8);
 }
+
 
 .about-us-section-header p {
     margin-top: 20px;
 }
 
-@media (min-width: 996px) {
+@media (min-width: 1050px) {
     #about-us .row {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
 }
+

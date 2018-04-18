@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -16,41 +15,34 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js"
             integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
             crossorigin="anonymous"></script>
-    <link rel="shortcut icon" type="image/png" href="./favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="fav.png"/>
     <title>BlueSky Cars - 3city</title>
 </head>
 <body>
-
 <header>
     <section id="hero-section" class="hero-section">
-        <div class="menu-bar">
-            <div class="menu-logo-img">
-                <img src="img/carwhite.png" alt="blue sky cars logo">
+        <nav id="hero-nav" class="navbar navbar-inverse navbar-fixed-top hero-navbar">
+            <div class="nav-div">
+                <button type="button" class="navbar-toggle collapsed hero-navbar__toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                    <span class="glyphicon glyphicon-menu-hamburger"></span>
+                </button>
+                    <a class="hero-navbar-logo navbar-brand" href="#">
+                        <img src="./img/carwhite.png">
+                        <span class="hero-navbar-logo-text">BlueSky Cars</span>
+                    </a>
             </div>
-            <div class="menu-logo-text">
-                <span>BlueSky Cars</span>
+
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right hero-navbar-list hero-navbar-menu">
+                    <li><a href="#form">Sign Up!</a></li>
+                    <li><a href="#func">Features</a></li>
+                    <li><a href="#about-us">Our Team</a></li>
+                </ul>
             </div>
-            <div class="menu-nav">
-                <span class="menu-btn">Menu</span>
-                <div class="dropdown">
-                    <nav>
-                        <ul class="menu-nav-links">
-                            <li><a href="#form">Get inside</a></li>
-                            <li><a href="#func">Features</a></li>
-                            <li><a href="#about-us">Meet Us</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-        <div class="hero-headline">Take a Deep Breath. Finally.</div>
-        <div class="hero-text">Over 50 comfortable electric vehicles.</div>
-        <div class="hero-text">Dozens of convenient pick-up &amp drop-off locations.</div>
-        <div class="hero-link-contain">
-            <a href="#form" class="hero-link">
-                <span>Start the ride !</span>
-            </a>
+        </nav>
+        <div class="container hero-section-div">
+            <img src="./img/hero-wallpaper.jpg" class="img-responsive hero-background">
+            <div class="hero-headline">Take a Deep Breath. Finally.</div>
         </div>
     </section>
 </header>
@@ -191,7 +183,7 @@
                     <a href="https://github.com/rob-now" target="_blank">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/robert-nowakowski/">
+                    <a href="https://www.linkedin.com/in/robert-nowakowski/" target="_blank">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
                     <a href="mailto:rnowakowski.prv@gmail.com">
@@ -208,10 +200,10 @@
                 <h4>Lukasz Koziara</h4>
                 <span>Junior Front-end Developer</span>
                 <div class="about-us-social">
-                    <a href="https://github.com/lkoziara" target="_blank">
+                    <a href="https://github.com/lukasz-koziara" target="_blank">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/robert-nowakowski/">
+                    <a href="https://www.linkedin.com/in/%C5%82ukasz-koziara/" target="_blank">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
                     <a href="mailto:lkoziara@gmail.com">
@@ -230,14 +222,15 @@
                     <a href="https://github.com/maciabe" target="_blank">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/robert-nowakowski/">
+                    <a href=https://www.linkedin.com/in/maciej-blandzi-a1b44a147/ target="_blank">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="mailto:mblandzi@gmail.com">
+                    <a href="mailto:maciabe@hotmail.com">
                         <i class="fas fa-at"></i>
                     </a>
                 </div>
             </div>
+
 
             <div class="about-us-member">
                 <div class="about-us-pic">
@@ -255,10 +248,11 @@
                 </div>
             </div>
         </div>
-
     </div>
 </section>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="script/functionalities.js"></script>
+<script src="script/parallax.js"></script>
 </body>
 </html>
