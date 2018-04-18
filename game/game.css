@@ -124,12 +124,21 @@ body {
     width: 100vw;
     height: 70vh;
     display: none;
-    justify-content: center;
     background-color: black;
     background-size: cover;
     z-index: 4;
+    padding-top: 1rem;
+    text-align: center;
 }
 
+.final-points {
+    background-color: #20c820;
+    width:12rem;
+    height: 5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    display: inline-block;
+}
 .last-screen-text {
     color:white;
     font-size: 10rem;
@@ -138,15 +147,19 @@ body {
     font-family: Arial, Verdana, sans-serif;
     font-style: italic;
     text-shadow: 0.5rem 0.5rem 0.5rem #20c820;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+    padding: 0;
 }
 .last-screen-show {
     display: block;
 }
 
 .reset-button {
-    padding: 20px 70px;
-    margin: 10px;
-    background-color: #20c820;
-    font-size: 30px;
+    padding: 0.7rem 2rem;
+    margin: auto;
+    background-color: orange;
+    font-size: 1.5rem;
     text-transform: uppercase;
+    font-weight: bold;
 }
