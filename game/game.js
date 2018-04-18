@@ -9,6 +9,10 @@ var game = (function () {
     function moveLeft() {
         direction = -1;
     }
+    
+    function accelerate() {
+        
+    }
 
     function enableControls() {
         document.addEventListener('keydown', function (event) {
