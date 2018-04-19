@@ -57,9 +57,11 @@ var game = (function () {
     requestAnimationFrame(move);
     var y = 0;
     var z = 0;
+
     function getRoad() {
         return document.querySelector('.road')
     }
+
     function getGrass() {
         return document.querySelector('.grass')
     }
@@ -99,11 +101,12 @@ var game = (function () {
 
 
     }
+
     var score = 0;
     var timer = 0;
     var timerIntervalId;
 
-    function getLastScreen () {
+    function getLastScreen() {
         return document.querySelector('.last-screen');
     }
 
@@ -122,33 +125,31 @@ var game = (function () {
     }
 
 
-
-
     // console.log(getLastScreen());
-   /*
-    var scoreContainer = document.getElementById('score');
-    var score = 0;
-    var batteries = getFromRoad(road, 'b');
-    var resetButtonNode = document.getElementById('reset-button');
-    resetButtonNode.addEventListener('click', start);
+    /*
+     var scoreContainer = document.getElementById('score');
+     var score = 0;
+     var batteries = getFromRoad(road, 'b');
+     var resetButtonNode = document.getElementById('reset-button');
+     resetButtonNode.addEventListener('click', start);
 
 
 
 
-    function showScore(score) {
-        scoreContainer.innerText = score + ' points';
-    }
+     function showScore(score) {
+         scoreContainer.innerText = score + ' points';
+     }
 
-    function update() {
-        if (najazd auta na baterie) {
-            score += 1;
-        }
+     function update() {
+         if (najazd auta na baterie) {
+             score += 1;
+         }
 
-        function reset() {
-            time = 0;
-            score = 0;
-            showScore();
-        }*/
+         function reset() {
+             time = 0;
+             score = 0;
+             showScore();
+         }*/
 
     function getTrack(index) {
         // Getting each track position
@@ -249,9 +250,9 @@ var game = (function () {
                     item.remove();
                     score += 1;
                     console.log('Congratulations! You have picked up the battery - 1 point.', score);
-                    getScore().innerText = score;
+                    getScore().innerText = 'Points: ' + score;
                     getScore().style.color = 'white';
-                    getTimer().innerText = timer;
+                    getTimer().innerText = 'Time: ' + timer + ' sec';
                     getTimer().style.color = 'white';
 
                 } else {
@@ -271,7 +272,7 @@ var game = (function () {
             }
         }, 16);
 
-        intervals.push({ id: intervalId, element: item })
+        intervals.push({id: intervalId, element: item})
     }
 
     /*function timer() {
@@ -288,8 +289,7 @@ var game = (function () {
         dropEnemyOrBattery(getEnemyOrBattery());
     }, 1000);
 
-    intervals.push({ id: gameIntervalId })
-
+    intervals.push({id: gameIntervalId})
 
 
     return {
