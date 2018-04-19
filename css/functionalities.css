@@ -34,7 +34,7 @@
 }
 
 .fa-car, .fa-dollar-sign, .fa-hourglass-end, .fa-mobile-alt, .fa-android, .fa-child, .fa-paw, .fa-location-arrow {
-    color: #46ECC2;
+    color: rgba(11, 18, 89, 0.8);
 }
 
 /*Func boxes animation on scroll*/

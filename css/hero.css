@@ -25,9 +25,13 @@
 
 .hero-navbar{
     background-color: rgba(11, 18, 89, 0.8);
+    border: none;
 }
 
+
 .hero-navbar:hover{
+
+
     background-color: rgba(11, 17, 57, 0.91);
 }
 
@@ -110,7 +114,7 @@
 .hero-background {
     width: 100%;
     height: auto;
-}
+   }
 
 .hero-headline {
     position: absolute;
@@ -149,4 +153,8 @@
         left:20%;
         bottom: 5%;
     }
+}
+
+.hero-section {
+    overflow: hidden;
 }
