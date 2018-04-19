@@ -106,7 +106,6 @@ var game = (function () {
     }
 
 
-
     var score = 0;
     var timer = 0;
     var scoreIntervalId;
@@ -114,7 +113,7 @@ var game = (function () {
     var pointsForBattery = 5;
     var pointsPerSecond = 2;
 
-    function getLastScreen () {
+    function getLastScreen() {
         return document.querySelector('.last-screen');
     }
 
@@ -156,11 +155,11 @@ var game = (function () {
         }, 1000);
     }
 
-         // function reset() {
-         //     time = 0;
-         //     score = 0;
-         //     showScore();
-         // }
+    // function reset() {
+    //     time = 0;
+    //     score = 0;
+    //     showScore();
+    // }
 
     function getTrack(index) {
         // Getting each track position
@@ -267,7 +266,8 @@ var game = (function () {
             if (itemRectX < playerCarRectX + playerCarRectWidth &&
                 itemRectX + itemRectWidth > playerCarRectX &&
                 itemRectY < playerCarRectY + playerCarRectHeight &&
-                itemRectHeight + itemRectY > playerCarRectY) {
+                itemRectHeight + itemRectY > playerCarRectY
+            ) {
                 if (item.classList.contains('battery')) {
                     clearInterval(itemIntervalId);
                     item.remove();
