@@ -3,6 +3,26 @@ body {
     /*zoom: 75%;*/
     overflow: hidden;
 }
+.welcome-screen {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 80%;
+    height: 60%;
+    opacity: 0.7;
+    background: url("road.jpg");
+    text-align: center;
+    color: #ffffff;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    background-color: #0b1139;
+    box-shadow: 0 8px 6px -6px black;
+}
+
+h1 {
+    text-shadow: 0 1.5px 0 rgba(0, 0, 0, 0.3);
+
+}
 
 .container {
     width: 100%;

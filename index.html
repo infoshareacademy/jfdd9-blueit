@@ -24,8 +24,10 @@
         <nav id="hero-nav" class="navbar navbar-inverse navbar-fixed-top hero-navbar">
             <div class="nav-div">
                 <button type="button" class="navbar-toggle collapsed hero-navbar__toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
-                    <span class="glyphicon glyphicon-menu-hamburger"></span>
+                    <span class="glyphicon glyphicon-menu-hamburger hamb"></span>
                 </button>
+
+            <div>
                     <a class="hero-navbar-logo navbar-brand" href="#">
                         <img src="./img/carwhite.png">
                         <span class="hero-navbar-logo-text">BlueSky Cars</span>
@@ -34,13 +36,17 @@
 
             <div class="collapse navbar-collapse" id="navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right hero-navbar-list hero-navbar-menu">
-                    <li><a href="#form">Sign Up!</a></li>
-                    <li><a href="#func">Features</a></li>
-                    <li><a href="#about-us">Our Team</a></li>
+                    <li ><a href="#" class="nav-link-hidden"></a></li>
+                    <li ><a href="#form" class="nav-link">Sign Up!</a></li>
+                    <li ><a href="#func" class="nav-link">Features</a></li>
+                    <li ><a href="#about-us" class="nav-link">Our Team</a></li>
                 </ul>
             </div>
         </nav>
-        <div class="container hero-section-div">
+        <div class="container hero-section-wall">
+            <a href="#form">
+                <button type="button" class="btn btn-outline-light hero-start-button">Get In and be amazed</button>
+            </a>
             <img src="./img/hero-wallpaper.jpg" class="img-responsive hero-background">
             <div class="hero-headline">Take a Deep Breath. Finally.</div>
         </div>
@@ -159,7 +165,6 @@
     <div class="clear"></div>
 </section>
 
-
 <!- About-Us -->
 
 
@@ -254,5 +259,12 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="script/functionalities.js"></script>
 <script src="script/parallax.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script>
+    window.addEventListener('scroll', function (event) {
+        document.querySelector('.hero').style.backgroundPositionX = (window.pageYOffset * -0.3) + 'px';
+    })
+</script>
+
 </body>
 </html>
