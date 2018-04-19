@@ -35,11 +35,14 @@ body {
     z-index: 3;
 }
 
-#hud {
+.hud {
+    display: flex;
+    flex: available;
     height: 130px;
     width: 300px;
     border: solid 1px white;
-    background: white;
+    background: black;
+    opacity: 0.5;
     position: absolute;
     top: 20px;
     right: 40px;
@@ -181,4 +184,17 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
+}
+
+.score-actual {
+
+    color: white;
+    align-self: right;
+    font-size: 1.5em;
+}
+
+.time-actual {
+    align-self: left;
+    color: white;
+    font-size: 1.5em;
 }

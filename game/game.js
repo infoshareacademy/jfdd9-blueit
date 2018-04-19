@@ -106,6 +106,12 @@ var game = (function () {
     var timer = 0;
     var timerIntervalId;
 
+    function showScore() {
+        return document.querySelector('.score-actual');
+    }
+    function showTime() {
+        return document.querySelector('.time-actual');
+    }
     function getLastScreen() {
         return document.querySelector('.last-screen');
     }
@@ -250,6 +256,8 @@ var game = (function () {
                     item.remove();
                     score += 1;
                     console.log('Congratulations! You have picked up the battery - 1 point.', score);
+                    showScore().innerText = 'Points ' + score;
+                    showTime().innerText = 'Time elapsed ' + timer;
                     getScore().innerText = 'Points: ' + score;
                     getScore().style.color = 'white';
                     getTimer().innerText = 'Time: ' + timer + ' sec';
