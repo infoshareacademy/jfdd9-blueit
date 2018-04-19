@@ -1,6 +1,6 @@
 var game = (function () {
-
-
+var theme = new Audio('track.mp3')
+theme.play()
     var directionX = 0;
     var directionY = 0;
 
@@ -209,7 +209,8 @@ var game = (function () {
             }
         });
     }
-
+    var battsnd = new Audio('battery.mp3')
+    var endsnd = new Audio('end.mp3')
     function dropEnemyOrBattery(item) {
         // Assigning random number from 0 to 4 to variable
         var index = Math.floor(Math.random() * 4);
@@ -271,6 +272,7 @@ var game = (function () {
                 if (item.classList.contains('battery')) {
                     clearInterval(itemIntervalId);
                     item.remove();
+                    battsnd.play()
                     // score += 1;
                     // console.log('Congratulations! You have picked up the battery - 1 point.', score);
                     // getScore().innerText = 'Points: ' + score;
@@ -291,6 +293,8 @@ var game = (function () {
                     getCar().remove();
                     clearInterval(carInterval);
                     console.log(intervals);
+                    endsnd.play()
+                    theme.pause()
                 }
             }
 
