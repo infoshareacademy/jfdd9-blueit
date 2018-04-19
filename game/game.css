@@ -176,3 +176,21 @@ body {
     font-weight: bold;
     cursor: pointer;
 }
+
+.timer,
+.score {
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    background: #325278;
+}
+
+.timer {
+    bottom: 10px;
+    right: 10px;
+}
+
+.score {
+    bottom: 50px;
+    right: 10px;
+}
