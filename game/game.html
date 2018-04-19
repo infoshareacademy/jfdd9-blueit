@@ -7,6 +7,7 @@
 
 </head>
 <body>
+
 <div class="progress">
 <div class="score">0 points</div>
 <div class="timer">0 seconds</div>
@@ -15,6 +16,11 @@
 <div class="grass">
     <div class="road">
         <div class="car"></div>
+    </div>
+    <div class="hud">
+        <p class="time-actual"></p>
+        <p class="score-actual"></p>
+
     </div>
 </div>
 
@@ -32,8 +38,15 @@
 </div>
 
 <script src="game.js"></script>
+<script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+
+<audio src='track.mp3'></audio>
 <script>
     game.start()
 </script>
+
 </body>
 </html>
