@@ -35,6 +35,16 @@ body {
     z-index: 3;
 }
 
+#hud {
+    height: 130px;
+    width: 300px;
+    border: solid 1px white;
+    background: white;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+
 .enemy_1 {
     position: absolute;
     top: -192px;

@@ -57,9 +57,11 @@ var game = (function () {
     requestAnimationFrame(move);
     var y = 0;
     var z = 0;
+
     function getRoad() {
         return document.querySelector('.road')
     }
+
     function getGrass() {
         return document.querySelector('.grass')
     }
@@ -136,6 +138,9 @@ var game = (function () {
         // todo: wykrywanie kolizji z 'car' dla enemy i battery
 
         // Moving item from top to bottom
+        var scoreboard = document.getElementById('hud')
+        var score = 0;
+
         var idSetInterval = setInterval(function () {
             var marginTop = parseInt(item.style.marginTop || 0);
             var enemySpeed = 8;
@@ -176,9 +181,13 @@ var game = (function () {
                 itemRectY < playerCarRectY + playerCarRectHeight &&
                 itemRectHeight + itemRectY > playerCarRectY) {
                 if (item.classList.contains('battery')) {
+
+
                     console.log('Congratulations! You have picked up the battery - 1 point.');
                     clearInterval(idSetInterval);
                     item.remove();
+                    var newscore = score += 1;
+                    scoreboard.innerHTML = 'Twój wynik to: ' + ' ' + newscore;
                 } else {
                     console.log('You wrecked the car! Game over!');
                     clearInterval(idSetInterval);
