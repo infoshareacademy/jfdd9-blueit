@@ -23,33 +23,37 @@
     <section id="hero-section" class="hero-section">
         <nav id="hero-nav" class="navbar navbar-inverse navbar-fixed-top hero-navbar">
             <div class="nav-div">
-                <button type="button" class="navbar-toggle collapsed hero-navbar__toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                <button type="button" class="navbar-toggle collapsed hero-navbar__toggle" data-toggle="collapse"
+                        data-target="#navbar-collapse-1">
                     <span class="glyphicon glyphicon-menu-hamburger hamb"></span>
                 </button>
 
-            <div>
-                    <a class="hero-navbar-logo navbar-brand" href="#">
+                <div>
+                    <a id="hero-navbar-logo" class="hero-navbar-logo navbar-brand" href="#">
                         <img src="./img/carwhite.png">
                         <span class="hero-navbar-logo-text">BlueSky Cars</span>
                     </a>
-            </div>
+                </div>
 
-            <div class="collapse navbar-collapse" id="navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right hero-navbar-list hero-navbar-menu">
-                    <li ><a href="#" class="nav-link-hidden"></a></li>
-                    <li ><a href="#form" class="nav-link">Sign Up!</a></li>
-                    <li ><a href="#func" class="nav-link">Features</a></li>
-                    <li ><a href="#about-us" class="nav-link">Our Team</a></li>
-                </ul>
+                <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                    <ul id="hero-navbar-list" class="nav navbar-nav navbar-right hero-navbar-list hero-navbar-menu">
+                        <!--<li><a href="#" class="nav-link-hidden"></a></li>-->
+                        <li><a href="#form" class="nav-link">Sign Up!</a></li>
+                        <li><a href="#func" class="nav-link">Features</a></li>
+                        <li><a href="#about-us" class="nav-link">Our Team</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
+
+
         <div class="container hero-section-wall">
-            <a href="#form">
-                <button type="button" class="btn btn-outline-light hero-start-button">Get In and be amazed</button>
-            </a>
-            <img src="./img/hero-wallpaper.jpg" class="img-responsive hero-background">
             <div class="hero-headline">Take a Deep Breath. Finally.</div>
+            <a href="#form" class="hero-start-link">
+                <button type="button" class="hero-start-button">Get In and be amazed</button></a>
         </div>
+
+
     </section>
 </header>
 <section id="func" class="func">
@@ -169,103 +173,106 @@
 <!- About-Us -->
 
 
-<section id="about-us" class="about-us">
-    <div class="container">
-        <div class="about-us-section-header">
-            <h2 class="about-us-section-title">Our Team</h2>
-            <span class="divider"></span>
-            <p class="about-us-section-description">Taking care of our customers, our communities and our
-                environment.</p>
-        </div>
+<!--<section id="about-us" class="about-us">-->
+    <!--<div class="container">-->
+        <!--<div class="about-us-section-header">-->
+            <!--<h2 class="about-us-section-title">Our Team</h2>-->
+            <!--<span class="divider"></span>-->
+            <!--<p class="about-us-section-description">Taking care of our customers, our communities and our-->
+                <!--environment.</p>-->
+        <!--</div>-->
 
-        <div class="row">
-            <div class="about-us-member">
-                <div class="about-us-pic">
-                    <img src="img/robert.jpg" alt="Robert Nowakowski" width="210px" height="210px">
-                </div>
-                <h4>Robert Nowakowski</h4>
-                <span>Junior Front-end Developer</span>
-                <div class="about-us-social">
-                    <a href="https://github.com/rob-now" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/robert-nowakowski/" target="_blank">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="mailto:rnowakowski.prv@gmail.com">
-                        <i class="fas fa-at"></i>
-                    </a>
-                </div>
+        <!--<div class="row">-->
+            <!--<div class="about-us-member">-->
+                <!--<div class="about-us-pic">-->
+                    <!--<img src="img/robert.jpg" alt="Robert Nowakowski" width="210px" height="210px">-->
+                <!--</div>-->
+                <!--<h4>Robert Nowakowski</h4>-->
+                <!--<span>Junior Front-end Developer</span>-->
+                <!--<div class="about-us-social">-->
+                    <!--<a href="https://github.com/rob-now" target="_blank">-->
+                        <!--<i class="fab fa-github"></i>-->
+                    <!--</a>-->
+                    <!--<a href="https://www.linkedin.com/in/robert-nowakowski/" target="_blank">-->
+                        <!--<i class="fab fa-linkedin-in"></i>-->
+                    <!--</a>-->
+                    <!--<a href="mailto:rnowakowski.prv@gmail.com">-->
+                        <!--<i class="fas fa-at"></i>-->
+                    <!--</a>-->
+                <!--</div>-->
 
-            </div>
+            <!--</div>-->
 
-            <div class="about-us-member">
-                <div class="about-us-pic">
-                    <img src="img/lukasz.jpeg" alt="Lukasz Koziara" width="210px" height="210px">
-                </div>
-                <h4>Lukasz Koziara</h4>
-                <span>Junior Front-end Developer</span>
-                <div class="about-us-social">
-                    <a href="https://github.com/lukasz-koziara" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/%C5%82ukasz-koziara/" target="_blank">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="mailto:lkoziara@gmail.com">
-                        <i class="fas fa-at"></i>
-                    </a>
-                </div>
-            </div>
+            <!--<div class="about-us-member">-->
+                <!--<div class="about-us-pic">-->
+                    <!--<img src="img/lukasz.jpeg" alt="Lukasz Koziara" width="210px" height="210px">-->
+                <!--</div>-->
+                <!--<h4>Lukasz Koziara</h4>-->
+                <!--<span>Junior Front-end Developer</span>-->
+                <!--<div class="about-us-social">-->
+                    <!--<a href="https://github.com/lukasz-koziara" target="_blank">-->
+                        <!--<i class="fab fa-github"></i>-->
+                    <!--</a>-->
+                    <!--<a href="https://www.linkedin.com/in/%C5%82ukasz-koziara/" target="_blank">-->
+                        <!--<i class="fab fa-linkedin-in"></i>-->
+                    <!--</a>-->
+                    <!--<a href="mailto:lkoziara@gmail.com">-->
+                        <!--<i class="fas fa-at"></i>-->
+                    <!--</a>-->
+                <!--</div>-->
+            <!--</div>-->
 
-            <div class="about-us-member">
-                <div class="about-us-pic">
-                    <img src="img/maciej.jpg" alt="Maciej Blandzi" width="210px" height="210px">
-                </div>
-                <h4>Maciej Blandzi</h4>
-                <span>Junior Front-end Developer</span>
-                <div class="about-us-social">
-                    <a href="https://github.com/maciabe" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href=https://www.linkedin.com/in/maciej-blandzi-a1b44a147/ target="_blank">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="mailto:maciabe@hotmail.com">
-                        <i class="fas fa-at"></i>
-                    </a>
-                </div>
-            </div>
+            <!--<div class="about-us-member">-->
+                <!--<div class="about-us-pic">-->
+                    <!--<img src="img/maciej.jpg" alt="Maciej Blandzi" width="210px" height="210px">-->
+                <!--</div>-->
+                <!--<h4>Maciej Blandzi</h4>-->
+                <!--<span>Junior Front-end Developer</span>-->
+                <!--<div class="about-us-social">-->
+                    <!--<a href="https://github.com/maciabe" target="_blank">-->
+                        <!--<i class="fab fa-github"></i>-->
+                    <!--</a>-->
+                    <!--<a href=https://www.linkedin.com/in/maciej-blandzi-a1b44a147/ target="_blank">-->
+                        <!--<i class="fab fa-linkedin-in"></i>-->
+                    <!--</a>-->
+                    <!--<a href="mailto:maciabe@hotmail.com">-->
+                        <!--<i class="fas fa-at"></i>-->
+                    <!--</a>-->
+                <!--</div>-->
+            <!--</div>-->
 
 
-            <div class="about-us-member">
-                <div class="about-us-pic">
-                    <img src="img/agata.jpg" alt="Agata Piernikowska" width="210px" height="210px">
-                </div>
-                <h4>Agata Piernikowska</h4>
-                <span>Junior Front-end Developer</span>
-                <div class="about-us-social">
-                    <a href="https://github.com/agatapiernikowska" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="mailto:agata.piernikowska@yahoo.com">
-                        <i class="fas fa-at"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+            <!--<div class="about-us-member">-->
+                <!--<div class="about-us-pic">-->
+                    <!--<img src="img/agata.jpg" alt="Agata Piernikowska" width="210px" height="210px">-->
+                <!--</div>-->
+                <!--<h4>Agata Piernikowska</h4>-->
+                <!--<span>Junior Front-end Developer</span>-->
+                <!--<div class="about-us-social">-->
+                    <!--<a href="https://github.com/agatapiernikowska" target="_blank">-->
+                        <!--<i class="fab fa-github"></i>-->
+                    <!--</a>-->
+                    <!--<a href="mailto:agata.piernikowska@yahoo.com">-->
+                        <!--<i class="fas fa-at"></i>-->
+                    <!--</a>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
 <script src="script/functionalities.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="script/parallax.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script>
-    window.addEventListener('scroll', function (event) {
-        document.querySelector('.hero').style.backgroundPositionX = (window.pageYOffset * -0.3) + 'px';
-    })
-</script>
+<!--<script>-->
+    <!--window.addEventListener('scroll', function (event) {-->
+        <!--document.querySelector('.hero').style.backgroundPositionX = (window.pageYOffset * -0.3) + 'px';-->
+    <!--})-->
+<!--</script>-->
 
 </body>
 </html>
