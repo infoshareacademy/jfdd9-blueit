@@ -35,19 +35,6 @@ body {
     z-index: 3;
 }
 
-.hud {
-    display: flex;
-    flex: available;
-    height: 130px;
-    width: 300px;
-    border: solid 1px white;
-    background: black;
-    opacity: 0.5;
-    position: absolute;
-    top: 20px;
-    right: 40px;
-}
-
 .enemy_1 {
     position: absolute;
     top: -192px;
@@ -190,15 +177,20 @@ body {
     cursor: pointer;
 }
 
-.score-actual {
-
+.timer,
+.score {
+    position: absolute;
     color: white;
-    align-self: right;
-    font-size: 1.5em;
+    font-size: 24px;
+    background: #325278;
 }
 
-.time-actual {
-    align-self: left;
-    color: white;
-    font-size: 1.5em;
+.timer {
+    bottom: 10px;
+    right: 10px;
+}
+
+.score {
+    bottom: 50px;
+    right: 10px;
 }

@@ -42,7 +42,7 @@ var game = (function () {
                     moveDown();
                     break;
                 case "Space":
-                    brake()
+                    brake();
                     break;
             }
         });
@@ -71,19 +71,24 @@ var game = (function () {
         z += 10;
         getRoad().style.backgroundPosition = '0 ' + y + 'px';
         getGrass().style.backgroundPosition = '0 ' + z + 'px';
-
+        if (gameOver === true) {
+            return;
+        }
         requestAnimationFrame(move);
-
     }
 
     function getCar() {
         return document.querySelector('.car')
     }
 
+    var carInterval;
+
     function start() {
         enableControls();
         startTimer();
-        setInterval(function () {
+        updateScoreByTime();
+        // updateScore(Math.floor((timer * 0.2)));
+        carInterval = setInterval(function () {
             var marginLeft = Math.max(
                 Math.min(
                     parseInt(getCar().style.marginLeft || 0),
@@ -98,64 +103,64 @@ var game = (function () {
                 ), 0);
             getCar().style.marginBottom = (marginBottom + directionY) + 'px'
         }, 30);
-
-
     }
+
+
 
     var score = 0;
     var timer = 0;
+    var scoreIntervalId;
     var timerIntervalId;
+    var pointsForBattery = 5;
+    var pointsPerSecond = 2;
 
-    function showScore() {
-        return document.querySelector('.score-actual');
-    }
-    function showTime() {
-        return document.querySelector('.time-actual');
-    }
-    function getLastScreen() {
+    function getLastScreen () {
         return document.querySelector('.last-screen');
     }
 
-    function getScore() {
-        return document.querySelector('.score');
+    var scoreNode = document.querySelectorAll('.score');
+
+    function showScore(score) {
+        scoreNode.forEach(function (node) {
+            return node.innerText = Math.round((score * 100) / 100) + ' points';
+        });
     }
 
-    function getTimer() {
-        return document.querySelector('.timer');
+    function updateScore(delta) {
+        score += delta;
+        showScore(score);
+    }
+
+    function updateScoreByTime() {
+        scoreIntervalId = setInterval(function () {
+            updateScore(pointsPerSecond);
+        }, 1000);
+    }
+
+    var timerNode = document.querySelectorAll('.timer');
+
+    function showTime(timer) {
+        timerNode.forEach(function (node) {
+            return node.innerText = timer + ' seconds';
+        });
+    }
+
+    function updateTime(delta) {
+        timer += delta;
+        showTime(timer);
     }
 
     function startTimer() {
         timerIntervalId = setInterval(function () {
-            timer += 1;
+            updateTime(1);
         }, 1000);
     }
 
-
-    // console.log(getLastScreen());
-    /*
-     var scoreContainer = document.getElementById('score');
-     var score = 0;
-     var batteries = getFromRoad(road, 'b');
-     var resetButtonNode = document.getElementById('reset-button');
-     resetButtonNode.addEventListener('click', start);
-
-
-
-
-     function showScore(score) {
-         scoreContainer.innerText = score + ' points';
-     }
-
-     function update() {
-         if (najazd auta na baterie) {
-             score += 1;
-         }
-
-         function reset() {
-             time = 0;
-             score = 0;
-             showScore();
-         }*/
+         // function reset() {
+         //     time = 0;
+         //     score = 0;
+         //     showScore();
+         // }
 
     function getTrack(index) {
         // Getting each track position
@@ -184,15 +189,16 @@ var game = (function () {
         var randomNumber = Math.floor(Math.random() * 10 + 1);
 
         // Returning element depending on the randomNumber
-        return randomNumber < 5 ? enemy : battery;
+        return randomNumber < 7 ? enemy : battery;
     }
 
     var intervals = [];
+    var gameOver = false;
 
     function removeInterval(id) {
         intervals = intervals.filter(function (interval) {
-            return interval.id !== id
-        })
+            return interval.id !== id;
+        });
     }
 
     function clearAllIntervals() {
@@ -202,20 +208,31 @@ var game = (function () {
             if (interval.element) {
                 interval.element.remove();
             }
-        })
+        });
     }
 
     function dropEnemyOrBattery(item) {
         // Assigning random number from 0 to 4 to variable
         var index = Math.floor(Math.random() * 4);
 
-        // todo: wykrywanie kolizji z 'car' dla enemy i battery
-
         // Moving item from top to bottom
-        var intervalId = setInterval(function () {
+        var itemIntervalId = setInterval(function () {
             var marginTop = parseInt(item.style.marginTop || 0);
-            var enemySpeed = 8;
-            var batterySpeed = 10;
+            var enemySpeed;
+            if (timer >= 0 && timer < 5) {
+                enemySpeed = 5;
+            } else if (timer >= 5 && timer < 10) {
+                enemySpeed = 7;
+            } else if (timer >= 10 && timer < 15) {
+                enemySpeed = 9;
+            } else if (timer >= 15 && timer < 20) {
+                enemySpeed = 11;
+            } else if (timer >= 20 && timer < 25) {
+                enemySpeed = 13;
+            } else {
+                enemySpeed = 15;
+            }
+            var batterySpeed = 8;
 
             // Assigning random track to variable
             var track = getTrack(index);
@@ -252,53 +269,49 @@ var game = (function () {
                 itemRectY < playerCarRectY + playerCarRectHeight &&
                 itemRectHeight + itemRectY > playerCarRectY) {
                 if (item.classList.contains('battery')) {
-                    clearInterval(intervalId);
+                    clearInterval(itemIntervalId);
                     item.remove();
-                    score += 1;
-                    console.log('Congratulations! You have picked up the battery - 1 point.', score);
-                    showScore().innerText = 'Points ' + score;
-                    showTime().innerText = 'Time elapsed ' + timer;
-                    getScore().innerText = 'Points: ' + score;
-                    getScore().style.color = 'white';
-                    getTimer().innerText = 'Time: ' + timer + ' sec';
-                    getTimer().style.color = 'white';
+                    // score += 1;
+                    // console.log('Congratulations! You have picked up the battery - 1 point.', score);
+                    // getScore().innerText = 'Points: ' + score;
+                    // getScore().style.color = 'white';
+                    // getTimer().innerText = 'Time: ' + timer + ' sec';
+                    // getTimer().style.color = 'white';
+                    updateScore(pointsForBattery);
 
                 } else {
-                    console.log('You wrecked the car! Game over!');
                     getLastScreen().classList.add('last-screen-show');
-                    clearInterval(intervalId);
+                    showTime(timer);
+                    clearInterval(itemIntervalId);
+                    clearInterval(scoreIntervalId);
                     clearInterval(timerIntervalId);
+                    clearInterval(carInterval);
                     clearAllIntervals();
+                    gameOver = true;
+                    getCar().remove();
+                    clearInterval(carInterval);
+                    console.log(intervals);
                 }
             }
 
-            // Removing item from document if it reaches bottom of the screen and clearing interval
+            // Removing item from document if reaches bottom of the screen and clearing interval
             if (parseInt(item.style.marginTop) > getRoad().clientHeight + item.clientHeight) {
                 item.remove();
-                clearInterval(intervalId);
-                removeInterval(intervalId);
+                clearInterval(itemIntervalId);
+                removeInterval(itemIntervalId);
             }
         }, 16);
 
-        intervals.push({id: intervalId, element: item})
+        // Adding 'itemIntervalId' to 'intervals' array
+        intervals.push({id: itemIntervalId, element: item})
     }
 
-    /*function timer() {
-        // todo: timer function
-    }*/
-
-    // Dropping first item
-    // Dropping more items when timer reaches a point in time
-    // Min interval - 400 (when enemies don't touch each other)
-
+    // Dropping items
     var gameIntervalId = setInterval(function () {
-
-
         dropEnemyOrBattery(getEnemyOrBattery());
     }, 1000);
 
-    intervals.push({id: gameIntervalId})
-
+    intervals.push({id: gameIntervalId});
 
     return {
         start: start
