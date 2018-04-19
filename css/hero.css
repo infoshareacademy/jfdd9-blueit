@@ -1,10 +1,26 @@
 
-.hero-section-div {
+.hero-section-wall {
     width: 100%;
     padding: 0;
     color: #fff;
     font-weight: 100;
     position: relative;
+}
+.glyphicon-menu-hamburger {
+    font-size: 1em;
+    color: #0b1139;
+}
+.nav-link{
+    color: #fff;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+.nav-link-hidden{
+    visibility: hidden;
+}
+.navbar-toggle{
+    background-color: white;
 }
 
 .hero-navbar{
@@ -14,30 +30,82 @@
 
 
 .hero-navbar:hover{
-    background-color: rgba(11,17,57,0.91);
-    }
-    /*height: 12%;*/
 
+
+    background-color: rgba(11, 17, 57, 0.91);
+}
+
+.modal-title, .modal-body{
+    font-family: "Helvetica", sans-serif;
+    font-size: 1.7em;
+    color: #fff;
+    text-align: center;
+    line-height:2em;
+}
+
+.modal-title2{
+    font-family: "Helvetica", sans-serif;
+    font-size: 1.4em;
+    color: #fff;
+    text-align: center;
+    line-height:2em;
+}
+.modal-body{
+    font-size: 1.2em;
+}
+.modal{
+    background-color: rgba(11, 18, 89, 0.3);
+}
+.modal-content{
+    background-color: rgb(11, 17, 57);
+}
+.modal-logo{
+    float: left;
+}
+
+.modal-footer{
+    text-transform: capitalize;
+}
+.hero-start-button{
+    width: fit-content;
+    padding: 12px 40px;
+    letter-spacing: 0.2em;
+    background-color: #fff;
+    border: 1px red solid;
+    color: #0b1139;
+    text-transform: uppercase;
+    font-size:1.2em;
+    font-weight: 700;
+    transition: color 0.1s;
+    position: absolute;
+    bottom: 60%;
+    left: 35%;
+}
+.hero-start-button:hover{
+    background-color: #0b1139;
+    color: #fff;
+    border: 1px #fff solid;
+}
 
 .hero-navbar-menu{
     padding-right: 5%;
-   }
+}
 
-.hero-navbar-menu a {
+.navbar-link {
     font-family: "Helvetica", sans-serif;
     font-size: 1.6em;
     color: #fff;
 }
 
 .hero-navbar-logo img{
-    height: 2.2em;
+    height: 2.1em;
     float: left;
     margin-left: 1em;
     margin-top: -10px;
 }
 .hero-navbar-logo-text{
     font-style: italic;
-    font-size: 1.8em;
+    font-size: 1.2em;
     color: #fff;
     font-weight: 600;
     margin-left: 0.3em;
@@ -46,8 +114,7 @@
 .hero-background {
     width: 100%;
     height: auto;
-    display: block;
-}
+   }
 
 .hero-headline {
     position: absolute;
@@ -69,26 +136,23 @@
 }
 @media screen and (max-width: 767px) {
     .hero-headline {
-        font-size: 2rem;
-        position: absolute;
-        top: 85%;
-        left: 18%;
-    }
-
-    .hero-navbar-logo-text {
-        font-size: 1.3em;
-        margin-left: 1em;
+        display: none;
     }
 
     .hero-navbar-logo img {
         margin-left: 0.4em;
     }
-}
-@media screen and (max-width: 566px) {
-    .hero-headline{
-        display: none;
+
+    .hero-navbar-menu  li{
+        width: 100%;
+        float: none;
+        text-align: center;
     }
 
+    .hero-start-button {
+        left:20%;
+        bottom: 5%;
+    }
 }
 
 .hero-section {
