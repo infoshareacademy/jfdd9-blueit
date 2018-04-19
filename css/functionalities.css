@@ -40,7 +40,14 @@
     width: 80%;
 }
 
-.fa-car, .fa-dollar-sign, .fa-hourglass-end, .fa-mobile-alt, .fa-android, .fa-child, .fa-paw, .fa-location-arrow {
+.fa-car,
+.fa-dollar-sign,
+.fa-hourglass-end,
+.fa-mobile-alt,
+.fa-android,
+.fa-child,
+.fa-paw,
+.fa-location-arrow {
     color: rgba(11, 18, 89, 0.8);
 }
 
