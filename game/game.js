@@ -155,11 +155,15 @@ theme.play()
         }, 1000);
     }
 
-    // function reset() {
-    //     time = 0;
-    //     score = 0;
-    //     showScore();
-    // }
+    function resetGame() {
+        timer = 0;
+        score = 0;
+        window.location.reload();
+    }
+
+    var resetBtn = document.querySelector('.reset-button');
+
+    resetBtn.addEventListener('click', resetGame);
 
     function getTrack(index) {
         // Getting each track position
@@ -208,6 +212,7 @@ theme.play()
                 interval.element.remove();
             }
         });
+        intervals = [];
     }
     var battsnd = new Audio('battery.mp3')
     var endsnd = new Audio('end.mp3')
@@ -290,8 +295,8 @@ theme.play()
                     clearInterval(carInterval);
                     clearAllIntervals();
                     gameOver = true;
-                    getCar().remove();
-                    clearInterval(carInterval);
+                    // getCar().remove();
+                    // clearInterval(carInterval);
                     console.log(intervals);
                     endsnd.play()
                     theme.pause()
