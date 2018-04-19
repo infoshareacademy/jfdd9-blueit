@@ -105,6 +105,8 @@ var game = (function () {
         }, 30);
     }
 
+
+
     var score = 0;
     var timer = 0;
     var scoreIntervalId;
@@ -112,7 +114,7 @@ var game = (function () {
     var pointsForBattery = 5;
     var pointsPerSecond = 2;
 
-    function getLastScreen() {
+    function getLastScreen () {
         return document.querySelector('.last-screen');
     }
 
@@ -269,6 +271,12 @@ var game = (function () {
                 if (item.classList.contains('battery')) {
                     clearInterval(itemIntervalId);
                     item.remove();
+                    // score += 1;
+                    // console.log('Congratulations! You have picked up the battery - 1 point.', score);
+                    // getScore().innerText = 'Points: ' + score;
+                    // getScore().style.color = 'white';
+                    // getTimer().innerText = 'Time: ' + timer + ' sec';
+                    // getTimer().style.color = 'white';
                     updateScore(pointsForBattery);
 
                 } else {
