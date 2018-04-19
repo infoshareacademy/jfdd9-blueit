@@ -18,7 +18,9 @@ body {
     background-color: #0b1139;
     box-shadow: 0 8px 6px -6px black;
 }
-
+.welcome-screen-hide{
+    display: none;
+}
 h1 {
     text-shadow: 0 1.5px 0 rgba(0, 0, 0, 0.3);
 

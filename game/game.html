@@ -14,7 +14,7 @@
     <p>Test your driving skills in our ULTIMATE DRIVING EXPERIENCE</p>
     <p>The object of the game is to stay within lines, avoid oncoming traffic and collect green batteries</p>
     <p> The game is not time-limited, you can go as far as your abilities will take you</p>
-    <a href="./game.html" class="btn btn-default">START THE GAME</a>
+    <span id="start-game" class="btn btn-default">START THE GAME</span>
 </div>
 <div class="progress">
 <div class="score">0 points</div>
@@ -53,7 +53,8 @@
 
 <audio src='track.mp3'></audio>
 <script>
-    game.start()
+    document.getElementById('start-game').addEventListener('click', game.start)
+    // game.start()
 </script>
 
 </body>
