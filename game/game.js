@@ -155,11 +155,15 @@ var game = (function () {
         }, 1000);
     }
 
-    // function reset() {
-    //     time = 0;
-    //     score = 0;
-    //     showScore();
-    // }
+    function resetGame() {
+        timer = 0;
+        score = 0;
+        window.location.reload();
+    }
+
+    var resetBtn = document.querySelector('.reset-button');
+
+    resetBtn.addEventListener('click', resetGame);
 
     function getTrack(index) {
         // Getting each track position
@@ -208,6 +212,7 @@ var game = (function () {
                 interval.element.remove();
             }
         });
+        intervals = [];
     }
 
     function dropEnemyOrBattery(item) {
@@ -288,8 +293,8 @@ var game = (function () {
                     clearInterval(carInterval);
                     clearAllIntervals();
                     gameOver = true;
-                    getCar().remove();
-                    clearInterval(carInterval);
+                    // getCar().remove();
+                    // clearInterval(carInterval);
                     console.log(intervals);
                 }
             }
