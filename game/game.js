@@ -214,8 +214,8 @@ theme.play()
         });
         intervals = [];
     }
-    var battsnd = new Audio('battery.mp3')
-    var endsnd = new Audio('end.mp3')
+    var battsnd = new Audio('battery.mp3');
+    var endsnd = new Audio('end.mp3');
     function dropEnemyOrBattery(item) {
         // Assigning random number from 0 to 4 to variable
         var index = Math.floor(Math.random() * 4);
@@ -277,7 +277,7 @@ theme.play()
                 if (item.classList.contains('battery')) {
                     clearInterval(itemIntervalId);
                     item.remove();
-                    battsnd.play()
+                    battsnd.play();
                     // score += 1;
                     // console.log('Congratulations! You have picked up the battery - 1 point.', score);
                     // getScore().innerText = 'Points: ' + score;
@@ -298,8 +298,8 @@ theme.play()
                     // getCar().remove();
                     // clearInterval(carInterval);
                     console.log(intervals);
-                    endsnd.play()
-                    theme.pause()
+                    endsnd.play();
+                    theme.pause();
                 }
             }
 
@@ -318,7 +318,7 @@ theme.play()
     // Dropping items
     var gameIntervalId = setInterval(function () {
         dropEnemyOrBattery(getEnemyOrBattery());
-    }, 1000);
+    }, 1250);
 
     intervals.push({id: gameIntervalId});
 
