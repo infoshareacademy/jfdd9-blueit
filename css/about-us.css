@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 .about-us-section-title {
     text-align: center;
     font-weight: 400;
@@ -17,6 +16,7 @@
     padding-bottom: 30px;
     color: #777;
     font-style: italic;
+    font-size: 16px;
 }
 
 .about-us-member {
@@ -36,7 +36,7 @@
     font-weight: 700;
     margin-bottom: 2px;
     font-size: 18px;
-    }
+}
 
 .about-us-member span {
     font-style: italic;
@@ -58,12 +58,11 @@
     color: rgba(11, 18, 89, 0.8);
 }
 
-
 .about-us-section-header p {
     margin-top: 20px;
 }
 
-@media (min-width: 1050px) {
+@media (min-width: 1100px) {
     #about-us .row {
         display: flex;
         flex-direction: row;

@@ -3,6 +3,7 @@ body {
     /*zoom: 75%;*/
     overflow: hidden;
 }
+
 .welcome-screen {
     position: absolute;
     top: 5%;
@@ -191,12 +192,12 @@ align-self: center;
 
 .final-points {
     background-color: #20c820;
-    width: 16rem;
-    height: 8rem;
-    margin-bottom: 3rem;
+    width: 22rem;
+    height: 14rem;
+    margin-bottom: 4rem;
     display: inline-block;
     box-shadow: inset 0 0 3.2rem white;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
     /*padding-left: 1.5rem;*/
     padding-top: 1rem;
@@ -206,13 +207,13 @@ align-self: center;
 
 .last-screen-text {
     color: white;
-    font-size: 10rem;
+    font-size: 17rem;
     letter-spacing: 0.6rem;
     text-align: center;
     font-family: Arial, Verdana, sans-serif;
     font-style: italic;
     text-shadow: 0.5rem 0.5rem 0.5rem #20c820;
-    margin-bottom: 5rem;
+    margin-bottom: 8rem;
     margin-top: 1rem;
     padding: 0;
 }
@@ -221,15 +222,11 @@ align-self: center;
     display: block;
 }
 
-.cup-container {
-
-}
-
 .reset-button {
-    padding: 1rem 3rem;
+    padding: 2rem 4rem;
     margin: auto;
     background-color: orange;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
@@ -241,9 +238,26 @@ align-self: center;
 
 .progress {
     position: absolute;
-    bottom: 30px;
+    align-items: center;
+    top: 30px;
     right: 30px;
+    width: 15%;
+    height: 75px;
     color: white;
     font-size: 24px;
-    background: #325278;
+    background: rgba(0, 0, 0, 0.5);
+    border: white 2px solid;
+}
+
+.score {
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.timer {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+
 }
