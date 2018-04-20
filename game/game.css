@@ -239,13 +239,13 @@ align-self: center;
     text-transform: uppercase;
 }
 
-.progress {
+.score-progress {
     position: absolute;
     align-items: center;
     top: 30px;
     right: 30px;
     width: 15%;
-    height: 75px;
+    height: 95px;
     color: white;
     font-size: 24px;
     background: rgba(0, 0, 0, 0.5);
@@ -253,12 +253,14 @@ align-self: center;
 }
 
 .score {
+
     margin-top: 10px;
     margin-left: 10px;
     text-align: center;
 }
 
 .timer {
+
     margin-left: 10px;
     margin-bottom: 10px;
     text-align: center;
