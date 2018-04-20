@@ -121,12 +121,6 @@ var game = (function () {
     var pointsForBattery = 5;
     var pointsPerSecond = 2;
 
-    var actualTime = document.querySelector('.time-actual')
-    var actualScore = document.querySelector('.score-actual')
-
-    function showActualScore(score){
-        actualScore.innerText = 'Score: ' + score
-    }
 
     function getLastScreen() {
         return document.querySelector('.last-screen');
