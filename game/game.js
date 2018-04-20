@@ -107,7 +107,7 @@ var game = (function () {
         // Dropping items
         var gameIntervalId = setInterval(function () {
             dropEnemyOrBattery(getEnemyOrBattery());
-        }, 1000);
+        }, 1250);
 
         intervals.push({id: gameIntervalId});
         requestAnimationFrame(move);
@@ -288,7 +288,7 @@ var game = (function () {
                 if (item.classList.contains('battery')) {
                     clearInterval(itemIntervalId);
                     item.remove();
-                    battsnd.play()
+                    battsnd.play();
                     // score += 1;
                     // console.log('Congratulations! You have picked up the battery - 1 point.', score);
                     // getScore().innerText = 'Points: ' + score;
@@ -309,8 +309,8 @@ var game = (function () {
                     // getCar().remove();
                     // clearInterval(carInterval);
                     console.log(intervals);
-                    endsnd.play()
-                    theme.pause()
+                    endsnd.play();
+                    theme.pause();
                 }
             }
 

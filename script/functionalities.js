@@ -2,9 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Selecting all func boxes
     var funcBox = document.querySelectorAll('.func-box');
 
-    // Event listener on scroll
-    document.addEventListener("scroll", function () {
-
+    function showFuncBoxes (){
         // For each element (func box) add or remove classes
         funcBox.forEach(function (element) {
             var elementRect = element.getBoundingClientRect();
@@ -18,5 +16,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 element.classList.remove('func-show-box');
             }
         });
+    }
+
+    showFuncBoxes();
+
+    // Event listener on scroll
+    document.addEventListener("scroll", function () {
+        showFuncBoxes();
     });
 });
