@@ -21,7 +21,7 @@
 <body>
 <header>
     <section id="hero-section" class="hero-section">
-        <nav id="hero-nav" class="navbar navbar-inverse navbar-fixed-top hero-navbar">
+        <nav id="hero-nav" class="navbar  navbar-fixed-top hero-navbar">
             <div class="nav-div">
                 <button type="button" class="navbar-toggle collapsed hero-navbar__toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
                     <span class="glyphicon glyphicon-menu-hamburger hamb"></span>
@@ -156,7 +156,7 @@
 
             <input type="email" id="mail" name="user_email" aria-label="email"
                    placeholder="Enter your email address ..." required>
-            <input type="hidden" name="_next" value="./game/game.html" />
+            <input type="hidden" name="_next" value="http://localhost:63342/jfdd9-blueit/game/game.html" />
             <button class="form-send" type="submit" aria-label="sing-up-button">Sign Up</button>
             <small>*Your e-mail address will not be shared to third-party organisations.</small>
         </form>
@@ -260,11 +260,7 @@
 <script src="script/functionalities.js"></script>
 <script src="script/parallax.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script>
-    window.addEventListener('scroll', function (event) {
-        document.querySelector('.hero').style.backgroundPositionX = (window.pageYOffset * -0.3) + 'px';
-    })
-</script>
+
 
 </body>
 </html>

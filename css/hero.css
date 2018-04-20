@@ -1,10 +1,11 @@
 
 .hero-section-wall {
     width: 100%;
+    height :auto;
     padding: 0;
     color: #fff;
     font-weight: 100;
-    position: relative;
+    /*position: relative;*/
 }
 .glyphicon-menu-hamburger {
     font-size: 1em;
@@ -28,47 +29,50 @@
     border: none;
 }
 
-
 .hero-navbar:hover{
-
-
     background-color: rgba(11, 17, 57, 0.91);
 }
 
-.modal-title, .modal-body{
-    font-family: "Helvetica", sans-serif;
-    font-size: 1.7em;
-    color: #fff;
-    text-align: center;
-    line-height:2em;
-}
+/*.modal-title, .modal-body{*/
+    /*font-family: "Helvetica", sans-serif;*/
+    /*font-size: 1.7em;*/
+    /*color: #fff;*/
+    /*text-align: center;*/
+    /*line-height:2em;*/
+/*}*/
 
-.modal-title2{
-    font-family: "Helvetica", sans-serif;
-    font-size: 1.4em;
-    color: #fff;
-    text-align: center;
-    line-height:2em;
-}
-.modal-body{
-    font-size: 1.2em;
-}
-.modal{
-    background-color: rgba(11, 18, 89, 0.3);
-}
-.modal-content{
-    background-color: rgb(11, 17, 57);
-}
-.modal-logo{
-    float: left;
-}
+/*.modal-title2{*/
+    /*font-family: "Helvetica", sans-serif;*/
+    /*font-size: 1.4em;*/
+    /*color: #fff;*/
+    /*text-align: center;*/
+    /*line-height:2em;*/
+/*}*/
+/*.modal-body{*/
+    /*font-size: 1.2em;*/
+/*}*/
 
-.modal-footer{
-    text-transform: capitalize;
-}
+/*.modal{*/
+    /*background-color: rgba(11, 18, 89, 0.3);*/
+/*}*/
+
+/*.modal-content{*/
+    /*background-color: rgb(11, 17, 57);*/
+/*}*/
+/*.modal-logo{*/
+    /*float: left;*/
+/*}*/
+
+/*.modal-footer{*/
+    /*text-transform: capitalize;*/
+/*}*/
 .hero-start-button{
     width: fit-content;
-    padding: 12px 40px;
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+    /*transform:translateX(-50%);*/
+    padding: 12px 30px;
     letter-spacing: 0.2em;
     background-color: #fff;
     border: 1px red solid;
@@ -77,9 +81,7 @@
     font-size:1.2em;
     font-weight: 700;
     transition: color 0.1s;
-    position: absolute;
-    bottom: 60%;
-    left: 35%;
+    text-align: center;
 }
 .hero-start-button:hover{
     background-color: #0b1139;
@@ -120,9 +122,11 @@
     position: absolute;
     top: 10%;
     left: 20%;
+    /*transform:translateX(-50%);*/
     font-family: "Helvetica", sans-serif;
     font-size: 4rem;
     color: #FFF;
+    text-align: center;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1330px) {
