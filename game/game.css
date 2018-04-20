@@ -26,23 +26,32 @@ body {
 /*.modal-logo{*/
 /*float: left;*/
 /*}*/
+
 .modal-title, .modal-body{
-font-size: 4em;
+font-size: 3em;
+color: #fff;
+text-align: center;
+line-height:1em;
+}
+
+.modal-title2{
+font-size: 2.5em;
 color: #fff;
 text-align: center;
 line-height:2em;
 }
 
-.modal-title2{
-font-size: 3em;
-color: #fff;
-text-align: center;
-line-height:2em;
+.modal-title3{
+    font-size: 2.5em;
+    color: #fff;
+    text-align: center;
+    line-height:2em;
 }
 
 .welcome-screen-hide{
     display: none;
 }
+
 .modal-game-title {
     text-shadow: 0 4px 0 ;
     font-size: 4em;
@@ -50,13 +59,21 @@ line-height:2em;
 }
 
 #start-game {
- background-color: red;
+    background-color: red;
     width: fit-content;
     padding: 1em;
     font-size: 1.6em;
     transition: color 0.2s;
-align-self: center;
+    align-self: center;
 }
+
+
+    /*display: block;*/
+    /*position: absolute;*/
+
+    /*top: 88%;*/
+    /*left: calc(50% - 190px);*/
+/*}*/
 #start-game:hover{
     background-color: white;
     color: red;

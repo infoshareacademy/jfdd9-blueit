@@ -67,22 +67,30 @@
     /*text-transform: capitalize;*/
 /*}*/
 .hero-start-button{
-    width: fit-content;
+    /*width: fit-content;*/
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    /*left: 35%;*/
+    /*!*transform:translateX(-50%);*!*/
+    /*padding: 12px 30px;*/
+    /*letter-spacing: 0.2em;*/
+    /*background-color: #fff;*/
+    /*border: 1px red solid;*/
+    /*color: #0b1139;*/
+    /*text-transform: uppercase;*/
+    /*font-size:1.2em;*/
+    /*font-weight: 700;*/
+    /*transition: color 0.1s;*/
+    /*text-align: center;
+        */
+
+    display: block;
     position: absolute;
-    bottom: 0;
-    left: 35%;
-    /*transform:translateX(-50%);*/
-    padding: 12px 30px;
-    letter-spacing: 0.2em;
-    background-color: #fff;
-    border: 1px red solid;
-    color: #0b1139;
-    text-transform: uppercase;
-    font-size:1.2em;
-    font-weight: 700;
-    transition: color 0.1s;
-    text-align: center;
+    width: 380px;
+    top: 88%;
+    left: calc(50% - 190px);
 }
+
 .hero-start-button:hover{
     background-color: #0b1139;
     color: #fff;
