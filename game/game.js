@@ -121,8 +121,6 @@ var game = (function () {
     var pointsForBattery = 5;
     var pointsPerSecond = 2;
 
-    var progress = document.querySelector('.progress')
-
 
     function getLastScreen() {
         return document.querySelector('.last-screen');
