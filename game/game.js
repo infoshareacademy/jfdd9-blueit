@@ -1,6 +1,6 @@
 var game = (function () {
-var theme = new Audio('track.mp3')
-theme.play()
+    var theme = new Audio('track.mp3')
+    theme.play()
     var directionX = 0;
     var directionY = 0;
 
@@ -54,7 +54,6 @@ theme.play()
     }
 
 
-    requestAnimationFrame(move);
     var y = 0;
     var z = 0;
 
@@ -82,8 +81,9 @@ theme.play()
     }
 
     var carInterval;
-
+    var welcomeScreen = document.querySelector(".welcome-screen");
     function start() {
+        welcomeScreen.classList.add("welcome-screen-hide");
         enableControls();
         startTimer();
         updateScoreByTime();
@@ -103,8 +103,16 @@ theme.play()
                 ), 0);
             getCar().style.marginBottom = (marginBottom + directionY) + 'px'
         }, 30);
-    }
 
+        // Dropping items
+        var gameIntervalId = setInterval(function () {
+            dropEnemyOrBattery(getEnemyOrBattery());
+        }, 1250);
+
+        intervals.push({id: gameIntervalId});
+        requestAnimationFrame(move);
+
+    }
 
     var score = 0;
     var timer = 0;
@@ -112,6 +120,7 @@ theme.play()
     var timerIntervalId;
     var pointsForBattery = 5;
     var pointsPerSecond = 2;
+
 
     function getLastScreen() {
         return document.querySelector('.last-screen');
@@ -214,8 +223,10 @@ theme.play()
         });
         intervals = [];
     }
-    var battsnd = new Audio('battery.mp3');
-    var endsnd = new Audio('end.mp3');
+
+    var battsnd = new Audio('battery.mp3')
+    var endsnd = new Audio('end.mp3')
+
     function dropEnemyOrBattery(item) {
         // Assigning random number from 0 to 4 to variable
         var index = Math.floor(Math.random() * 4);
@@ -315,12 +326,6 @@ theme.play()
         intervals.push({id: itemIntervalId, element: item})
     }
 
-    // Dropping items
-    var gameIntervalId = setInterval(function () {
-        dropEnemyOrBattery(getEnemyOrBattery());
-    }, 1250);
-
-    intervals.push({id: gameIntervalId});
 
     return {
         start: start

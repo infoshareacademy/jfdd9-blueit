@@ -1,3 +1,4 @@
+
 window.addEventListener('scroll', function (event) {
     var heroHeadline = document.querySelector('.hero-headline');
     $(window).width() <= 1280
