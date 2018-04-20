@@ -27,17 +27,17 @@ body {
 /*float: left;*/
 /*}*/
 .modal-title, .modal-body{
-font-size: 4em;
-color: #fff;
-text-align: center;
-line-height:2em;
+    font-size: 4em;
+    color: #fff;
+    text-align: center;
+    line-height:2em;
 }
 
 .modal-title2{
-font-size: 3em;
-color: #fff;
-text-align: center;
-line-height:2em;
+    font-size: 3em;
+    color: #fff;
+    text-align: center;
+    line-height:2em;
 }
 
 .welcome-screen-hide{
@@ -50,12 +50,12 @@ line-height:2em;
 }
 
 #start-game {
- background-color: red;
+    background-color: red;
     width: fit-content;
     padding: 1em;
     font-size: 1.6em;
     transition: color 0.2s;
-align-self: center;
+    align-self: center;
 }
 #start-game:hover{
     background-color: white;
@@ -262,4 +262,17 @@ align-self: center;
     margin-bottom: 10px;
     text-align: center;
 
+}
+
+.control-info {
+    position: absolute;
+    align-items: center;
+    width: 15%;
+    height: auto;
+    bottom: 30px;
+    right: 30px;
+    color: white;
+    font-size: 24px;
+    background: rgba(0, 0, 0, 0.5);
+    border: white 2px solid;
 }
