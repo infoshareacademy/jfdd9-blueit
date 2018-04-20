@@ -105,13 +105,15 @@ theme.play()
         }, 30);
     }
 
-
     var score = 0;
     var timer = 0;
     var scoreIntervalId;
     var timerIntervalId;
     var pointsForBattery = 5;
     var pointsPerSecond = 2;
+
+    var progress = document.querySelector('.progress')
+
 
     function getLastScreen() {
         return document.querySelector('.last-screen');
