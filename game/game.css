@@ -15,6 +15,7 @@ body {
     height: 80vh;
     opacity: 0.7;
     text-align: center;
+    font-family: Verdana, sans-serif;
     color: #fff;
     border: 1px solid #aaa;
     border-radius: 10px;
@@ -23,18 +24,17 @@ body {
     z-index: 100;
     padding: 1rem;
 }
-/*.modal-logo{*/
-/*float: left;*/
-/*}*/
-.modal-title, .modal-body{
-    font-size: 4em;
+
+.modal-title{
+    font-size: 3em;
     color: #fff;
     text-align: center;
     line-height:2em;
+    text-transform: uppercase;
 }
 
 .modal-title2{
-    font-size: 3em;
+    font-size: 2.5em;
     color: #fff;
     text-align: center;
     line-height:2em;
@@ -43,20 +43,37 @@ body {
 .welcome-screen-hide{
     display: none;
 }
+
+.modal-brand-name{
+    text-shadow: 0 0 15px #421fff;
+    font-size: 3em;
+    letter-spacing: 0.2em;
+}
+
 .modal-game-title {
-    text-shadow: 0 4px 0 ;
     font-size: 4em;
     font-style: italic;
+    text-shadow: 0 0 15px #FF0000;
+}
+
+.modal-logo{
+    width: 1em;
+}
+
+.game-info{
+    font-size: 1.3em;
 }
 
 #start-game {
-    background-color: red;
+    background-color: #FF0000;
     width: fit-content;
     padding: 1em;
     font-size: 1.6em;
     transition: color 0.2s;
     align-self: center;
+    font-weight: 700;
 }
+
 #start-game:hover{
     background-color: white;
     color: red;
@@ -275,4 +292,12 @@ body {
     font-size: 24px;
     background: rgba(0, 0, 0, 0.5);
     border: white 2px solid;
+}
+@media screen and (max-width: 767px) {
+    .modal-logo,
+    .emoji,
+    .modal-game-title,
+    .modal-title{
+        display: none;
+    }
 }
