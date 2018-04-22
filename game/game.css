@@ -26,23 +26,15 @@ body {
 /*.modal-logo{*/
 /*float: left;*/
 /*}*/
-
 .modal-title, .modal-body{
-font-size: 3em;
-color: #fff;
-text-align: center;
-line-height:1em;
+    font-size: 4em;
+    color: #fff;
+    text-align: center;
+    line-height:2em;
 }
 
 .modal-title2{
-font-size: 2.5em;
-color: #fff;
-text-align: center;
-line-height:2em;
-}
-
-.modal-title3{
-    font-size: 2.5em;
+    font-size: 3em;
     color: #fff;
     text-align: center;
     line-height:2em;
@@ -51,7 +43,6 @@ line-height:2em;
 .welcome-screen-hide{
     display: none;
 }
-
 .modal-game-title {
     text-shadow: 0 4px 0 ;
     font-size: 4em;
@@ -66,14 +57,6 @@ line-height:2em;
     transition: color 0.2s;
     align-self: center;
 }
-
-
-    /*display: block;*/
-    /*position: absolute;*/
-
-    /*top: 88%;*/
-    /*left: calc(50% - 190px);*/
-/*}*/
 #start-game:hover{
     background-color: white;
     color: red;
@@ -253,13 +236,13 @@ line-height:2em;
     text-transform: uppercase;
 }
 
-.progress {
+.score-progress {
     position: absolute;
     align-items: center;
     top: 30px;
     right: 30px;
     width: 15%;
-    height: 75px;
+    height: 95px;
     color: white;
     font-size: 24px;
     background: rgba(0, 0, 0, 0.5);
@@ -267,14 +250,29 @@ line-height:2em;
 }
 
 .score {
+
     margin-top: 10px;
     margin-left: 10px;
     text-align: center;
 }
 
 .timer {
+
     margin-left: 10px;
     margin-bottom: 10px;
     text-align: center;
 
+}
+
+.control-info {
+    position: absolute;
+    align-items: center;
+    width: 15%;
+    height: auto;
+    bottom: 30px;
+    right: 30px;
+    color: white;
+    font-size: 24px;
+    background: rgba(0, 0, 0, 0.5);
+    border: white 2px solid;
 }

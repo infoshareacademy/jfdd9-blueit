@@ -52,3 +52,11 @@ h3 {
     background: linear-gradient(0deg, rgba(11, 18, 89, 0.8) 0%, skyblue 100%);
     margin: 20px auto 0 auto;
 }
+
+@media projector {
+    .func,
+    .about-us {
+        /*background: #d9e1e1;*/
+        background: #111111;
+    }
+}
