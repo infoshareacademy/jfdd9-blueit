@@ -223,7 +223,7 @@ var game = (function () {
         });
         intervals = [];
     }
-
+    var hitsnd = new Audio('hit2.mp3')
     var battsnd = new Audio('battery.mp3')
     var endsnd = new Audio('end.mp3')
 
@@ -311,6 +311,8 @@ var game = (function () {
                     console.log(intervals);
                     endsnd.play();
                     theme.pause();
+                    hitsnd.play();
+
                 }
             }
 
