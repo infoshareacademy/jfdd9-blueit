@@ -292,7 +292,11 @@ body {
     font-size: 24px;
     background: rgba(0, 0, 0, 0.5);
     border: white 2px solid;
+    padding: 10px 0px 10px 10px;
 }
+
+
+
 @media screen and (max-width: 767px) {
     .modal-logo,
     .emoji,
@@ -300,4 +304,5 @@ body {
     .modal-title{
         display: none;
     }
-}
+
+
