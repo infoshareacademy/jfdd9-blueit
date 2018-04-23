@@ -227,7 +227,7 @@ var game = (function () {
         });
         intervals = [];
     }
-
+    var hitsnd = new Audio('hit2.mp3')
     var battsnd = new Audio('battery.mp3')
     var endsnd = new Audio('end.mp3')
 
@@ -284,10 +284,10 @@ var game = (function () {
                 : item.style.marginTop = (marginTop + enemySpeed) + 'px';
 
             // Detecting collisions with enemies and batteries
-            if (itemRectX < playerCarRectX + playerCarRectWidth &&
-                itemRectX + itemRectWidth > playerCarRectX &&
-                itemRectY < playerCarRectY + playerCarRectHeight &&
-                itemRectHeight + itemRectY > playerCarRectY
+            if (itemRectX < playerCarRectX + (playerCarRectWidth - 15) &&
+                itemRectX + (itemRectWidth - 15) > playerCarRectX &&
+                itemRectY < playerCarRectY + (playerCarRectHeight - 15) &&
+                (itemRectHeight - 15) + itemRectY > playerCarRectY
             ) {
                 if (item.classList.contains('battery')) {
                     clearInterval(itemIntervalId);
@@ -315,6 +315,8 @@ var game = (function () {
                     console.log(intervals);
                     endsnd.play();
                     theme.pause();
+                    hitsnd.play();
+
                 }
             }
 
