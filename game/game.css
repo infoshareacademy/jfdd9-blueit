@@ -2,6 +2,7 @@ body {
     margin: 0;
     /*zoom: 75%;*/
     overflow: hidden;
+
 }
 
 .welcome-screen {
@@ -25,26 +26,26 @@ body {
     padding: 1rem;
 }
 
-.modal-title{
+.modal-title {
     font-size: 3em;
     color: #fff;
     text-align: center;
-    line-height:2em;
+    line-height: 2em;
     text-transform: uppercase;
 }
 
-.modal-title2{
+.modal-title2 {
     font-size: 2.5em;
     color: #fff;
     text-align: center;
-    line-height:2em;
+    line-height: 2em;
 }
 
-.welcome-screen-hide{
+.welcome-screen-hide {
     display: none;
 }
 
-.modal-brand-name{
+.modal-brand-name {
     text-shadow: 0 0 15px #421fff;
     font-size: 3em;
     letter-spacing: 0.2em;
@@ -56,11 +57,11 @@ body {
     text-shadow: 0 0 15px #FF0000;
 }
 
-.modal-logo{
+.modal-logo {
     width: 1em;
 }
 
-.game-info{
+.game-info {
     font-size: 1.3em;
 }
 
@@ -74,7 +75,7 @@ body {
     font-weight: 700;
 }
 
-#start-game:hover{
+#start-game:hover {
     background-color: white;
     color: red;
     transition: color 0.4s;
@@ -262,6 +263,7 @@ body {
     height: 95px;
     color: white;
     font-size: 24px;
+    font-family: 'VT323', monospace;
     background: rgba(0, 0, 0, 0.5);
     border: white 2px solid;
 }
@@ -290,21 +292,37 @@ body {
     right: 30px;
     color: white;
     font-size: 24px;
+    font-family: 'VT323', monospace;
     background: rgba(0, 0, 0, 0.5);
     border: white 2px solid;
     padding: 10px 0px 10px 10px;
 }
 
 .whatIsLove {
+    display: flex;
     position: absolute;
-background: url("whatIsLove.gif");
+    font-family: 'VT323', monospace;
+    background: url("whatIsLove.gif");
     width: 500px;
     height: 281px;
     top: 10px;
     left: 10px;
     border: solid white;
+    color: white;
 }
 
+.whatIsLove p {
+    position: absolute;
+    align-self: flex-end;
+    animation: blinker 1s linear infinite;
+    letter-spacing: 4px;
+    font-size: 24px;
+    left: 20px;
+}
+
+@keyframes blinker {
+    50% { opacity: 0; }
+}
 
 @media screen and (max-width: 767px) {
     .modal-logo,
