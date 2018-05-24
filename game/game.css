@@ -295,14 +295,25 @@ body {
     padding: 10px 0px 10px 10px;
 }
 
+.whatIsLove {
+    position: absolute;
+background: url("whatIsLove.gif");
+    width: 500px;
+    height: 281px;
+    top: 10px;
+    left: 10px;
+    border: solid white;
+}
 
 
 @media screen and (max-width: 767px) {
     .modal-logo,
     .emoji,
     .modal-game-title,
-    .modal-title{
+    .modal-title {
         display: none;
     }
+}
+
 
 
