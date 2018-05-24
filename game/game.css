@@ -320,6 +320,17 @@ body {
     left: 20px;
 }
 
+.whatIsLove span {
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+
+.whatIsLove img {
+    width: 45px;
+    height: 15px;
+}
+
 @keyframes blinker {
     50% { opacity: 0; }
 }
