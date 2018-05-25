@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>..::Road to Power::..</title>
+    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js"
+            integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+            crossorigin="anonymous"></script>
+
+</head>
+
+<div class="welcome-screen">
+
+    <p class="modal-title"><img src="../img/carwhite.png" class="modal-logo"> &nbsp Congratulations!! &nbsp
+        <img src="../img/carwhite.png" class="modal-logo"></p>
+    <p class="modal-title2"> Thank you for joining our </p>
+    <p class="modal-brand-name">BlueSky Revolution</p>
+
+    <span class="game-info">You've been rewarded with an Ultimate Driving Challenge..</span>
+    <h1 class="modal-game-title">..IT'S SHOWTIME !!!</h1>
+    <span class="game-info">Test your driving skills in our ULTIMATE DRIVING EXPERIENCE.</span>
+    <span class="game-info">The object of the game is to stay within lines, avoid oncoming traffic and collect green batteries.</span>
+    <span class="game-info"> The game is not time-limited, you can go as far as your abilities take you.</span>
+    <span id="start-game" class="btn btn-danger">START THE GAME</span>
+</div>
+
+<div class="score-progress">
+    <div class="score">0 points</div>
+    <div class="timer">0 seconds</div>
+</div>
+
+<div class="control-info">
+    <p>Use Arrows Keys to move, SPACEBAR to stay in place</p>
+    <p>You'll get 2 points for each second, 5 for each battery.</p>
+</div>
+
+<div class="grass">
+    <div class="road">
+        <div class="car"></div>
+    </div>
+    <div class="hud">
+        <p class="time-actual"></p>
+        <p class="score-actual"></p>
+
+    </div>
+    <div class="whatIsLove">
+        <span><img src="rec-anim-02.gif"></span>
+        <p>REAR MIRROR CAMERA VIEW</p>
+    </div>
+</div>
+a
+<div class="last-screen">
+    <div class="final-points">
+        <div class="score-title">Your score</div>
+        <div class="score">0 points</div>
+        <div class="timer"></div>
+    </div>
+    <div class="cup-container">
+        <img src="img/puchar.png" height="90rem" width="90rem">
+        <h1 class="last-screen-text">Game Over</h1>
+    </div>
+    <button class="reset-button">Try again</button>
+</div>
+
+<script src="game.js"></script>
+<script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+
+<audio src='track.mp3'></audio>
+<script>
+    document.getElementById('start-game').addEventListener('click', game.start)
+    // game.start()
+</script>
+
+</body>
+</html>

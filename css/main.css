@@ -8,59 +8,6 @@ body {
     color: #666;
 }
 
-.hero-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #c4d3e6 url("../img/tesla.jpeg");
-    background-size: cover;
-    height: 100vh;
-    opacity: 0.8;
-}
-
-.hero-headline {
-    font-family: "Open Sans", sans-serif;
-    font-size: 4em;
-    margin-top: 2em;
-    margin-bottom: 0.6em;
-    opacity: 1;
-}
-
-.hero-text {
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.8em;
-    opacity: 1;
-}
-
-.hero-link-contain {
-    margin-top: 4em;
-    text-decoration: none;
-    border: 1px black solid;
-    border-radius: 20px;
-    padding: 5px;
-}
-
-.hero-link {
-    text-decoration: none;
-    font-family: "Open Sans", sans-serif;
-    color: black;
-    font-size: 1.5em;
-}
-
-.hero-link-contain:hover {
-    border: 1px white solid;
-    color: white;
-}
-
-.hero-link-contain:active {
-    background-color: #7db7e6;
-    color: white;
-}
-
-.hero-link:active {
-    color: white;
-}
-
 h2 {
     font-size: 32px;
     font-weight: 400;
@@ -101,7 +48,15 @@ h3 {
     display: block;
     width: 70px;
     height: 3px;
-    background: #1dc8cd;
-    background: linear-gradient(0deg, #1dc8cd 0%, #55fabe 100%);
+    background: rgba(11, 18, 89, 0.8);
+    background: linear-gradient(0deg, rgba(11, 18, 89, 0.8) 0%, skyblue 100%);
     margin: 20px auto 0 auto;
+}
+
+@media projector {
+    .func,
+    .about-us {
+        /*background: #d9e1e1;*/
+        background: #111111;
+    }
 }
