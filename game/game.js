@@ -1,3 +1,5 @@
+
+
 var game = (function () {
     var theme = new Audio('track.mp3')
     theme.play()
@@ -27,6 +29,14 @@ var game = (function () {
     
     function accelerate() {
         
+    }
+
+    window.onload=function () {
+        setTimeout(noMore, 10000)
+    }
+
+    function noMore() {
+        document.getElementsByClassName('dontHurtMe').className='whatIsLove'
     }
 
     function enableControls() {

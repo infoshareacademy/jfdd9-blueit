@@ -47,7 +47,7 @@
         <p class="score-actual"></p>
 
     </div>
-    <div class="whatIsLove">
+    <div id="dontHurtMe">
         <span><img src="rec-anim-02.gif"></span>
         <p>REAR MIRROR CAMERA VIEW</p>
     </div>
@@ -76,6 +76,11 @@ a
 <script>
     document.getElementById('start-game').addEventListener('click', game.start)
     // game.start()
+    $(document).ready(function(){
+        window.setTimeout(function(){
+            $("#dontHurtMe").addClass("whatIsLove");
+        },10000);
+    });
 </script>
 
 </body>

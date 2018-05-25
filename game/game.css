@@ -298,7 +298,13 @@ body {
     padding: 10px 0px 10px 10px;
 }
 
-.whatIsLove {
+
+
+#dontHurtMe {
+    display: none;
+}
+
+#dontHurtMe.whatIsLove {
     display: flex;
     position: absolute;
     font-family: 'VT323', monospace;
