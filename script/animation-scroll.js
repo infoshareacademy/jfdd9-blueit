@@ -1,5 +1,5 @@
 var links = document.querySelectorAll('#hero-section a[href^="#"]');
-var navLinks = document.querySelectorAll('#nav-div a[href^="#"]');
+var navLinks = document.querySelectorAll('#hero-nav a[href^="#"]');
 var menu = document.querySelector('#hero-nav');
 
 links.forEach(function (link) {
