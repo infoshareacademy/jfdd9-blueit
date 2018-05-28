@@ -46,8 +46,16 @@
     color: #fff;
 }
 
-#hero-navbar-logo {
+/*#hero-navbar-list > li > a:focus {*/
+/*background: none;*/
+/*}*/
+
+.nav > li > a:focus {
     background: none;
+}
+
+#hero-navbar-logo {
+    background: none !important;
 }
 
 #hero-navbar-list > li > a,
