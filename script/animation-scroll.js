@@ -1,5 +1,6 @@
 var links = document.querySelectorAll('#hero-section a[href^="#"]');
-var menu = document.querySelector('#hero-section');
+var navLinks = document.querySelectorAll('#nav-div a[href^="#"]');
+var menu = document.querySelector('#hero-nav');
 
 links.forEach(function (link) {
   link.addEventListener('click', function (event) {
@@ -12,23 +13,24 @@ links.forEach(function (link) {
     });
   });
 });
-//
-// window.addEventListener('scroll', function (event) {
-//   var currentPosition = window.pageYOffset;
-//   Array.prototype.map.call(links, function (link) {
-//     return document.querySelector(
-//       link.getAttribute('href')
-//     )
-//   }).forEach(function (element, index) {
-//     var pos = currentPosition + menu.offsetHeight + 1;
-//     if (
-//       pos > element.offsetTop &&
-//       pos < element.offsetHeight + element.offsetTop) {
-//       links.forEach(function (link) {
-//         link.classList.remove('active')
-//       });
-//       links[index].classList.add('active')
-//     }
-//   })
-// });
+
+window.addEventListener('scroll', function (event) {
+  var currentPosition = window.pageYOffset;
+  Array.prototype.map.call(navLinks, function (link) {
+    return document.querySelector(
+      link.getAttribute('href')
+    )
+  }).forEach(function (element, index) {
+    var pos = currentPosition + menu.offsetHeight + 1;
+    if (
+      pos > element.offsetTop &&
+      pos < element.offsetHeight + element.offsetTop
+    ) {
+      navLinks.forEach(function (link) {
+        link.classList.remove('active')
+      });
+      navLinks[index].classList.add('active')
+    }
+  })
+});
 

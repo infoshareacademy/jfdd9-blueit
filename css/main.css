@@ -53,10 +53,7 @@ h3 {
     margin: 20px auto 0 auto;
 }
 
-@media projector {
-    .func,
-    .about-us {
-        /*background: #d9e1e1;*/
-        background: #111111;
-    }
+.active {
+    background: rgba(255, 255, 255, 0.3);
 }
+
