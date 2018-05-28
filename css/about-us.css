@@ -31,6 +31,10 @@
     margin-bottom: 15px;
 }
 
+.about-us img {
+    box-shadow: 0 0 20px 0 #777;
+}
+
 .about-us-member h4 {
     display: block;
     font-weight: 700;
